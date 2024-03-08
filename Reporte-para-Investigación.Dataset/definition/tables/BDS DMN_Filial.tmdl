@@ -1,0 +1,45 @@
+table 'BDS DMN_Filial'
+	lineageTag: 3d7bc767-4d03-426f-b9d2-43df3946bc16
+
+	column Cod_Filial
+		dataType: string
+		lineageTag: 6c159942-379d-492f-a849-c3aac754529f
+		summarizeBy: none
+		sourceColumn: Cod_Filial
+
+		annotation SummarizationSetBy = Automatic
+
+	column Des_Filial
+		dataType: string
+		lineageTag: 2bef6081-7a2b-417a-b416-06607cbd10f9
+		summarizeBy: none
+		sourceColumn: Des_Filial
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fec_Carga
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: eba2e3f3-adf2-41a5-a9dc-a839f17fb851
+		summarizeBy: none
+		sourceColumn: Fec_Carga
+
+		variation Variación
+			isDefault
+			relationship: 292e2a67-3f57-496a-80c4-775a18051132
+			defaultHierarchy: LocalDateTable_0c4b72ce-06c5-40f9-9acc-aaee26b591cb.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'BDS DMN_Filial' = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("student360ucv.database.windows.net,1433"),
+				    BDStudent = Origen{[Name="BDStudent"]}[Data],
+				    BDS_DMN_Filial = BDStudent{[Schema="BDS",Item="DMN_Filial"]}[Data]
+				in
+				    BDS_DMN_Filial
+
+	annotation PBI_ResultType = Table
+

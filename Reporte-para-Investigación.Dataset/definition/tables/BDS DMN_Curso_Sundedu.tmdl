@@ -1,0 +1,107 @@
+table 'BDS DMN_Curso_Sundedu'
+	lineageTag: 1cc51cd7-6cbb-43d2-bbb2-c9bad461b8d4
+
+	column nPrdActividad
+		dataType: int64
+		formatString: 0
+		lineageTag: b71f383e-bca8-45b9-8f6b-bb464123d432
+		summarizeBy: sum
+		sourceColumn: nPrdActividad
+
+		annotation SummarizationSetBy = Automatic
+
+	column cPrdActividad
+		dataType: string
+		lineageTag: e42a509d-f935-423f-aff1-2b00af579c39
+		summarizeBy: none
+		sourceColumn: cPrdActividad
+
+		annotation SummarizationSetBy = Automatic
+
+	column nPrdCodigo
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d3d3916-b765-4fb3-8e96-0eaf54ee23af
+		summarizeBy: none
+		sourceColumn: nPrdCodigo
+
+		annotation SummarizationSetBy = User
+
+	column cPrdDescripcion
+		dataType: string
+		lineageTag: 6c10671a-128f-48e4-9cc4-27337eda5acc
+		summarizeBy: none
+		sourceColumn: cPrdDescripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	column cperjuridica
+		dataType: string
+		lineageTag: 80bc81ac-7727-4746-ba6e-f60637790509
+		summarizeBy: none
+		sourceColumn: cperjuridica
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuniorgnombre
+		dataType: string
+		lineageTag: c7c3cee4-62c5-4617-ad32-2a927c9057f7
+		summarizeBy: none
+		sourceColumn: cuniorgnombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column nCicCodigo
+		dataType: string
+		lineageTag: 4f9369c9-5b57-4c54-b56e-b4b7d4d2c3fd
+		summarizeBy: none
+		sourceColumn: nCicCodigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column nCurCodigo
+		dataType: int64
+		formatString: 0
+		lineageTag: adbee459-559e-4ea8-80ef-768d8a557a58
+		summarizeBy: sum
+		sourceColumn: nCurCodigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column cCurDescripcion
+		dataType: string
+		lineageTag: c94e8ab2-62e9-49a1-8467-c32021572cd0
+		summarizeBy: none
+		sourceColumn: cCurDescripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	column nAsiCodigo
+		dataType: int64
+		formatString: 0
+		lineageTag: 97a28ca7-1893-4bb9-93cf-b477b22d4157
+		summarizeBy: none
+		sourceColumn: nAsiCodigo
+
+		annotation SummarizationSetBy = User
+
+	column cAsiDescripcion
+		dataType: string
+		lineageTag: f438769c-ebd6-4c0a-b4f1-2d2bc700e48d
+		summarizeBy: none
+		sourceColumn: cAsiDescripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'BDS DMN_Curso_Sundedu' = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("student360ucv.database.windows.net,1433"),
+				    BDStudent = Origen{[Name="BDStudent"]}[Data],
+				    BDS_DMN_Curso_Sundedu = BDStudent{[Schema="BDS",Item="DMN_Curso_Sundedu"]}[Data]
+				in
+				    BDS_DMN_Curso_Sundedu
+
+	annotation PBI_ResultType = Table
+

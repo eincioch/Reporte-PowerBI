@@ -1,0 +1,69 @@
+table Medidas
+	lineageTag: e8251061-3772-43e5-be10-3f277544d312
+
+	measure 'Nro estudiantes participan Prj Inv.' =
+			CALCULATE(
+			    DISTINCTCOUNT('BDS FCT_Data_Result_Investigacion'[CODIGO_ESTUDIANTE_SUN]),
+			    FILTER(
+			        'BDS FCT_Data_Result_Investigacion',
+			        NOT(ISBLANK('BDS FCT_Data_Result_Investigacion'[nAsiCodigo]))  && 'BDS FCT_Data_Result_Investigacion'[Des_Estado_Curso] = "Aprobado"
+			    )
+			)
+		formatString: 0
+		lineageTag: cbed706c-4d64-4743-ace6-c58c74c4ed40
+
+		changedProperty = IsHidden
+
+	measure 'Nro estudiantes matriculados sunedu' = DISTINCTCOUNT('BDS FCT_Data_Result_Investigacion'[CODIGO_ESTUDIANTE_SUN])
+		formatString: 0
+		lineageTag: 1164752f-cb6e-45d9-919d-41decfcbe8cb
+
+	measure 'Medida EA-12-03' = DIVIDE(Medidas[Nro estudiantes participan Prj Inv.],Medidas[Nro estudiantes matriculados sunedu])*100
+		lineageTag: 9f7eaa3d-f2db-4aef-ba00-903ac4fda221
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Pronostico = ```
+			IF(ISBLANK(DISTINCTCOUNT('BDS FCT_Data_Result_Investigacion'[CODIGO_ESTUDIANTE_SUN])), 
+			    Medidas[Nro estudiantes participan Prj Inv.] * (1+ Medidas[Nro estudiantes matriculados sunedu]),
+			    BLANK()
+			    )
+			```
+		formatString: 0
+		lineageTag: 1ff59605-0063-4292-a0d4-7070e587fc5d
+
+	measure 'Total Docente' = DISTINCTCOUNT('BDS FCT_Docente_Procesado'[CPERCODIGO])
+		formatString: 0
+		lineageTag: 22a43b73-e276-499e-a91b-6b029161b61e
+
+	measure 'Nro docentes participan Prj Inv.' = ```
+			CALCULATE(
+			    DISTINCTCOUNT('BDS FCT_Docente_Procesado'[CPERCODIGO]),
+			    FILTER(
+			        'BDS FCT_Docente_Procesado',
+			        NOT(ISBLANK('BDS FCT_Docente_Procesado'[nAsiCodigo_Inv]) 
+			    )
+			))
+			```
+		formatString: 0
+		lineageTag: 6c942c17-931e-460c-b8f3-5fa477d3ffe3
+
+	measure 'Medida EA-12-04' = DIVIDE([Nro docentes participan Prj Inv.],[Total Docente])*100
+		lineageTag: 10be747f-4df6-482e-bf25-60d555f7e4a1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Medidas = m
+		mode: import
+		source =
+				let
+				    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Columna1 = _t]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Columna1", type text}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Columna1"})
+				in
+				    #"Columnas quitadas"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,516 @@
+{
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.50\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection",
+      "config": "{}",
+      "name": "Pod"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "EA-12-039916458431258106.png",
+            "path": "EA-12-039916458431258106.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"288L\"}}}}}]}}",
+      "displayName": "EA-12-03",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"06c899040ab2ce60c317\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.82089552238806,\"y\":19.70149253731343,\"z\":23000,\"width\":200.59701492537312,\"height\":70.74626865671641,\"tabOrder\":23000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"EA-12-03\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"16pt\",\"color\":\"#d64550\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 70.75,
+          "width": 200.60,
+          "x": 35.82,
+          "y": 19.70,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"097b44061e00cc9ac51e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":121.11111111111111,\"y\":97.77777777777777,\"z\":1000,\"width\":390,\"height\":51.11111111111111,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS FCT_Data_Result_Investigacion.cPrdDescripcion\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BDS FCT_Data_Result_Investigacion\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"cPrdDescripcion\"},\"Name\":\"BDS FCT_Data_Result_Investigacion.cPrdDescripcion\",\"NativeReferenceName\":\"cPrdDescripcion\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D2F5D'\"}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Periodo'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'P E R I O D O'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filial'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 51.11,
+          "width": 390.00,
+          "x": 121.11,
+          "y": 97.78,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"0dabff7ed4285e0b27a0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.55555555555556,\"y\":230,\"z\":8000,\"width\":85.55555555555556,\"height\":28.88888888888889,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Escuela:\",\"textStyle\":{\"fontWeight\":\"bold\",\"color\":\"#000000\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 28.89,
+          "width": 85.56,
+          "x": 35.56,
+          "y": 230.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"1f2371025d991aa75122\",\"layouts\":[{\"id\":0,\"position\":{\"x\":863.4754098360655,\"y\":401.8360655737705,\"z\":21000,\"width\":382.95081967213116,\"height\":295.8688524590164,\"tabOrder\":21000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS FCT_Data_Result_Investigacion.Escuela\"},{\"queryRef\":\"Medidas.Medida Nro estudiantes participan pryt I\"},{\"queryRef\":\"Medidas.Medida Nro estudiantes matriculados prog estudios\"},{\"queryRef\":\"Medidas.Medida EA-12-03\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"b\",\"Entity\":\"BDS FCT_Data_Result_Investigacion\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro estudiantes matriculados sunedu\"},\"Name\":\"Medidas.Medida Nro estudiantes matriculados prog estudios\",\"NativeReferenceName\":\"N° (B)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro estudiantes participan Prj Inv.\"},\"Name\":\"Medidas.Medida Nro estudiantes participan pryt I\",\"NativeReferenceName\":\"N° (A)1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Escuela\"},\"Name\":\"BDS FCT_Data_Result_Investigacion.Escuela\",\"NativeReferenceName\":\"Escuela\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Medida EA-12-03\"},\"Name\":\"Medidas.Medida EA-12-03\",\"NativeReferenceName\":\"Procentaje\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Escuela\"}}}]},\"columnProperties\":{\"Medidas.Medida EA-12-03\":{\"displayName\":\"Procentaje\"},\"Medidas.Medida Nro estudiantes matriculados prog estudios\":{\"displayName\":\"N° (B)\"},\"Medidas.Medida Nro estudiantes participan pryt I\":{\"displayName\":\"N° (A)\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{\"gridHorizontalColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0.6}}}}},\"gridHorizontalWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"rowPadding\":{\"expr\":{\"Literal\":{\"Value\":\"7D\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.4}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"wordWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"autoSizeColumnWidth\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"57.39344262295082D\"}}}},\"selector\":{\"metadata\":\"Medidas.Medida Nro estudiantes matriculados prog estudios\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"70.73554529800654D\"}}}},\"selector\":{\"metadata\":\"Medidas.Medida Nro estudiantes participan pryt I\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"152.39734939822762D\"}}}},\"selector\":{\"metadata\":\"BDS FCT_Data_Result_Investigacion.Escuela\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"77.12432668465935D\"}}}},\"selector\":{\"metadata\":\"Medidas.Medida EA-12-03\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Agrupado por Facultad'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'None'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"93D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 295.87,
+          "width": 382.95,
+          "x": 863.48,
+          "y": 401.84,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"3b896400a196255087a0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":120,\"y\":137.77777777777777,\"z\":3000,\"width\":391.1111111111111,\"height\":51.11111111111111,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS FCT_Data_Result_Investigacion.Filial\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BDS FCT_Data_Result_Investigacion\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Filial\"},\"Name\":\"BDS FCT_Data_Result_Investigacion.Filial\",\"NativeReferenceName\":\"Filial\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BDS FCT_Data_Result_Investigacion\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Filial\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'UCV FILIAL TRUJILLO'\"}}]]}}}]}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D2F5D'\"}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Periodo'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'P E R I O D O'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filial'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 51.11,
+          "width": 391.11,
+          "x": 120.00,
+          "y": 137.78,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"421538c6b08c608063a3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":612.7213114754098,\"y\":199.34426229508193,\"z\":9000,\"width\":196.19672131147541,\"height\":81.8360655737705,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Medidas.Medida\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro estudiantes participan Prj Inv.\"},\"Name\":\"Medidas.Medida\",\"NativeReferenceName\":\".\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro estudiantes participan Prj Inv.\"}}}]},\"columnProperties\":{\"Medidas.Medida\":{\"displayName\":\".\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}},\"selector\":{\"metadata\":\"Medidas.Medida\"}}],\"label\":[{\"properties\":{\"matchValueAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Medidas.Medida\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 81.84,
+          "width": 196.20,
+          "x": 612.72,
+          "y": 199.34,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"43823c40bc05ebe9ddaa\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.555555555555555,\"y\":188.88888888888889,\"z\":6000,\"width\":105.55555555555556,\"height\":28.88888888888889,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Facultad:\",\"textStyle\":{\"fontWeight\":\"bold\",\"color\":\"#000000\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 28.89,
+          "width": 105.56,
+          "x": 15.56,
+          "y": 188.89,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"44986f5d4c02005219aa\",\"layouts\":[{\"id\":0,\"position\":{\"x\":66.66666666666667,\"y\":147.77777777777777,\"z\":4000,\"width\":54.44444444444444,\"height\":28.88888888888889,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Filial:\",\"textStyle\":{\"fontWeight\":\"bold\",\"color\":\"#000000\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 28.89,
+          "width": 54.44,
+          "x": 66.67,
+          "y": 147.78,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"44cea94c3cdb7c0b84ee\",\"layouts\":[{\"id\":0,\"position\":{\"x\":44.75524475524475,\"y\":108.53146853146852,\"z\":2000,\"width\":76.08391608391608,\"height\":27.97202797202797,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Periodo:\",\"textStyle\":{\"fontWeight\":\"bold\",\"color\":\"#000000\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 27.97,
+          "width": 76.08,
+          "x": 44.76,
+          "y": 108.53,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"55ef01abba914620543e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":510.95081967213116,\"y\":401.8360655737705,\"z\":24000,\"width\":343.08196721311475,\"height\":295.8688524590164,\"tabOrder\":24000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS FCT_Data_Result_Investigacion.cPrdDescripcion\"},{\"queryRef\":\"Medidas.Medida Nro estudiantes participan pryt I\"},{\"queryRef\":\"Medidas.Medida Nro estudiantes matriculados prog estudios\"},{\"queryRef\":\"Medidas.Medida EA-12-03\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"b\",\"Entity\":\"BDS FCT_Data_Result_Investigacion\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro estudiantes matriculados sunedu\"},\"Name\":\"Medidas.Medida Nro estudiantes matriculados prog estudios\",\"NativeReferenceName\":\"N° (B)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro estudiantes participan Prj Inv.\"},\"Name\":\"Medidas.Medida Nro estudiantes participan pryt I\",\"NativeReferenceName\":\"N° (A)1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Medida EA-12-03\"},\"Name\":\"Medidas.Medida EA-12-03\",\"NativeReferenceName\":\"Procentaje\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"cPrdDescripcion\"},\"Name\":\"BDS FCT_Data_Result_Investigacion.cPrdDescripcion\",\"NativeReferenceName\":\"Semestre(s)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro estudiantes participan Prj Inv.\"}}}]},\"columnProperties\":{\"Medidas.Medida EA-12-03\":{\"displayName\":\"Procentaje\"},\"Medidas.Medida Nro estudiantes matriculados prog estudios\":{\"displayName\":\"N° (B)\"},\"Medidas.Medida Nro estudiantes participan pryt I\":{\"displayName\":\"N° (A)\"},\"BDS FCT_Data_Result_Investigacion.cPrdDescripcion\":{\"displayName\":\"Semestre(s)\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{\"gridHorizontalColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0.6}}}}},\"gridHorizontalWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"rowPadding\":{\"expr\":{\"Literal\":{\"Value\":\"7D\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.4}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"wordWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"autoSizeColumnWidth\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"70.01329233868296D\"}}}},\"selector\":{\"metadata\":\"Medidas.Medida Nro estudiantes matriculados prog estudios\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"85.4445254757011D\"}}}},\"selector\":{\"metadata\":\"Medidas.Medida Nro estudiantes participan pryt I\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"83.43119117724925D\"}}}},\"selector\":{\"metadata\":\"Medidas.Medida EA-12-03\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"90.25058926047741D\"}}}},\"selector\":{\"metadata\":\"BDS FCT_Data_Result_Investigacion.cPrdDescripcion\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Agrupado por Facultad'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'None'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"93D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 295.87,
+          "width": 343.08,
+          "x": 510.95,
+          "y": 401.84,
+          "z": 24000.00
+        },
+        {
+          "config": "{\"name\":\"5a50ae6859b43e3553ad\",\"layouts\":[{\"id\":0,\"position\":{\"x\":612.7213114754098,\"y\":267.5409836065574,\"z\":18000,\"width\":193.04918032786884,\"height\":29.37704918032787,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"_____________________________________________________________\"}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 29.38,
+          "width": 193.05,
+          "x": 612.72,
+          "y": 267.54,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"6325bf40c4890c7d048a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1048.1311475409836,\"y\":218.2295081967213,\"z\":25000,\"width\":198.29508196721312,\"height\":165.7704918032787,\"tabOrder\":25000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"N° (A) :\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"9pt\"}},{\"value\":\" \",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"9pt\",\"color\":\"#118dff\"}},{\"value\":\"{ Numero de estudiantes del programa de estudios que participan en proyectos de I+D+i articulados con proceso de enseñanza - aprendizaje}\",\"textStyle\":{\"fontSize\":\"9pt\",\"color\":\"#118dff\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"Nº (B) :\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"9pt\"}},{\"value\":\" \",\"textStyle\":{\"fontSize\":\"9pt\"}},{\"value\":\"{Numero de estudiantes matriculados del  programa de estudios}\",\"textStyle\":{\"fontSize\":\"9pt\",\"color\":\"#12239e\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 165.77,
+          "width": 198.30,
+          "x": 1048.13,
+          "y": 218.23,
+          "z": 25000.00
+        },
+        {
+          "config": "{\"name\":\"71ca0d683d0011522a15\",\"layouts\":[{\"id\":0,\"position\":{\"x\":520.3934426229508,\"y\":99.67213114754098,\"z\":22000,\"width\":720.7868852459017,\"height\":289.57377049180326,\"tabOrder\":22000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"95D\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 289.57,
+          "width": 720.79,
+          "x": 520.39,
+          "y": 99.67,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"79f59b30e0ce028a4ab0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":121.11111111111111,\"y\":213.33333333333331,\"z\":7000,\"width\":390,\"height\":51.11111111111111,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS DMN_Escuela_CodSUNEDU.cEscuelaGen\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BDS DMN_Escuela_CodSUNEDU\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"cEscuelaGen\"},\"Name\":\"BDS DMN_Escuela_CodSUNEDU.cEscuelaGen\",\"NativeReferenceName\":\"cEscuelaGen\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BDS DMN_Escuela_CodSUNEDU\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"cEscuelaGen\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'PSICOLOGÍA'\"}}]]}}}]}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D2F5D'\"}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Periodo'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'P E R I O D O'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filial'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 51.11,
+          "width": 390.00,
+          "x": 121.11,
+          "y": 213.33,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"863d883a4860d1bdeba7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":25.18032786885246,\"y\":359.8688524590164,\"z\":20000,\"width\":477.37704918032784,\"height\":337.8360655737705,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Medidas.Nro estudiantes participan Prj Inv.\"}],\"Category\":[{\"queryRef\":\"BDS FCT_Data_Result_Investigacion.Facultad\",\"active\":true}],\"Y2\":[{\"queryRef\":\"Medidas.Nro estudiantes matriculados sunedu\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"b\",\"Entity\":\"BDS FCT_Data_Result_Investigacion\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Facultad\"},\"Name\":\"BDS FCT_Data_Result_Investigacion.Facultad\",\"NativeReferenceName\":\"Facultad\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro estudiantes participan Prj Inv.\"},\"Name\":\"Medidas.Nro estudiantes participan Prj Inv.\",\"NativeReferenceName\":\"Nro estudiantes participan Prj Inv.\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro estudiantes matriculados sunedu\"},\"Name\":\"Medidas.Nro estudiantes matriculados sunedu\",\"NativeReferenceName\":\"Nro estudiantes matriculados sunedu\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro estudiantes participan Prj Inv.\"}}}]},\"columnProperties\":{\"Medidas.Nro estudiantes participan Prj Inv.\":{\"displayName\":\"N° (A)\"},\"Medidas.Nro estudiantes matriculados sunedu\":{\"displayName\":\"N° (B)\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"lineStyles\":[{\"properties\":{\"shadeArea\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"strokeLineJoin\":{\"expr\":{\"Literal\":{\"Value\":\"'round'\"}}},\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'smooth'\"}}},\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'dotted'\"}}},\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"markerSize\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}},\"markerShape\":{\"expr\":{\"Literal\":{\"Value\":\"'circle'\"}}},\"markerColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.6}}}}}},\"selector\":{\"metadata\":\"Medidas.Ventas Año Anterior\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.2}}}}},\"fillTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"borderShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}},\"borderColorMatchFill\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Medidas.Nro estudiantes participan Prj Inv.\"}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"innerPadding\":{\"expr\":{\"Literal\":{\"Value\":\"15L\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"26L\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"valueAxis\":[{\"properties\":{\"secShowAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"secShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"secStart\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"gridlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"secLabelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"secLabelColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}},\"alignZeros\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"secLabelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"secBold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showSeries\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Medidas.Ventas Año Anterior\"}},{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"metadata\":\"Medidas.Nro estudiantes participan Prj Inv.\"}},{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Medidas.Medida Nro estudiantes matriculados prog estudios\"}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.4}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopRight'\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Comparativo cantidad Investigación y Total programas'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 337.84,
+          "width": 477.38,
+          "x": 25.18,
+          "y": 359.87,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"89251932a93ceb0203e4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":0,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"8f25a473d04e44becb10\",\"layouts\":[{\"id\":0,\"position\":{\"x\":121.11111111111111,\"y\":294.44444444444446,\"z\":12000,\"width\":390,\"height\":50,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS DMN_Modalidad_Estudio_CodSUNEDU.ModalidaddeEstudios\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BDS DMN_Modalidad_Estudio_CodSUNEDU\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"ModalidaddeEstudios\"},\"Name\":\"BDS DMN_Modalidad_Estudio_CodSUNEDU.ModalidaddeEstudios\",\"NativeReferenceName\":\"ModalidaddeEstudios\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D2F5D'\"}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Periodo'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'P E R I O D O'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filial'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 50.00,
+          "width": 390.00,
+          "x": 121.11,
+          "y": 294.44,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"98482b3ade40ed240180\",\"layouts\":[{\"id\":0,\"position\":{\"x\":236.4179104477612,\"y\":19.70149253731343,\"z\":14000,\"width\":1011.044776119403,\"height\":70.74626865671641,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Porcentaje de estudiantes que participan en proyectos de I+D+i\",\"textStyle\":{\"fontSize\":\"16pt\",\"color\":\"#12239e\"}}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"articulados con proceso de enseñanza - aprendizaje.\",\"textStyle\":{\"fontSize\":\"16pt\",\"color\":\"#12239e\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lockAspect\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 70.75,
+          "width": 1011.04,
+          "x": 236.42,
+          "y": 19.70,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"b8334a47ebe0e8d05456\",\"layouts\":[{\"id\":0,\"position\":{\"x\":120,\"y\":177.77777777777777,\"z\":5000,\"width\":391.1111111111111,\"height\":51.11111111111111,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS DMN_Facultad_CodSUNEDU.cDescripcion\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BDS DMN_Facultad_CodSUNEDU\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"cDescripcion\"},\"Name\":\"BDS DMN_Facultad_CodSUNEDU.cDescripcion\",\"NativeReferenceName\":\"cDescripcion\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D2F5D'\"}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Periodo'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'P E R I O D O'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filial'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 51.11,
+          "width": 391.11,
+          "x": 120.00,
+          "y": 177.78,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"bb6cb2f45a938646acc7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":609.5737704918033,\"y\":296.91803278688525,\"z\":15000,\"width\":196.19672131147541,\"height\":81.8360655737705,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Medidas.Medida Nro estudiantes matriculados prog estudios\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro estudiantes matriculados sunedu\"},\"Name\":\"Medidas.Medida Nro estudiantes matriculados prog estudios\",\"NativeReferenceName\":\".\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro estudiantes matriculados sunedu\"}}}]},\"columnProperties\":{\"Medidas.Medida Nro estudiantes matriculados prog estudios\":{\"displayName\":\".\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.2}}}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}},\"selector\":{\"metadata\":\"Medidas.Medida Nro estudiantes matriculados prog estudios\"}}],\"label\":[{\"properties\":{\"matchValueAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Medidas.Medida Nro estudiantes matriculados prog estudios\"}}],\"layout\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'middle'\"}}},\"cellPadding\":{\"expr\":{\"Literal\":{\"Value\":\"7L\"}}}}}]},\"vcObjects\":{\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 81.84,
+          "width": 196.20,
+          "x": 609.57,
+          "y": 296.92,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"bf673016579a27882b56\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.555555555555555,\"y\":264.44444444444446,\"z\":11000,\"width\":105.55555555555556,\"height\":30,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Nivel Estudio:\",\"textStyle\":{\"fontWeight\":\"bold\",\"color\":\"#000000\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 30.00,
+          "width": 105.56,
+          "x": 15.56,
+          "y": 264.44,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"cbda3759840552cab567\",\"layouts\":[{\"id\":0,\"position\":{\"x\":843.5409836065573,\"y\":235.01639344262293,\"z\":16000,\"width\":148.98360655737704,\"height\":96.52459016393442,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Medidas.Medida EA-12-03\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Medida EA-12-03\"},\"Name\":\"Medidas.Medida EA-12-03\",\"NativeReferenceName\":\"Porcentaje\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Medida EA-12-03\"}}}]},\"columnProperties\":{\"Medidas.Medida EA-12-03\":{\"displayName\":\"Porcentaje\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'right'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"-1D\"}}},\"showBlankAs\":{\"expr\":{\"Literal\":{\"Value\":\"'--'\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Medidas.Medida EA-12-03\"}}],\"label\":[{\"properties\":{\"matchValueAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}],\"layout\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"overFlow\":[{\"properties\":{\"overFlowDirection\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 96.52,
+          "width": 148.98,
+          "x": 843.54,
+          "y": 235.02,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"deea925307374a001891\",\"layouts\":[{\"id\":0,\"position\":{\"x\":121.11111111111111,\"y\":254.44444444444443,\"z\":10000,\"width\":390,\"height\":50,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS DMN_Nivel_Academico.Des_Nivel_Academico\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BDS DMN_Nivel_Academico\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Des_Nivel_Academico\"},\"Name\":\"BDS DMN_Nivel_Academico.Des_Nivel_Academico\",\"NativeReferenceName\":\"Des_Nivel_Academico\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D2F5D'\"}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Periodo'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'P E R I O D O'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filial'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 50.00,
+          "width": 390.00,
+          "x": 121.11,
+          "y": 254.44,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"dfc792d82ca0e508c045\",\"layouts\":[{\"id\":0,\"position\":{\"x\":535.5223880597015,\"y\":101.19402985074626,\"z\":19000,\"width\":705.6716417910447,\"height\":92.23880597014926,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"EA-12-039916458431258106.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 92.24,
+          "width": 705.67,
+          "x": 535.52,
+          "y": 101.19,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"e0095004ce590a60e02c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":805.7704918032787,\"y\":261.24590163934425,\"z\":17000,\"width\":43.01639344262295,\"height\":43.01639344262295,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"=\",\"textStyle\":{\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 43.02,
+          "width": 43.02,
+          "x": 805.77,
+          "y": 261.25,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"f3b2d955e2759d04b8d2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.555555555555555,\"y\":305.55555555555554,\"z\":13000,\"width\":105.55555555555556,\"height\":30,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Modalidad:\",\"textStyle\":{\"fontWeight\":\"bold\",\"color\":\"#000000\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 30.00,
+          "width": 105.56,
+          "x": 15.56,
+          "y": 305.56,
+          "z": 13000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "EA-12-04",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection0491011c19d7da2b5dcb",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"31d9f5ed2aa839727901\",\"layouts\":[{\"id\":0,\"position\":{\"x\":120,\"y\":137.77777777777777,\"z\":3000,\"width\":391.1111111111111,\"height\":51.11111111111111,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS FCT_Data_Result_Investigacion.Filial\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BDS FCT_Data_Result_Investigacion\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Filial\"},\"Name\":\"BDS FCT_Data_Result_Investigacion.Filial\",\"NativeReferenceName\":\"Filial\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D2F5D'\"}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Periodo'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'P E R I O D O'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filial'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 51.11,
+          "width": 391.11,
+          "x": 120.00,
+          "y": 137.78,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"3c223f28061d55d27e0f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":527.7377049180328,\"y\":401.8360655737705,\"z\":23000,\"width\":360.91803278688525,\"height\":295.8688524590164,\"tabOrder\":23000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS FCT_Docente_Procesado.Docente Investiga\"},{\"queryRef\":\"Medidas.Nro docentes participan Prj Inv.\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BDS FCT_Docente_Procesado\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro docentes participan Prj Inv.\"},\"Name\":\"Medidas.Nro docentes participan Prj Inv.\",\"NativeReferenceName\":\"N° (A)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Docente Investiga\"},\"Name\":\"BDS FCT_Docente_Procesado.Docente Investiga\",\"NativeReferenceName\":\"Docente Investiga\"}]},\"columnProperties\":{\"Medidas.Nro docentes participan Prj Inv.\":{\"displayName\":\"N° (A)\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{\"gridHorizontalColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0.6}}}}},\"gridHorizontalWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"rowPadding\":{\"expr\":{\"Literal\":{\"Value\":\"7D\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.4}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"wordWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"autoSizeColumnWidth\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"63.685030079017295D\"}}}},\"selector\":{\"metadata\":\"Medidas.Nro docentes participan Prj Inv.\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Agrupado por Facultad'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'None'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"93D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 295.87,
+          "width": 360.92,
+          "x": 527.74,
+          "y": 401.84,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"3d9df511e4762f24a839\",\"layouts\":[{\"id\":0,\"position\":{\"x\":121.11111111111111,\"y\":97.77777777777777,\"z\":1000,\"width\":390,\"height\":51.11111111111111,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS FCT_Data_Result_Investigacion.cPrdDescripcion\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BDS FCT_Data_Result_Investigacion\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"cPrdDescripcion\"},\"Name\":\"BDS FCT_Data_Result_Investigacion.cPrdDescripcion\",\"NativeReferenceName\":\"cPrdDescripcion\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D2F5D'\"}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Periodo'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'P E R I O D O'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filial'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 51.11,
+          "width": 390.00,
+          "x": 121.11,
+          "y": 97.78,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"473b4ce8fdf93785fa1a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":903.344262295082,\"y\":401.8360655737705,\"z\":19000,\"width\":344.1311475409836,\"height\":295.8688524590164,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS FCT_Docente_Procesado.ESCUELA\"},{\"queryRef\":\"Medidas.Nro docentes participan Prj Inv.\"},{\"queryRef\":\"Medidas.Total Docente\"},{\"queryRef\":\"Medidas.Medida EA-12-04\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BDS FCT_Docente_Procesado\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"ESCUELA\"},\"Name\":\"BDS FCT_Docente_Procesado.ESCUELA\",\"NativeReferenceName\":\"ESCUELA\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro docentes participan Prj Inv.\"},\"Name\":\"Medidas.Nro docentes participan Prj Inv.\",\"NativeReferenceName\":\"N° (A)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Docente\"},\"Name\":\"Medidas.Total Docente\",\"NativeReferenceName\":\"N° (B)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Medida EA-12-04\"},\"Name\":\"Medidas.Medida EA-12-04\",\"NativeReferenceName\":\"Porcentaje\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Docente\"}}}]},\"columnProperties\":{\"Medidas.Nro docentes participan Prj Inv.\":{\"displayName\":\"N° (A)\"},\"Medidas.Total Docente\":{\"displayName\":\"N° (B)\"},\"Medidas.Medida EA-12-04\":{\"displayName\":\"Porcentaje\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{\"gridHorizontalColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0.6}}}}},\"gridHorizontalWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"rowPadding\":{\"expr\":{\"Literal\":{\"Value\":\"7D\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.4}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"wordWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"autoSizeColumnWidth\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"63.685030079017295D\"}}}},\"selector\":{\"metadata\":\"Medidas.Nro docentes participan Prj Inv.\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"72.14522631996859D\"}}}},\"selector\":{\"metadata\":\"Medidas.Total Docente\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"85.70343422064109D\"}}}},\"selector\":{\"metadata\":\"Medidas.Medida EA-12-04\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"112.34942301025208D\"}}}},\"selector\":{\"metadata\":\"BDS FCT_Docente_Procesado.ESCUELA\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Agrupado por Facultad'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'None'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"93D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 295.87,
+          "width": 344.13,
+          "x": 903.34,
+          "y": 401.84,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"4a8fda7cc0820b3d8af0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":535.5223880597015,\"y\":101.19402985074626,\"z\":17000,\"width\":705.6716417910447,\"height\":92.23880597014926,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"EA-12-039916458431258106.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 92.24,
+          "width": 705.67,
+          "x": 535.52,
+          "y": 101.19,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"586a4aa3d25a68e9719b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":612.7213114754098,\"y\":267.5409836065574,\"z\":16000,\"width\":193.04918032786884,\"height\":29.37704918032787,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"_____________________________________________________________\"}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 29.38,
+          "width": 193.05,
+          "x": 612.72,
+          "y": 267.54,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"5b1d00a4dbbe16eee4d8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":120,\"y\":177.77777777777777,\"z\":5000,\"width\":391.1111111111111,\"height\":51.11111111111111,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS DMN_Facultad.Des_Facultad\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b1\",\"Entity\":\"BDS DMN_Facultad\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Des_Facultad\"},\"Name\":\"BDS DMN_Facultad.Des_Facultad\",\"NativeReferenceName\":\"Des_Facultad\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D2F5D'\"}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Periodo'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'P E R I O D O'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filial'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 51.11,
+          "width": 391.11,
+          "x": 120.00,
+          "y": 177.78,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"608482f323768d18f6fc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":520.3934426229508,\"y\":99.67213114754098,\"z\":20000,\"width\":720.7868852459017,\"height\":289.57377049180326,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"95D\"}}},\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 289.57,
+          "width": 720.79,
+          "x": 520.39,
+          "y": 99.67,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"6783a14bada92491a084\",\"layouts\":[{\"id\":0,\"position\":{\"x\":121.11111111111111,\"y\":213.33333333333331,\"z\":7000,\"width\":390,\"height\":51.11111111111111,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS DMN_Escuela.Des_Escuela\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b1\",\"Entity\":\"BDS DMN_Escuela\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Des_Escuela\"},\"Name\":\"BDS DMN_Escuela.Des_Escuela\",\"NativeReferenceName\":\"Des_Escuela\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D2F5D'\"}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Periodo'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'P E R I O D O'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filial'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 51.11,
+          "width": 390.00,
+          "x": 121.11,
+          "y": 213.33,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"6863687c9b4dac9a0448\",\"layouts\":[{\"id\":0,\"position\":{\"x\":121.11111111111111,\"y\":254.44444444444443,\"z\":10000,\"width\":390,\"height\":50,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"BDS FCT_Docente_Procesado.Modalidad\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b1\",\"Entity\":\"BDS FCT_Docente_Procesado\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Modalidad\"},\"Name\":\"BDS FCT_Docente_Procesado.Modalidad\",\"NativeReferenceName\":\"Modalidad\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BDS FCT_Docente_Procesado\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Modalidad\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'PRESENCIAL'\"}}]]}}}]}}}}],\"items\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D2F5D'\"}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Periodo'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'P E R I O D O'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTitle\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filial'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 50.00,
+          "width": 390.00,
+          "x": 121.11,
+          "y": 254.44,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"7169ed83122498037f49\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":0,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"832f4dfd5576dc858238\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.555555555555555,\"y\":264.44444444444446,\"z\":11000,\"width\":105.55555555555556,\"height\":30,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Nivel Estudio:\",\"textStyle\":{\"fontWeight\":\"bold\",\"color\":\"#000000\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 30.00,
+          "width": 105.56,
+          "x": 15.56,
+          "y": 264.44,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"85f0416f0e3c8abf0659\",\"layouts\":[{\"id\":0,\"position\":{\"x\":843.5409836065573,\"y\":235.01639344262293,\"z\":14000,\"width\":148.98360655737704,\"height\":96.52459016393442,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Medidas.Medida EA-12-04\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Medida EA-12-04\"},\"Name\":\"Medidas.Medida EA-12-04\",\"NativeReferenceName\":\"Procentaje\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Medida EA-12-04\"}}}]},\"columnProperties\":{\"Medidas.Medida EA-12-04\":{\"displayName\":\"Procentaje\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'right'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}},\"selector\":{\"id\":\"default\"}}],\"label\":[{\"properties\":{\"matchValueAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}],\"layout\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"overFlow\":[{\"properties\":{\"overFlowDirection\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 96.52,
+          "width": 148.98,
+          "x": 843.54,
+          "y": 235.02,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"86a2dbeed30b094456ff\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.55555555555556,\"y\":230,\"z\":8000,\"width\":85.55555555555556,\"height\":28.88888888888889,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Escuela:\",\"textStyle\":{\"fontWeight\":\"bold\",\"color\":\"#000000\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 28.89,
+          "width": 85.56,
+          "x": 35.56,
+          "y": 230.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"932c50d1c04abf1079f5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":44.75524475524475,\"y\":108.53146853146852,\"z\":2000,\"width\":76.08391608391608,\"height\":27.97202797202797,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Periodo:\",\"textStyle\":{\"fontWeight\":\"bold\",\"color\":\"#000000\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 27.97,
+          "width": 76.08,
+          "x": 44.76,
+          "y": 108.53,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"a8b71c53ca211c6588ed\",\"layouts\":[{\"id\":0,\"position\":{\"x\":612.7213114754098,\"y\":188.85245901639345,\"z\":9000,\"width\":196.19672131147541,\"height\":92.32786885245902,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Medidas.Nro docentes participan Prj Inv.\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro docentes participan Prj Inv.\"},\"Name\":\"Medidas.Nro docentes participan Prj Inv.\",\"NativeReferenceName\":\".\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro docentes participan Prj Inv.\"}}}]},\"columnProperties\":{\"Medidas.Nro docentes participan Prj Inv.\":{\"displayName\":\".\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}},\"selector\":{\"id\":\"default\"}}],\"label\":[{\"properties\":{\"matchValueAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 92.33,
+          "width": 196.20,
+          "x": 612.72,
+          "y": 188.85,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"b78d4ca581f7b7dafae0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":805.7704918032787,\"y\":261.24590163934425,\"z\":15000,\"width\":43.01639344262295,\"height\":43.01639344262295,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"=\",\"textStyle\":{\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 43.02,
+          "width": 43.02,
+          "x": 805.77,
+          "y": 261.25,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"bca00a6e9e61889af331\",\"layouts\":[{\"id\":0,\"position\":{\"x\":66.66666666666667,\"y\":147.77777777777777,\"z\":4000,\"width\":54.44444444444444,\"height\":28.88888888888889,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Filial:\",\"textStyle\":{\"fontWeight\":\"bold\",\"color\":\"#000000\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 28.89,
+          "width": 54.44,
+          "x": 66.67,
+          "y": 147.78,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"c0dae2858a8414e90b7a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.82089552238806,\"y\":19.70149253731343,\"z\":21000,\"width\":200.59701492537312,\"height\":70.74626865671641,\"tabOrder\":21000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"EA-12-04\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"16pt\",\"color\":\"#d64550\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 70.75,
+          "width": 200.60,
+          "x": 35.82,
+          "y": 19.70,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"caeb3d6534976f3dc984\",\"layouts\":[{\"id\":0,\"position\":{\"x\":236.4179104477612,\"y\":19.70149253731343,\"z\":12000,\"width\":1011.044776119403,\"height\":70.74626865671641,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Porcentaje de docentes que participan en proyectos de I+D+i articulados con proceso de enseñanza – aprendizaje\",\"textStyle\":{\"fontSize\":\"16pt\",\"color\":\"#d64550\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lockAspect\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 70.75,
+          "width": 1011.04,
+          "x": 236.42,
+          "y": 19.70,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"cf1ab510abe84ec6eff5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":25.18032786885246,\"y\":359.8688524590164,\"z\":18000,\"width\":477.37704918032784,\"height\":337.8360655737705,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Medidas.Nro docentes participan Prj Inv.\"}],\"Category\":[{\"queryRef\":\"BDS FCT_Docente_Procesado.Nombre_Facultad\",\"active\":true}],\"Y2\":[{\"queryRef\":\"Medidas.Total Docente\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"BDS FCT_Docente_Procesado\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"Nombre_Facultad\"},\"Name\":\"BDS FCT_Docente_Procesado.Nombre_Facultad\",\"NativeReferenceName\":\"Nombre_Facultad\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro docentes participan Prj Inv.\"},\"Name\":\"Medidas.Nro docentes participan Prj Inv.\",\"NativeReferenceName\":\"N° (A)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Docente\"},\"Name\":\"Medidas.Total Docente\",\"NativeReferenceName\":\"N° (B)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Nro docentes participan Prj Inv.\"}}}]},\"columnProperties\":{\"Medidas.Nro docentes participan Prj Inv.\":{\"displayName\":\"N° (A)\"},\"Medidas.Total Docente\":{\"displayName\":\"N° (B)\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"lineStyles\":[{\"properties\":{\"shadeArea\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"strokeLineJoin\":{\"expr\":{\"Literal\":{\"Value\":\"'round'\"}}},\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'smooth'\"}}},\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'dotted'\"}}},\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"markerSize\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}},\"markerShape\":{\"expr\":{\"Literal\":{\"Value\":\"'circle'\"}}},\"markerColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.6}}}}}},\"selector\":{\"metadata\":\"Medidas.Ventas Año Anterior\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.2}}}}},\"fillTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"borderShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}},\"borderColorMatchFill\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"innerPadding\":{\"expr\":{\"Literal\":{\"Value\":\"15L\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"26L\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"valueAxis\":[{\"properties\":{\"secShowAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"secShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"secStart\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"gridlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"secLabelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"secLabelColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}},\"alignZeros\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"secLabelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"secBold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showSeries\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Medidas.Ventas Año Anterior\"}},{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Medidas.Medida Nro estudiantes matriculados prog estudios\"}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.4}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopRight'\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Comparativo cantidad Investigación y Total programas'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 337.84,
+          "width": 477.38,
+          "x": 25.18,
+          "y": 359.87,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"d8e1129e3a58d1b00edc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1026.0983606557377,\"y\":218.2295081967213,\"z\":22000,\"width\":198.29508196721312,\"height\":165.7704918032787,\"tabOrder\":22000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"N° (A) :\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"9pt\"}},{\"value\":\" \",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"9pt\",\"color\":\"#118dff\"}},{\"value\":\"{ Numero de docentes que participan en proyectos de I+D+i articulados con proceso de enseñanza - aprendizaje}\",\"textStyle\":{\"fontSize\":\"9pt\",\"color\":\"#118dff\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"Nº (B) :\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"9pt\"}},{\"value\":\" \",\"textStyle\":{\"fontSize\":\"9pt\"}},{\"value\":\"{Numero total de docentes}\",\"textStyle\":{\"fontSize\":\"9pt\",\"color\":\"#12239e\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 165.77,
+          "width": 198.30,
+          "x": 1026.10,
+          "y": 218.23,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"db096aabfb32d2a27cd4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":609.5737704918033,\"y\":296.91803278688525,\"z\":13000,\"width\":196.19672131147541,\"height\":92.32786885245902,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Medidas.Medida Total Docente\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Docente\"},\"Name\":\"Medidas.Medida Total Docente\",\"NativeReferenceName\":\".\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Docente\"}}}]},\"columnProperties\":{\"Medidas.Medida Total Docente\":{\"displayName\":\".\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.2}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"35D\"}}}},\"selector\":{\"id\":\"default\"}}],\"label\":[{\"properties\":{\"matchValueAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"italic\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"layout\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'middle'\"}}},\"cellPadding\":{\"expr\":{\"Literal\":{\"Value\":\"7L\"}}}}}]},\"vcObjects\":{\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 92.33,
+          "width": 196.20,
+          "x": 609.57,
+          "y": 296.92,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"f4f0454791095ab2d04e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.555555555555555,\"y\":188.88888888888889,\"z\":6000,\"width\":105.55555555555556,\"height\":28.88888888888889,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Facultad:\",\"textStyle\":{\"fontWeight\":\"bold\",\"color\":\"#000000\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 28.89,
+          "width": 105.56,
+          "x": 15.56,
+          "y": 188.89,
+          "z": 6000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

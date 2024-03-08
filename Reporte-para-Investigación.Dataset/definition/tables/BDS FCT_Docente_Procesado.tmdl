@@ -1,0 +1,187 @@
+table 'BDS FCT_Docente_Procesado'
+	lineageTag: 203ed707-89f7-4a07-819d-b99d413ba1dc
+
+	measure 'Docente Investigacion' =
+			CALCULATE(
+			    DISTINCT('BDS FCT_Docente_Procesado'[DOCENTE]),
+			    FILTER(
+			        'BDS FCT_Docente_Procesado',
+			        NOT(ISBLANK('BDS FCT_Docente_Procesado'[nAsiCodigo_Inv]) )
+			))
+		lineageTag: e6960364-2856-4db3-863b-2a5cff162e4f
+
+	column CPERCODIGO
+		dataType: string
+		lineageTag: 0dbb8eab-733f-4dc2-a0d0-64a86954054d
+		summarizeBy: none
+		sourceColumn: CPERCODIGO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOCENTE
+		dataType: string
+		lineageTag: 18ed3567-0c07-4ec1-9f28-760444981b10
+		summarizeBy: none
+		sourceColumn: DOCENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CPERJURIDICA
+		dataType: string
+		lineageTag: c3344498-4860-44a7-8ba0-b4b099b18ecb
+		summarizeBy: none
+		sourceColumn: CPERJURIDICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CAMPUS
+		dataType: string
+		lineageTag: b9770c67-dec7-403a-8eca-de735c7a5390
+		summarizeBy: none
+		sourceColumn: CAMPUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cod_Facultad
+		dataType: int64
+		formatString: 0
+		lineageTag: 1b67d689-3309-4447-bacb-faee1856fbfc
+		summarizeBy: none
+		sourceColumn: Cod_Facultad
+
+		annotation SummarizationSetBy = User
+
+	column Nombre_Facultad
+		dataType: string
+		lineageTag: b564b43c-9cdb-462f-afac-6786f517be18
+		summarizeBy: none
+		sourceColumn: Nombre_Facultad
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodigoEscuela
+		dataType: int64
+		formatString: 0
+		lineageTag: 4cc5acf8-5f36-4296-baea-3de2bf7bcd3f
+		summarizeBy: none
+		sourceColumn: CodigoEscuela
+
+		annotation SummarizationSetBy = User
+
+	column ESCUELA
+		dataType: string
+		lineageTag: 3483be17-1fc5-419b-96d5-7ac8ebef3053
+		summarizeBy: none
+		sourceColumn: ESCUELA
+
+		annotation SummarizationSetBy = Automatic
+
+	column cuniorgcodigo
+		dataType: string
+		lineageTag: 289d1208-4625-44cb-8c04-2362d6be5c7e
+		summarizeBy: none
+		sourceColumn: cuniorgcodigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column NASICODIGO
+		dataType: int64
+		formatString: 0
+		lineageTag: bfa90b29-2d17-4d7a-a61f-d55e4a8d701d
+		summarizeBy: none
+		sourceColumn: NASICODIGO
+
+		annotation SummarizationSetBy = User
+
+	column CURSO
+		dataType: string
+		lineageTag: f4627d53-02b0-4981-9c95-db01da5ec55f
+		summarizeBy: none
+		sourceColumn: CURSO
+
+		annotation SummarizationSetBy = Automatic
+
+	column PERIODO
+		dataType: int64
+		formatString: 0
+		lineageTag: 4ff1d487-347e-4e15-997b-bf1c543f6d0d
+		summarizeBy: sum
+		sourceColumn: PERIODO
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cod_Nivel_Estudio
+		dataType: int64
+		formatString: 0
+		lineageTag: d52dfd40-52a8-4502-9649-7035127af931
+		summarizeBy: none
+		sourceColumn: Cod_Nivel_Estudio
+
+		annotation SummarizationSetBy = User
+
+	column Nivel_Estudio
+		dataType: string
+		lineageTag: 138609de-2ac9-4765-980b-3453a40db8b2
+		summarizeBy: none
+		sourceColumn: Nivel_Estudio
+
+		annotation SummarizationSetBy = Automatic
+
+	column Modalidad
+		dataType: string
+		lineageTag: 39789c50-7cf7-4155-83f3-53c67726fede
+		summarizeBy: none
+		sourceColumn: Modalidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column nAsiCodigo_Inv
+		dataType: int64
+		formatString: 0
+		lineageTag: 41e20e64-f005-4806-8608-f3131f58f1e5
+		summarizeBy: sum
+		sourceColumn: nAsiCodigo_Inv
+
+		annotation SummarizationSetBy = Automatic
+
+	column nCurCodigo
+		dataType: int64
+		formatString: 0
+		lineageTag: d9adc5dc-4257-4929-a6b3-243f411a2b31
+		summarizeBy: sum
+		sourceColumn: nCurCodigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column cAsiDescripcion_Inv
+		dataType: string
+		lineageTag: db6b7d66-895d-4e95-95e4-4f1857ec33f1
+		summarizeBy: none
+		sourceColumn: cAsiDescripcion_Inv
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Docente Investiga' =
+			CALCULATE(
+			    VALUES('BDS FCT_Docente_Procesado'[DOCENTE]),
+			        NOT(ISBLANK('BDS FCT_Docente_Procesado'[nAsiCodigo_Inv])
+			))
+		dataType: string
+		lineageTag: 0259e8a8-5307-4d70-b2f4-91f0877af4fe
+		summarizeBy: none
+		isDataTypeInferred
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'BDS FCT_Docente_Procesado' = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("student360ucv.database.windows.net,1433"),
+				    BDStudent = Origen{[Name="BDStudent"]}[Data],
+				    BDS_FCT_Docente_Procesado = BDStudent{[Schema="BDS",Item="FCT_Docente_Procesado"]}[Data]
+				in
+				    BDS_FCT_Docente_Procesado
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,35 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["BDS DMN_Curso_Sundedu","BDS FCT_Data_Result_Investigacion","Medidas","BDS DMN_Filial","BDS DMN_Periodo","BDS DMN_Escuela_CodSUNEDU","BDS DMN_Facultad_CodSUNEDU","BDS DMN_Nivel_Academico","BDS DMN_Modalidad_Estudio_CodSUNEDU","BDS FCT_Docente_Procesado","BDS DMN_Escuela","BDS DMN_Facultad"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.126.927.0 (24.02)
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DateTableTemplate_8e6458cd-1791-4d20-ac75-a5b38cec09c8
+ref table 'BDS DMN_Curso_Sundedu'
+ref table 'BDS FCT_Data_Result_Investigacion'
+ref table Medidas
+ref table 'BDS DMN_Filial'
+ref table LocalDateTable_0c4b72ce-06c5-40f9-9acc-aaee26b591cb
+ref table 'BDS DMN_Periodo'
+ref table LocalDateTable_fb66eca8-4977-4fbc-b088-54ac55262d01
+ref table 'BDS DMN_Escuela_CodSUNEDU'
+ref table 'BDS DMN_Facultad_CodSUNEDU'
+ref table 'BDS DMN_Nivel_Academico'
+ref table LocalDateTable_94882611-c6fb-407c-92b8-0c27748de503
+ref table 'BDS DMN_Modalidad_Estudio_CodSUNEDU'
+ref table 'BDS FCT_Docente_Procesado'
+ref table 'BDS DMN_Escuela'
+ref table LocalDateTable_50a9c103-1e4b-4adb-a64c-2991df1ab582
+ref table 'BDS DMN_Facultad'
+ref table LocalDateTable_0d0bdefa-1cf0-441b-a535-48e2c4694fb6
+

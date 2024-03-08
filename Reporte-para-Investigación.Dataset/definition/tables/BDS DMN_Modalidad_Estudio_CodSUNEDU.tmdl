@@ -1,0 +1,32 @@
+table 'BDS DMN_Modalidad_Estudio_CodSUNEDU'
+	lineageTag: d6cfb3cd-a3fd-4eee-a35b-4fcaff055a0f
+
+	column MODALIDAD_ESTUDIO_SUN
+		dataType: int64
+		formatString: 0
+		lineageTag: 0a8b3ced-daf1-41a5-b362-606a230e8bf9
+		summarizeBy: none
+		sourceColumn: MODALIDAD_ESTUDIO_SUN
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModalidaddeEstudios
+		dataType: string
+		lineageTag: b20311e1-5dc0-4d86-8986-e13d519c72fb
+		summarizeBy: none
+		sourceColumn: ModalidaddeEstudios
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'BDS DMN_Modalidad_Estudio_CodSUNEDU' = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("student360ucv.database.windows.net,1433"),
+				    BDStudent = Origen{[Name="BDStudent"]}[Data],
+				    BDS_DMN_Modalidad_Estudio_CodSUNEDU = BDStudent{[Schema="BDS",Item="DMN_Modalidad_Estudio_CodSUNEDU"]}[Data]
+				in
+				    BDS_DMN_Modalidad_Estudio_CodSUNEDU
+
+	annotation PBI_ResultType = Table
+

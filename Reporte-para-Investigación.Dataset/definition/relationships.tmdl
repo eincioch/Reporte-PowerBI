@@ -1,0 +1,75 @@
+relationship 292e2a67-3f57-496a-80c4-775a18051132
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'BDS DMN_Filial'.Fec_Carga
+	toColumn: LocalDateTable_0c4b72ce-06c5-40f9-9acc-aaee26b591cb.Date
+
+relationship ddf7067d-e9ea-4ea8-ac43-b22be52c01cf
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'BDS DMN_Periodo'.Fec_Carga
+	toColumn: LocalDateTable_fb66eca8-4977-4fbc-b088-54ac55262d01.Date
+
+relationship 03c33a50-ccab-4b00-84df-ad18630dcb06
+	fromColumn: 'BDS FCT_Data_Result_Investigacion'.cperjuridica
+	toColumn: 'BDS DMN_Filial'.Cod_Filial
+
+relationship dc0e1088-04af-44cb-aaad-845a396d37ec
+	fromColumn: 'BDS FCT_Data_Result_Investigacion'.nPrdCodigo
+	toColumn: 'BDS DMN_Periodo'.Cod_Periodo
+
+relationship a8fdf41c-43b5-472e-96ca-c8d365cd9602
+	fromColumn: 'BDS FCT_Data_Result_Investigacion'.SUN_CODIGO_FACULTAD_UNIDAD
+	toColumn: 'BDS DMN_Facultad_CodSUNEDU'.nCodSunedu
+
+relationship 84ab0804-171a-4f42-aa0b-d630bb0a6e90
+	fromColumn: 'BDS FCT_Data_Result_Investigacion'.nEscuelaGral
+	toColumn: 'BDS DMN_Escuela_CodSUNEDU'.nEscuelaGen
+
+relationship 32709350-1df3-47e9-a4c3-a99cc66c1ec6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'BDS DMN_Nivel_Academico'.Fec_Carga
+	toColumn: LocalDateTable_94882611-c6fb-407c-92b8-0c27748de503.Date
+
+relationship 217a8661-857b-4d33-b069-418a46b338ba
+	fromColumn: 'BDS FCT_Data_Result_Investigacion'.nProGeneral
+	toColumn: 'BDS DMN_Nivel_Academico'.Cod_Nivel_Academico
+
+relationship c6392ebf-a553-4fe2-b437-f2285fe8d3d5
+	fromColumn: 'BDS FCT_Data_Result_Investigacion'.MODALIDAD_ESTUDIO_SUN
+	toColumn: 'BDS DMN_Modalidad_Estudio_CodSUNEDU'.MODALIDAD_ESTUDIO_SUN
+
+relationship f3c1064f-0deb-463a-ad0b-f4dea6451fbf
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'BDS DMN_Escuela'.Fec_Carga
+	toColumn: LocalDateTable_50a9c103-1e4b-4adb-a64c-2991df1ab582.Date
+
+relationship 2306c143-9cbe-4ca0-bd89-31daa2202bf7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'BDS DMN_Facultad'.Fec_Carga
+	toColumn: LocalDateTable_0d0bdefa-1cf0-441b-a535-48e2c4694fb6.Date
+
+relationship 01c5d322-e2c4-4518-b6ab-6e797c364329
+	fromColumn: 'BDS DMN_Escuela'.Cod_Filial
+	toColumn: 'BDS DMN_Filial'.Cod_Filial
+
+relationship 0eb4267b-6227-4142-984f-5d033b7d3da1
+	fromColumn: 'BDS DMN_Facultad'.Cod_Filial
+	toColumn: 'BDS DMN_Filial'.Cod_Filial
+
+relationship 21ac148d-f089-4720-8c25-d7f297f9ed14
+	fromColumn: 'BDS FCT_Docente_Procesado'.CPERJURIDICA
+	toColumn: 'BDS DMN_Filial'.Cod_Filial
+
+relationship cc9743cc-8b4c-42fd-80fd-20c102b8a3a2
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'BDS FCT_Docente_Procesado'.Cod_Facultad
+	toColumn: 'BDS DMN_Facultad'.Cod_Facultad
+
+relationship 2ec7b64f-60ac-42b8-ad42-3efa90c15cd2
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'BDS FCT_Docente_Procesado'.CodigoEscuela
+	toColumn: 'BDS DMN_Escuela'.Cod_Escuela
+

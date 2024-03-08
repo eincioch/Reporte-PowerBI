@@ -1,0 +1,660 @@
+table 'BDS FCT_Data_Result_Investigacion'
+	lineageTag: 11a8a880-2109-47cb-98b9-5e4c1fcc4dc4
+
+	column nperaluregcodigo
+		dataType: int64
+		formatString: 0
+		lineageTag: 38a1bfb0-f4bd-4f78-935a-94a1b15f202f
+		summarizeBy: none
+		sourceColumn: nperaluregcodigo
+
+		annotation SummarizationSetBy = User
+
+	column cperjuridica
+		dataType: string
+		lineageTag: d1ab579d-4b27-4945-9823-2031512f456d
+		summarizeBy: none
+		sourceColumn: cperjuridica
+
+		annotation SummarizationSetBy = Automatic
+
+	column nProGeneral
+		dataType: int64
+		formatString: 0
+		lineageTag: 0f2a4598-3b6e-4938-b903-0fd9befc9e50
+		summarizeBy: none
+		sourceColumn: nProGeneral
+
+		annotation SummarizationSetBy = User
+
+	column nProcodigo
+		dataType: int64
+		formatString: 0
+		lineageTag: b785ef31-4474-4cfd-ada1-e4e714cdd0c2
+		summarizeBy: none
+		sourceColumn: nProcodigo
+
+		annotation SummarizationSetBy = User
+
+	column cPrdDescripcion
+		dataType: string
+		lineageTag: fd6dc6fe-da87-4ccb-8772-2ec0dba1358d
+		summarizeBy: none
+		sourceColumn: cPrdDescripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	column nModEstudio
+		dataType: int64
+		formatString: 0
+		lineageTag: d82e28c8-7f05-420c-a15d-f9bc28fdaa45
+		summarizeBy: none
+		sourceColumn: nModEstudio
+
+		annotation SummarizationSetBy = User
+
+	column nPrdCodigo
+		dataType: int64
+		formatString: 0
+		lineageTag: b447e2e5-4d8f-4b28-ad2e-0bd6f695420a
+		summarizeBy: none
+		sourceColumn: nPrdCodigo
+
+		annotation SummarizationSetBy = User
+
+	column PeriodoMatricula
+		dataType: string
+		lineageTag: 8fd0545b-27f8-4c88-b2b7-e8174e6c9717
+		summarizeBy: none
+		sourceColumn: PeriodoMatricula
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODIGO_ESTUDIANTE_SUN
+		dataType: string
+		lineageTag: 7d4c8399-5160-4d89-a3ab-96ef61d282a7
+		summarizeBy: none
+		sourceColumn: CODIGO_ESTUDIANTE_SUN
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApellidoPaterno
+		dataType: string
+		lineageTag: 604709b1-4585-4571-a316-45b36feb5cd0
+		summarizeBy: none
+		sourceColumn: ApellidoPaterno
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApellidoMaterno
+		dataType: string
+		lineageTag: f6eb266f-e884-4190-9223-04dfa73963b6
+		summarizeBy: none
+		sourceColumn: ApellidoMaterno
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nombres
+		dataType: string
+		lineageTag: 29733464-408b-4667-8bd4-c3808102c08a
+		summarizeBy: none
+		sourceColumn: Nombres
+
+		annotation SummarizationSetBy = Automatic
+
+	column Género
+		dataType: string
+		lineageTag: 76997ba9-e857-48f9-8e93-ef875a026b91
+		summarizeBy: none
+		sourceColumn: Género
+
+		annotation SummarizationSetBy = Automatic
+
+	column FechaNacimiento
+		dataType: string
+		lineageTag: 1dc1dca1-35d8-430c-967b-e8abc6b61563
+		summarizeBy: none
+		sourceColumn: FechaNacimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	column TipoDocumentoIdentidad
+		dataType: string
+		lineageTag: f5c0623d-16e8-4922-a166-9961d5730a3e
+		summarizeBy: none
+		sourceColumn: TipoDocumentoIdentidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumeroDocumentoIdentidad
+		dataType: string
+		lineageTag: 7207fba5-2a3d-4061-9e93-90af3163e3b3
+		summarizeBy: none
+		sourceColumn: NumeroDocumentoIdentidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPO_DOCUMENTO_SUN
+		dataType: int64
+		formatString: 0
+		lineageTag: f451c710-3678-45b9-85cb-2c732e845752
+		summarizeBy: none
+		sourceColumn: TIPO_DOCUMENTO_SUN
+
+		annotation SummarizationSetBy = User
+
+	column NRO_DOCUMENTO_SUN
+		dataType: string
+		lineageTag: a68cbb69-b1c1-4b14-84f0-32aeff3a718e
+		summarizeBy: none
+		sourceColumn: NRO_DOCUMENTO_SUN
+
+		annotation SummarizationSetBy = Automatic
+
+	column MODALIDAD_ESTUDIO_SUN
+		dataType: int64
+		formatString: 0
+		lineageTag: bb05dd4a-cc3a-4b3b-977a-37200f176eb6
+		summarizeBy: none
+		sourceColumn: MODALIDAD_ESTUDIO_SUN
+
+		annotation SummarizationSetBy = User
+
+	column CorreoPersonal
+		dataType: string
+		lineageTag: dc1d5d09-0e31-43f1-82d9-74e689eced08
+		summarizeBy: none
+		sourceColumn: CorreoPersonal
+
+		annotation SummarizationSetBy = Automatic
+
+	column CorreoInstitucional
+		dataType: string
+		lineageTag: e0f8b78a-b5cc-49ea-aae4-69c03c258a8e
+		summarizeBy: none
+		sourceColumn: CorreoInstitucional
+
+		annotation SummarizationSetBy = Automatic
+
+	column Telefono
+		dataType: string
+		lineageTag: bd852a97-6374-4bf5-b5cc-7d756bc3f888
+		summarizeBy: none
+		sourceColumn: Telefono
+
+		annotation SummarizationSetBy = Automatic
+
+	column Celular
+		dataType: string
+		lineageTag: a74e64b1-6bd1-4be9-9690-6bdcb56704d4
+		summarizeBy: none
+		sourceColumn: Celular
+
+		annotation SummarizationSetBy = Automatic
+
+	column TieneDiscapacidad
+		dataType: string
+		lineageTag: 173a445a-7f7d-4407-b36c-80337ba82644
+		summarizeBy: none
+		sourceColumn: TieneDiscapacidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Discapacidad
+		dataType: string
+		lineageTag: 08c022e6-341c-4d5f-a0da-542a1f25e00d
+		summarizeBy: none
+		sourceColumn: Discapacidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Filial
+		dataType: string
+		lineageTag: 3cae521f-7018-445b-8ebe-61553f37cf0b
+		summarizeBy: none
+		sourceColumn: Filial
+
+		annotation SummarizationSetBy = Automatic
+
+	column Local
+		dataType: string
+		lineageTag: e636781d-e251-4eca-b7e3-675395324570
+		summarizeBy: none
+		sourceColumn: Local
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUN_CODIGO_LOCAL
+		dataType: string
+		lineageTag: c063fc63-ac8a-4415-bb6e-712a73b66b11
+		summarizeBy: none
+		sourceColumn: SUN_CODIGO_LOCAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUN_PERIODO_LECTIVO
+		dataType: string
+		lineageTag: 2ed197e8-4eba-427f-8ba3-48d0b45a5be8
+		summarizeBy: none
+		sourceColumn: SUN_PERIODO_LECTIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUN_TIPO_PERIODO
+		dataType: string
+		lineageTag: a1b063ca-1d62-4944-ab1a-8607da9e4d6e
+		summarizeBy: none
+		sourceColumn: SUN_TIPO_PERIODO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUN_CODIGO_FACULTAD_UNIDAD
+		dataType: string
+		lineageTag: 156dd314-82d0-4f78-a496-25d422dfef8d
+		summarizeBy: none
+		sourceColumn: SUN_CODIGO_FACULTAD_UNIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUN_CODIGO_PROGRAMA
+		dataType: string
+		lineageTag: 595dc524-f7cf-4678-b62b-c1d7173b9309
+		summarizeBy: none
+		sourceColumn: SUN_CODIGO_PROGRAMA
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUN_CAMBIO_PROGRAMA
+		dataType: string
+		lineageTag: 203363c8-4329-41a6-86ce-d6193026034b
+		summarizeBy: none
+		sourceColumn: SUN_CAMBIO_PROGRAMA
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUN_CODIGO_PROGRAMA_ANTERIOR
+		dataType: string
+		lineageTag: fe20c6da-db64-4a11-9c30-63562a0f2c73
+		summarizeBy: none
+		sourceColumn: SUN_CODIGO_PROGRAMA_ANTERIOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUN_FECHA_CAMBIO_PROGRAMA
+		dataType: string
+		lineageTag: 345ec4f9-638b-4f84-86df-b529dc87384d
+		summarizeBy: none
+		sourceColumn: SUN_FECHA_CAMBIO_PROGRAMA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sede
+		dataType: string
+		lineageTag: a73b8026-7fb0-470f-bf6a-8a62211280b3
+		summarizeBy: none
+		sourceColumn: Sede
+
+		annotation SummarizationSetBy = Automatic
+
+	column Escuela
+		dataType: string
+		lineageTag: cc45469f-e382-4a0a-abbf-4ea651ac7f39
+		summarizeBy: none
+		sourceColumn: Escuela
+
+		annotation SummarizationSetBy = Automatic
+
+	column CicloMatriculado
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ff9958c-ae50-454a-a884-26423dd13fec
+		summarizeBy: none
+		sourceColumn: CicloMatriculado
+
+		annotation SummarizationSetBy = User
+
+	column FECHA_MATRICULA_SUN
+		dataType: string
+		lineageTag: 188f52df-fe8c-414c-b86d-939ab6108e7f
+		summarizeBy: none
+		sourceColumn: FECHA_MATRICULA_SUN
+
+		annotation SummarizationSetBy = Automatic
+
+	column SemestrePrimerRegistro
+		dataType: string
+		lineageTag: 65de323a-62cc-492b-9bf3-2a277516cc12
+		summarizeBy: none
+		sourceColumn: SemestrePrimerRegistro
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModalidaddeEstudios
+		dataType: string
+		lineageTag: 0e6535d0-3c29-48d4-9abb-04ea111266d2
+		summarizeBy: none
+		sourceColumn: ModalidaddeEstudios
+
+		annotation SummarizationSetBy = Automatic
+
+	column SemestreIngreso
+		dataType: string
+		lineageTag: d7e707d4-8124-45b1-98d8-ca306d8608b3
+		summarizeBy: none
+		sourceColumn: SemestreIngreso
+
+		annotation SummarizationSetBy = Automatic
+
+	column IdentidadEtnica
+		dataType: string
+		lineageTag: b4986c36-e1ce-42e1-9873-57ac18fdd0cb
+		summarizeBy: none
+		sourceColumn: IdentidadEtnica
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreditosMatriculados
+		dataType: double
+		lineageTag: d151acf8-08c7-447b-bda9-8673fc29efde
+		summarizeBy: none
+		sourceColumn: CreditosMatriculados
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CicloTentativo
+		dataType: int64
+		formatString: 0
+		lineageTag: e0255c46-8be3-44df-9673-4de71babcac1
+		summarizeBy: none
+		sourceColumn: CicloTentativo
+
+		annotation SummarizationSetBy = User
+
+	column CreditosAprobadosActual
+		dataType: double
+		lineageTag: 69a0a4f8-67a8-459a-ac65-0a4983e8f814
+		summarizeBy: none
+		sourceColumn: CreditosAprobadosActual
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PPS
+		dataType: double
+		lineageTag: d250ed6c-f57e-45df-9f76-b4df21d53342
+		summarizeBy: none
+		sourceColumn: PPS
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Categoria
+		dataType: string
+		lineageTag: d93c47d5-56d9-4fba-9197-d0d5c78d58df
+		summarizeBy: none
+		sourceColumn: Categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column Movilidad
+		dataType: string
+		lineageTag: 8c658177-36e4-4c77-b359-dbde99d1d4ff
+		summarizeBy: none
+		sourceColumn: Movilidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreditosConvalidados
+		dataType: double
+		lineageTag: 20c2be18-daa1-451f-a0c1-b304dfbf5cda
+		summarizeBy: none
+		sourceColumn: CreditosConvalidados
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cIntitucionProcedencia
+		dataType: string
+		lineageTag: 03af7089-9ba3-46dd-9365-25ea8316c6b9
+		summarizeBy: none
+		sourceColumn: cIntitucionProcedencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreditosPrograma
+		dataType: double
+		lineageTag: aeb6e508-477a-4ddb-98f7-cc17a8399158
+		summarizeBy: none
+		sourceColumn: CreditosPrograma
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DireccionPrincipalSede
+		dataType: string
+		lineageTag: 894357f2-b252-4df0-91fe-c57ae0ff1796
+		summarizeBy: none
+		sourceColumn: DireccionPrincipalSede
+
+		annotation SummarizationSetBy = Automatic
+
+	column DepartamentoSede
+		dataType: string
+		lineageTag: cd989ef5-d983-403f-b8be-77d875d4f80d
+		summarizeBy: none
+		sourceColumn: DepartamentoSede
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProvinciaSede
+		dataType: string
+		lineageTag: c97e62b6-e949-46bd-b2d1-f2898d400e78
+		summarizeBy: none
+		sourceColumn: ProvinciaSede
+
+		annotation SummarizationSetBy = Automatic
+
+	column DistritoSede
+		dataType: string
+		lineageTag: c9924030-4bb5-4d49-9ede-0cef37ab45e8
+		summarizeBy: none
+		sourceColumn: DistritoSede
+
+		annotation SummarizationSetBy = Automatic
+
+	column Facultad
+		dataType: string
+		lineageTag: 21ee4804-a376-4c7b-b1ce-9b71daa80799
+		summarizeBy: none
+		sourceColumn: Facultad
+
+		annotation SummarizationSetBy = Automatic
+
+	column NivelEstudio
+		dataType: string
+		lineageTag: 9c437fe6-147d-4290-b460-a1d78073dde2
+		summarizeBy: none
+		sourceColumn: NivelEstudio
+
+		annotation SummarizationSetBy = Automatic
+
+	column IngresanteMatriculado
+		dataType: string
+		lineageTag: 9ec9a690-a0e3-4d9f-80ea-0e1c51bf9230
+		summarizeBy: none
+		sourceColumn: IngresanteMatriculado
+
+		annotation SummarizationSetBy = Automatic
+
+	column SubModalidad
+		dataType: string
+		lineageTag: 6e856cfc-b762-44c4-9fdc-9765db646dc6
+		summarizeBy: none
+		sourceColumn: SubModalidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModalidadIngreso
+		dataType: string
+		lineageTag: c9013c3f-97fe-4f67-8d65-0fff757a1c1a
+		summarizeBy: none
+		sourceColumn: ModalidadIngreso
+
+		annotation SummarizationSetBy = Automatic
+
+	column CicloAprobadoActual
+		dataType: int64
+		formatString: 0
+		lineageTag: 3c65a7cb-a475-44f1-8ab8-104818caf881
+		summarizeBy: none
+		sourceColumn: CicloAprobadoActual
+
+		annotation SummarizationSetBy = User
+
+	column CicloActual
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d2a6cbe-250d-4941-b4e1-11175eb08951
+		summarizeBy: none
+		sourceColumn: CicloActual
+
+		annotation SummarizationSetBy = User
+
+	column bMigrado
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3f135e17-f00c-4098-a6cf-7ef9d088cc25
+		summarizeBy: none
+		sourceColumn: bMigrado
+
+		annotation SummarizationSetBy = Automatic
+
+	column nEscuelaGral
+		dataType: int64
+		formatString: 0
+		lineageTag: 5f1427bd-7919-4968-8fd5-485dd90ca720
+		summarizeBy: none
+		sourceColumn: nEscuelaGral
+
+		annotation SummarizationSetBy = User
+
+	column nCurCodigo
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ba5cc4d-663a-4606-891c-aea1ec98ee3d
+		summarizeBy: none
+		sourceColumn: nCurCodigo
+
+		annotation SummarizationSetBy = User
+
+	column nUniOrgCodigo
+		dataType: int64
+		formatString: 0
+		lineageTag: c8b444a3-b960-4825-a989-45b3ef9e5ff8
+		summarizeBy: none
+		sourceColumn: nUniOrgCodigo
+
+		annotation SummarizationSetBy = User
+
+	column nAsiCodigo
+		dataType: int64
+		formatString: 0
+		lineageTag: 0522d30e-c65c-40ba-ad03-8adbfb75a5f4
+		summarizeBy: none
+		sourceColumn: nAsiCodigo
+
+		annotation SummarizationSetBy = User
+
+	column cAsiDescripcion
+		dataType: string
+		lineageTag: d1df7bd6-fd61-4dfb-9951-3dc88c16b003
+		summarizeBy: none
+		sourceColumn: cAsiDescripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	column Des_Estado_Curso
+		dataType: string
+		lineageTag: 9f578352-c96f-40cf-9b6b-a53d35bc8e48
+		summarizeBy: none
+		sourceColumn: Des_Estado_Curso
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nro_Ciclo_Curso
+		dataType: int64
+		formatString: 0
+		lineageTag: 1843b590-0781-4250-a5d4-0a637e149a08
+		summarizeBy: none
+		sourceColumn: Nro_Ciclo_Curso
+
+		annotation SummarizationSetBy = User
+
+	column Nro_Promedio1
+		dataType: double
+		lineageTag: a527a8d0-2570-4263-9ff2-e2a7dd8f8eb3
+		summarizeBy: none
+		sourceColumn: Nro_Promedio1
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Nro_Promedio2
+		dataType: double
+		lineageTag: 3a9ce864-71cc-4826-aae7-333b92d4725d
+		summarizeBy: none
+		sourceColumn: Nro_Promedio2
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Nro_Promedio3
+		dataType: double
+		lineageTag: 678d96dc-b9b2-45f9-9ff2-6c227f50ee0c
+		summarizeBy: none
+		sourceColumn: Nro_Promedio3
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Nro_Promedio4
+		dataType: double
+		lineageTag: ec556617-2544-42ab-9599-53c1b7047cb1
+		summarizeBy: none
+		sourceColumn: Nro_Promedio4
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Nro_Prom_Final
+		dataType: double
+		lineageTag: f3b327dd-dc22-4fef-97ca-db55ea634679
+		summarizeBy: none
+		sourceColumn: Nro_Prom_Final
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'BDS FCT_Data_Result_Investigacion' = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("student360ucv.database.windows.net,1433"),
+				    BDStudent = Origen{[Name="BDStudent"]}[Data],
+				    BDS_FCT_Data_Result_Investigacion = BDStudent{[Schema="BDS",Item="FCT_Data_Result_Investigacion"]}[Data]
+				in
+				    BDS_FCT_Data_Result_Investigacion
+
+	annotation PBI_ResultType = Table
+

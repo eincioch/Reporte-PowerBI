@@ -1,0 +1,46 @@
+table 'BDS DMN_Periodo'
+	lineageTag: 9c78390b-6940-4ba7-a584-c36ef27904b2
+
+	column Cod_Periodo
+		dataType: int64
+		formatString: 0
+		lineageTag: e549fdd8-a19d-42b0-a92e-a74f01871b75
+		summarizeBy: none
+		sourceColumn: Cod_Periodo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Des_Periodo
+		dataType: string
+		lineageTag: 49c3accd-8a90-49cc-b9a7-f8f9065ade91
+		summarizeBy: none
+		sourceColumn: Des_Periodo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fec_Carga
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2368b6e5-f48c-48eb-9a23-c40fc740f0e7
+		summarizeBy: none
+		sourceColumn: Fec_Carga
+
+		variation Variación
+			isDefault
+			relationship: ddf7067d-e9ea-4ea8-ac43-b22be52c01cf
+			defaultHierarchy: LocalDateTable_fb66eca8-4977-4fbc-b088-54ac55262d01.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'BDS DMN_Periodo' = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("student360ucv.database.windows.net,1433"),
+				    BDStudent = Origen{[Name="BDStudent"]}[Data],
+				    BDS_DMN_Periodo = BDStudent{[Schema="BDS",Item="DMN_Periodo"]}[Data]
+				in
+				    BDS_DMN_Periodo
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,41 @@
+table 'BDS DMN_Facultad_CodSUNEDU'
+	lineageTag: 10402434-3fff-49a6-abd0-ae30f6cdfcf9
+
+	column idEqFacultadGenCodSUNEDU
+		dataType: int64
+		formatString: 0
+		lineageTag: aee446fd-3870-4711-9a98-355beacfa65b
+		summarizeBy: none
+		sourceColumn: idEqFacultadGenCodSUNEDU
+
+		annotation SummarizationSetBy = Automatic
+
+	column nCodSunedu
+		dataType: int64
+		formatString: 0
+		lineageTag: 96b990f4-b5b0-4df5-9484-67c2c7b0b7c1
+		summarizeBy: none
+		sourceColumn: nCodSunedu
+
+		annotation SummarizationSetBy = Automatic
+
+	column cDescripcion
+		dataType: string
+		lineageTag: 85355e61-5d79-4f4b-ab6d-9ecb5a0dd847
+		summarizeBy: none
+		sourceColumn: cDescripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'BDS DMN_Facultad_CodSUNEDU' = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("student360ucv.database.windows.net,1433"),
+				    BDStudent = Origen{[Name="BDStudent"]}[Data],
+				    BDS_DMN_Facultad_CodSUNEDU = BDStudent{[Schema="BDS",Item="DMN_Facultad_CodSUNEDU"]}[Data]
+				in
+				    BDS_DMN_Facultad_CodSUNEDU
+
+	annotation PBI_ResultType = Table
+

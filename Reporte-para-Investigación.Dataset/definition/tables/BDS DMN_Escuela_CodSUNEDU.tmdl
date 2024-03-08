@@ -1,0 +1,50 @@
+table 'BDS DMN_Escuela_CodSUNEDU'
+	lineageTag: e9c3b1f2-c542-4650-831a-ac2e73cef8ce
+
+	column IdEqEscGenCodSunedu
+		dataType: int64
+		formatString: 0
+		lineageTag: f66c2b67-2244-4a2d-b312-cb7cb2ee5190
+		summarizeBy: none
+		sourceColumn: IdEqEscGenCodSunedu
+
+		annotation SummarizationSetBy = Automatic
+
+	column nEscuelaGen
+		dataType: int64
+		formatString: 0
+		lineageTag: d15e23f6-c7ec-43dc-ad0f-aeda2d5b44fe
+		summarizeBy: none
+		sourceColumn: nEscuelaGen
+
+		annotation SummarizationSetBy = Automatic
+
+	column cEscuelaGen
+		dataType: string
+		lineageTag: d7246ba7-0916-470d-95c7-ef11bb0fbe2f
+		summarizeBy: none
+		sourceColumn: cEscuelaGen
+
+		annotation SummarizationSetBy = Automatic
+
+	column nCodSunedu
+		dataType: int64
+		formatString: 0
+		lineageTag: f1082c59-42ac-4bb3-ac48-01f3f4bf993b
+		summarizeBy: none
+		sourceColumn: nCodSunedu
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'BDS DMN_Escuela_CodSUNEDU' = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("student360ucv.database.windows.net,1433"),
+				    BDStudent = Origen{[Name="BDStudent"]}[Data],
+				    BDS_DMN_Escuela_CodSUNEDU = BDStudent{[Schema="BDS",Item="DMN_Escuela_CodSUNEDU"]}[Data]
+				in
+				    BDS_DMN_Escuela_CodSUNEDU
+
+	annotation PBI_ResultType = Table
+
