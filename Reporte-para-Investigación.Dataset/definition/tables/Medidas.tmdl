@@ -18,19 +18,10 @@ table Medidas
 		formatString: 0
 		lineageTag: 1164752f-cb6e-45d9-919d-41decfcbe8cb
 
-	measure 'Medida EA-12-03' = DIVIDE(Medidas[Nro estudiantes participan Prj Inv.],Medidas[Nro estudiantes matriculados sunedu])*100
+	measure 'Medida EA-12-03' = DIVIDE([Nro estudiantes participan Prj Inv.],[Nro estudiantes matriculados sunedu])*100
 		lineageTag: 9f7eaa3d-f2db-4aef-ba00-903ac4fda221
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure Pronostico = ```
-			IF(ISBLANK(DISTINCTCOUNT('BDS FCT_Data_Result_Investigacion'[CODIGO_ESTUDIANTE_SUN])), 
-			    Medidas[Nro estudiantes participan Prj Inv.] * (1+ Medidas[Nro estudiantes matriculados sunedu]),
-			    BLANK()
-			    )
-			```
-		formatString: 0
-		lineageTag: 1ff59605-0063-4292-a0d4-7070e587fc5d
 
 	measure 'Total Docente' = DISTINCTCOUNT('BDS FCT_Docente_Procesado'[CPERCODIGO])
 		formatString: 0

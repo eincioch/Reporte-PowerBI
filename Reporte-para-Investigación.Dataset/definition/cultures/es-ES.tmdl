@@ -3294,22 +3294,6 @@ culture es-ES
 			        }
 			      ]
 			    },
-			    "medida.pronostico": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "Pronostico"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "pronostico": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
 			    "dim_calendario.mes_corto": {
 			      "Definition": {
 			        "Binding": {

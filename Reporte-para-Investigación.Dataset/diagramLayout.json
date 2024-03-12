@@ -5,7 +5,7 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 274.84359036034391
+        "y": 74.330163507660941
       },
       "nodes": [
         {
@@ -19,7 +19,7 @@
             "height": 436.62007594808767,
             "width": 313.69504430305119
           },
-          "zIndex": 7
+          "zIndex": 6
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 1000,
             "width": 527.71403997335574
           },
-          "zIndex": 6
+          "zIndex": 5
         },
         {
           "location": {
@@ -75,8 +75,8 @@
         },
         {
           "location": {
-            "x": 148.72831105328106,
-            "y": 380.45959460719661
+            "x": 260.98202737097307,
+            "y": 272.75670462670831
           },
           "nodeIndex": "BDS DMN_Escuela_CodSUNEDU",
           "nodeLineageTag": "e9c3b1f2-c542-4650-831a-ac2e73cef8ce",
@@ -84,12 +84,12 @@
             "height": 176,
             "width": 234
           },
-          "zIndex": 4
+          "zIndex": 11
         },
         {
           "location": {
-            "x": 250.44654115922708,
-            "y": 910.37710209076886
+            "x": 347.5308363529067,
+            "y": 895.20768096675647
           },
           "nodeIndex": "BDS DMN_Facultad_CodSUNEDU",
           "nodeLineageTag": "10402434-3fff-49a6-abd0-ae30f6cdfcf9",
@@ -97,7 +97,7 @@
             "height": 152,
             "width": 234
           },
-          "zIndex": 5
+          "zIndex": 4
         },
         {
           "location": {
@@ -110,7 +110,7 @@
             "height": 152,
             "width": 234
           },
-          "zIndex": 8
+          "zIndex": 7
         },
         {
           "location": {
@@ -141,7 +141,7 @@
         {
           "location": {
             "x": 0,
-            "y": 253.32933277100773
+            "y": 259.39710122061274
           },
           "nodeIndex": "BDS DMN_Facultad",
           "nodeLineageTag": "0801e966-1ba2-40e5-bf89-da6435c89da8",
@@ -149,7 +149,7 @@
             "height": 176,
             "width": 234
           },
-          "zIndex": 9
+          "zIndex": 8
         },
         {
           "location": {
@@ -162,11 +162,11 @@
             "height": 585.1851171314338,
             "width": 341.70288998048818
           },
-          "zIndex": 11
+          "zIndex": 9
         }
       ],
       "name": "Todas las tablas",
-      "zoomValue": 92.9061917206578,
+      "zoomValue": 65.9220936530696,
       "pinKeyFieldsToTop": true,
       "showExtraHeaderInfo": true,
       "hideKeyFieldsWhenCollapsed": false,

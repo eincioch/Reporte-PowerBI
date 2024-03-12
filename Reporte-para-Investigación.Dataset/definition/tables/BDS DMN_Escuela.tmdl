@@ -14,10 +14,10 @@ table 'BDS DMN_Escuela'
 		dataType: int64
 		formatString: 0
 		lineageTag: 186c4cd5-ac29-486e-828b-c60c3b4bd956
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Cod_Facultad
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column Cod_Filial
 		dataType: string
