@@ -5,7 +5,7 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 75.496235911987881
+        "y": 0
       },
       "nodes": [
         {
@@ -19,7 +19,7 @@
             "height": 436.62007594808767,
             "width": 313.69504430305119
           },
-          "zIndex": 11
+          "zIndex": 10
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 254.0446452108273,
             "width": 350.31648978242583
           },
-          "zIndex": 12
+          "zIndex": 11
         },
         {
           "location": {
@@ -84,7 +84,7 @@
             "height": 176,
             "width": 315.26885170482012
           },
-          "zIndex": 9
+          "zIndex": 8
         },
         {
           "location": {
@@ -136,7 +136,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 8
+          "zIndex": 12
         },
         {
           "location": {
@@ -162,7 +162,7 @@
             "height": 585.1851171314338,
             "width": 341.70288998048818
           },
-          "zIndex": 10
+          "zIndex": 9
         }
       ],
       "name": "Todas las tablas",
