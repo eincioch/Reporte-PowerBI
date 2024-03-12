@@ -19,9 +19,8 @@ table Medidas
 		lineageTag: 1164752f-cb6e-45d9-919d-41decfcbe8cb
 
 	measure 'Medida EA-12-03' = DIVIDE([Nro estudiantes participan Prj Inv.],[Nro estudiantes matriculados sunedu])*100
+		formatString: 0.00
 		lineageTag: 9f7eaa3d-f2db-4aef-ba00-903ac4fda221
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'Total Docente' = DISTINCTCOUNT('BDS FCT_Docente_Procesado'[CPERCODIGO])
 		formatString: 0
@@ -40,9 +39,8 @@ table Medidas
 		lineageTag: 6c942c17-931e-460c-b8f3-5fa477d3ffe3
 
 	measure 'Medida EA-12-04' = DIVIDE([Nro docentes participan Prj Inv.],[Total Docente])*100
+		formatString: 0.00
 		lineageTag: 10be747f-4df6-482e-bf25-60d555f7e4a1
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	partition Medidas = m
 		mode: import
