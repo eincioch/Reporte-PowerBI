@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
-        "y": 74.330163507660941
+        "x": 27.863606298795489,
+        "y": 348.29507873494362
       },
       "nodes": [
         {
@@ -19,7 +19,7 @@
             "height": 436.62007594808767,
             "width": 313.69504430305119
           },
-          "zIndex": 6
+          "zIndex": 12
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 254.0446452108273,
             "width": 350.31648978242583
           },
-          "zIndex": 12
+          "zIndex": 10
         },
         {
           "location": {
@@ -82,9 +82,9 @@
           "nodeLineageTag": "e9c3b1f2-c542-4650-831a-ac2e73cef8ce",
           "size": {
             "height": 176,
-            "width": 234
+            "width": 315.26885170482012
           },
-          "zIndex": 11
+          "zIndex": 9
         },
         {
           "location": {
@@ -95,7 +95,7 @@
           "nodeLineageTag": "10402434-3fff-49a6-abd0-ae30f6cdfcf9",
           "size": {
             "height": 152,
-            "width": 234
+            "width": 307.14196653433805
           },
           "zIndex": 4
         },
@@ -110,7 +110,7 @@
             "height": 152,
             "width": 234
           },
-          "zIndex": 7
+          "zIndex": 6
         },
         {
           "location": {
@@ -136,7 +136,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 10
+          "zIndex": 8
         },
         {
           "location": {
@@ -149,7 +149,7 @@
             "height": 176,
             "width": 234
           },
-          "zIndex": 8
+          "zIndex": 7
         },
         {
           "location": {
@@ -162,11 +162,11 @@
             "height": 585.1851171314338,
             "width": 341.70288998048818
           },
-          "zIndex": 9
+          "zIndex": 11
         }
       ],
       "name": "Todas las tablas",
-      "zoomValue": 65.9220936530696,
+      "zoomValue": 86.133861290731389,
       "pinKeyFieldsToTop": true,
       "showExtraHeaderInfo": true,
       "hideKeyFieldsWhenCollapsed": false,

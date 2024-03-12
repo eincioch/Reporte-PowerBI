@@ -105,10 +105,10 @@ table 'BDS FCT_Docente_Procesado'
 		dataType: int64
 		formatString: 0
 		lineageTag: 4ff1d487-347e-4e15-997b-bf1c543f6d0d
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: PERIODO
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column Cod_Nivel_Estudio
 		dataType: int64
@@ -139,19 +139,19 @@ table 'BDS FCT_Docente_Procesado'
 		dataType: int64
 		formatString: 0
 		lineageTag: 41e20e64-f005-4806-8608-f3131f58f1e5
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: nAsiCodigo_Inv
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column nCurCodigo
 		dataType: int64
 		formatString: 0
 		lineageTag: d9adc5dc-4257-4929-a6b3-243f411a2b31
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: nCurCodigo
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column cAsiDescripcion_Inv
 		dataType: string

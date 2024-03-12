@@ -249,7 +249,8 @@ table 'BDS FCT_Data_Result_Investigacion'
 		annotation SummarizationSetBy = Automatic
 
 	column SUN_CODIGO_FACULTAD_UNIDAD
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: 156dd314-82d0-4f78-a496-25d422dfef8d
 		summarizeBy: none
 		sourceColumn: SUN_CODIGO_FACULTAD_UNIDAD
