@@ -1,15 +1,6 @@
 table 'BDS FCT_Docente_Procesado'
 	lineageTag: 203ed707-89f7-4a07-819d-b99d413ba1dc
 
-	measure 'Docente Investigacion' =
-			CALCULATE(
-			    DISTINCT('BDS FCT_Docente_Procesado'[DOCENTE]),
-			    FILTER(
-			        'BDS FCT_Docente_Procesado',
-			        NOT(ISBLANK('BDS FCT_Docente_Procesado'[nAsiCodigo_Inv]) )
-			))
-		lineageTag: e6960364-2856-4db3-863b-2a5cff162e4f
-
 	column CPERCODIGO
 		dataType: string
 		lineageTag: 0dbb8eab-733f-4dc2-a0d0-64a86954054d
