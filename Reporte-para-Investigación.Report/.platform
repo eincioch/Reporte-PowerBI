@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Reporte-para-Investigación"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a0a6d830-0532-406c-a46c-ec904841d74c"
+  }
+}

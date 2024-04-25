@@ -4,7 +4,6 @@ culture es-ES
 			{
 			  "Version": "3.5.0",
 			  "Language": "en-US",
-			  "DynamicImprovement": "HighConfidence",
 			  "Entities": {
 			    "BDS_DMN_Curso_Sundedu": {
 			      "Definition": {

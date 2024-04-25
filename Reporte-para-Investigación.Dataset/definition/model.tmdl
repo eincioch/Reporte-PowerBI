@@ -10,7 +10,7 @@ annotation PBI_QueryOrder = ["BDS DMN_Curso_Sundedu","BDS FCT_Data_Result_Invest
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.126.927.0 (24.02)
+annotation PBIDesktopVersion = 2.128.952.0 (24.04)
 
 annotation PBI_ProTooling = ["DevMode"]
 
