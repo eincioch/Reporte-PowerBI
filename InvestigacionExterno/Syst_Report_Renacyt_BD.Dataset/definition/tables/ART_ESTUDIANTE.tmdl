@@ -1,0 +1,137 @@
+table ART_ESTUDIANTE
+	lineageTag: 36814306-1957-4ed7-8478-b99a8f0743b1
+
+	column ID_ESTUDIANTE
+		dataType: int64
+		formatString: 0
+		lineageTag: a8c8fec3-0f7b-470c-a1fd-4c868ad7161d
+		summarizeBy: sum
+		sourceColumn: ID_ESTUDIANTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_AUTOR
+		dataType: int64
+		formatString: 0
+		lineageTag: 544a1c4b-2dab-4947-9b71-848a88f53aed
+		summarizeBy: none
+		sourceColumn: ID_AUTOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_PROGACAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 401c6566-b24e-4160-be0c-43ab2a9ace6e
+		summarizeBy: none
+		sourceColumn: ID_PROGACAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column CORREO_ESTUDIANTE
+		dataType: string
+		lineageTag: d9b53dad-6289-4183-8825-676cb78b3c59
+		summarizeBy: none
+		sourceColumn: CORREO_ESTUDIANTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXP_CURRICULAR
+		dataType: string
+		lineageTag: 5c9da919-5a3c-4e3f-9c8c-b4cef54ae42d
+		summarizeBy: none
+		sourceColumn: EXP_CURRICULAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOCENTE
+		dataType: string
+		lineageTag: b88bf9d2-70f7-4c48-aee7-ef56cc53d86d
+		summarizeBy: none
+		sourceColumn: DOCENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CORREO_DOCENTE
+		dataType: string
+		lineageTag: 29ce4d0e-5fcf-476f-b060-9704504e9bc9
+		summarizeBy: none
+		sourceColumn: CORREO_DOCENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column REVISTA
+		dataType: string
+		lineageTag: 3b494244-1aaf-4be2-9f90-f3425bce47e6
+		summarizeBy: none
+		sourceColumn: REVISTA
+
+		annotation SummarizationSetBy = Automatic
+
+	column BASE_DATO
+		dataType: string
+		lineageTag: c8bd9f5d-b621-42a7-802d-410844285caa
+		summarizeBy: none
+		sourceColumn: BASE_DATO
+
+		annotation SummarizationSetBy = Automatic
+
+	column TITULO
+		dataType: string
+		lineageTag: c2d12db8-d33e-47b8-a4a4-7115fc6246ad
+		summarizeBy: none
+		sourceColumn: TITULO
+
+		annotation SummarizationSetBy = Automatic
+
+	column EVIDENCIA
+		dataType: string
+		lineageTag: d4d62480-7011-4b4f-a8c2-cb55c0499a80
+		summarizeBy: none
+		sourceColumn: EVIDENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUARTIL
+		dataType: string
+		lineageTag: 602611f8-95c7-4d0c-b011-385ece5c2653
+		summarizeBy: none
+		sourceColumn: CUARTIL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONDICION
+		dataType: string
+		lineageTag: b886998e-e433-495d-9116-ecf2e9898d7e
+		summarizeBy: none
+		sourceColumn: CONDICION
+
+		annotation SummarizationSetBy = Automatic
+
+	column LINEA_INVESTIGACION
+		dataType: string
+		lineageTag: 657bef7d-3f4e-45b0-a4c3-2438627dec81
+		summarizeBy: none
+		sourceColumn: LINEA_INVESTIGACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column ODS_1
+		dataType: string
+		lineageTag: a2d5fc1d-97fb-4bb6-9a51-c6cc33880b6b
+		summarizeBy: none
+		sourceColumn: ODS_1
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ART_ESTUDIANTE = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_ART_ESTUDIANTE = Origen{[Schema="dbo",Item="ART_ESTUDIANTE"]}[Data]
+				in
+				    dbo_ART_ESTUDIANTE
+
+	annotation PBI_ResultType = Exception
+

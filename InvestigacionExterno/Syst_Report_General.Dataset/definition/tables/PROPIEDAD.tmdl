@@ -1,0 +1,99 @@
+table PROPIEDAD
+	lineageTag: dde0157b-281c-4c48-839d-c9fb5b1ae1b9
+
+	column ID_PROPIEDAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 26cc5f8d-bb93-4c1d-9112-85caad16d382
+		summarizeBy: sum
+		sourceColumn: ID_PROPIEDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE
+		dataType: string
+		lineageTag: 12962908-9833-4529-9a73-6bad7bfe9e19
+		summarizeBy: none
+		sourceColumn: NOMBRE
+
+		annotation SummarizationSetBy = Automatic
+
+	column NUM_EXPEDIENTE
+		dataType: string
+		lineageTag: e60816e4-8021-4ebc-948c-71b5408f7bcf
+		summarizeBy: none
+		sourceColumn: NUM_EXPEDIENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPO
+		dataType: string
+		lineageTag: cb4f0c26-92ad-41f5-a658-9b5db881a19d
+		summarizeBy: none
+		sourceColumn: TIPO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ESTADO
+		dataType: string
+		lineageTag: 5334a077-6b30-41ec-9d8b-c894538f10db
+		summarizeBy: none
+		sourceColumn: ESTADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA
+		dataType: string
+		lineageTag: 7c936eff-2f93-4099-b475-855482514fb9
+		summarizeBy: none
+		sourceColumn: FECHA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_SEMLL
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d9798b6-ea31-4f9c-ad96-9f32c689bf56
+		summarizeBy: none
+		sourceColumn: ID_SEMLL
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_GRUP
+		dataType: int64
+		formatString: 0
+		lineageTag: 1443d9ec-6dc1-4001-ac7f-f9117ebe53be
+		summarizeBy: sum
+		sourceColumn: ID_GRUP
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_PROGACAD
+		dataType: int64
+		formatString: 0
+		lineageTag: c25e3483-33a2-4e0b-923a-b1b38befd79c
+		summarizeBy: none
+		sourceColumn: ID_PROGACAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_CAMPUS
+		dataType: int64
+		formatString: 0
+		lineageTag: f45ee296-6dca-4f61-9c3f-92c76888678f
+		summarizeBy: none
+		sourceColumn: ID_CAMPUS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PROPIEDAD = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_PROPIEDAD = Origen{[Schema="dbo",Item="PROPIEDAD"]}[Data]
+				in
+				    dbo_PROPIEDAD
+
+	annotation PBI_ResultType = Table
+

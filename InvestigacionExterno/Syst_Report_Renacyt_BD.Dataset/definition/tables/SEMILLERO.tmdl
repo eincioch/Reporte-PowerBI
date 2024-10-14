@@ -1,0 +1,82 @@
+table SEMILLERO
+	lineageTag: dc814120-fbe6-4bf5-ad65-4f5ff203449f
+
+	column ID_SEMLL
+		dataType: int64
+		formatString: 0
+		lineageTag: bd437600-c98f-46ee-bd98-6c32cc0af202
+		summarizeBy: none
+		sourceColumn: ID_SEMLL
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE_SEMILLERO
+		dataType: string
+		lineageTag: 5413695a-b3af-43e9-93dd-984d1ec2cefd
+		summarizeBy: none
+		sourceColumn: NOMBRE_SEMILLERO
+
+		annotation SummarizationSetBy = Automatic
+
+	column PLANTRABAJO
+		dataType: string
+		lineageTag: 0698380d-a024-43b6-a1b6-4d54bb2ab70b
+		summarizeBy: none
+		sourceColumn: PLANTRABAJO
+
+		annotation SummarizationSetBy = Automatic
+
+	column NUMERO_INTEGRANTES
+		dataType: int64
+		formatString: 0
+		lineageTag: e35a2c3e-0e62-4526-bddf-e41b0c00ee0b
+		summarizeBy: sum
+		sourceColumn: NUMERO_INTEGRANTES
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_RENACYT
+		dataType: string
+		lineageTag: 5299e258-770d-40c8-ae81-576c4f7849bb
+		summarizeBy: none
+		sourceColumn: COD_RENACYT
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESOLUCION
+		dataType: string
+		lineageTag: 4899ed9e-7fff-498f-a165-a545f5b9cc25
+		summarizeBy: none
+		sourceColumn: RESOLUCION
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_INTEG
+		dataType: int64
+		formatString: 0
+		lineageTag: 56ee228b-6edc-46a7-beaf-9503530725ce
+		summarizeBy: sum
+		sourceColumn: ID_INTEG
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_PROGACAD
+		dataType: int64
+		formatString: 0
+		lineageTag: c0325dbd-b9f1-4da4-8c71-42f3714b766a
+		summarizeBy: sum
+		sourceColumn: ID_PROGACAD
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SEMILLERO = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_SEMILLERO = Origen{[Schema="dbo",Item="SEMILLERO"]}[Data]
+				in
+				    dbo_SEMILLERO
+
+	annotation PBI_ResultType = Table
+

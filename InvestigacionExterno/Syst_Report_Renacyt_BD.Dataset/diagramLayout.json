@@ -1,0 +1,269 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 858,
+        "y": 1439
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 741.93129949603485,
+            "y": 1717.47325704221
+          },
+          "nodeIndex": "ART_DOCENTE",
+          "nodeLineageTag": "249efc49-00fc-4f11-98b7-76241139e573",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 452.03989400462194,
+            "y": 1621.499615673217
+          },
+          "nodeIndex": "ART_ESTUDIANTE",
+          "nodeLineageTag": "36814306-1957-4ed7-8478-b99a8f0743b1",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 575.241965369273,
+            "y": 2073.2604033445741
+          },
+          "nodeIndex": "AUTOR",
+          "nodeLineageTag": "cf72bcb9-a141-4077-ba7e-52bc647138c7",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 408.29869065321327,
+            "y": 345.07755483776168
+          },
+          "nodeIndex": "CAMPUS",
+          "nodeLineageTag": "0641b04b-f442-4560-9fae-5587264fad50",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 78.795617510057127
+          },
+          "nodeIndex": "COLABORADOR",
+          "nodeLineageTag": "806d8ef6-0283-4d44-bc92-d7d3a2f76d58",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1031.9135714435652,
+            "y": 1564.0060717029723
+          },
+          "nodeIndex": "DOC_FORMATIVA",
+          "nodeLineageTag": "8d97d4d8-7cd9-4ad9-9134-ac8131af8955",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 113.06049895166916,
+            "y": 370.22638927125581
+          },
+          "nodeIndex": "GRUPOS",
+          "nodeLineageTag": "9e70d773-d0fe-40f6-905b-dab50a3c18c5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 299.94622341811703,
+            "y": -10
+          },
+          "nodeIndex": "GRUPOS_MENTORIZADOS",
+          "nodeLineageTag": "3897402c-4205-4aec-9854-6b3156aae30f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 63.094675462520854,
+            "y": 1005.2827438130671
+          },
+          "nodeIndex": "INTEGRANTE",
+          "nodeLineageTag": "7ffd0b3b-c2f0-4f9d-a7c3-c595eec32590",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 453.58735941973396,
+            "y": 1084.0749532602672
+          },
+          "nodeIndex": "LIBRO",
+          "nodeLineageTag": "2b4f721e-e45d-4680-a594-e512454508ee",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 741.92454325062636,
+            "y": 1387.0652395656277
+          },
+          "nodeIndex": "PROGACADEM",
+          "nodeLineageTag": "55d67923-a615-4a02-8315-6b43f36b92ef",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 351.80037526448405,
+            "y": 727.499738907416
+          },
+          "nodeIndex": "PROPIEDAD",
+          "nodeLineageTag": "2a3ba8eb-dee4-4ff1-be1c-7ebb7e95000a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 930.90877445478873,
+            "y": 552.711716891685
+          },
+          "nodeIndex": "PROYECTO",
+          "nodeLineageTag": "6946e46f-d705-4c60-a94f-0aa1e352fd59",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 641.67026046103865,
+            "y": 528.50047663332225
+          },
+          "nodeIndex": "RENACYT",
+          "nodeLineageTag": "ec443b05-ecac-4520-8bae-8074016ceccc",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 931.6232435491014,
+            "y": 195.39802757285815
+          },
+          "nodeIndex": "RESOLUCION",
+          "nodeLineageTag": "6e9d832f-f5fd-4a2c-9936-725ec54ff358",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 830.24349128850372,
+            "y": 909.26599100264548
+          },
+          "nodeIndex": "SEMILLERO",
+          "nodeLineageTag": "dc814120-fbe6-4bf5-ad65-4f5ff203449f",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1491.7217777753433,
+            "y": 967.63020167228706
+          },
+          "nodeIndex": "TAB_DESARROLLO",
+          "nodeLineageTag": "30e79cb9-3586-4b22-99d5-e70c916f850d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1775.7217777753433,
+            "y": 967.63020167228706
+          },
+          "nodeIndex": "TAB_FORMATIVA",
+          "nodeLineageTag": "2164f342-7b2e-41b1-94d2-7f1b98ccfebc",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1217.7217777753433,
+            "y": 824.43154928141939
+          },
+          "nodeIndex": "TESIS_PUBL",
+          "nodeLineageTag": "c8dd8559-b723-4aca-abac-d8aa2a989a12",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

@@ -1,0 +1,102 @@
+table TESIS_PUBL
+	lineageTag: c8dd8559-b723-4aca-abac-d8aa2a989a12
+
+	column ID_TESIS
+		dataType: int64
+		formatString: 0
+		lineageTag: 2c394f90-84a6-4c1a-b90c-75af1803ffa9
+		summarizeBy: sum
+		sourceColumn: ID_TESIS
+
+		annotation SummarizationSetBy = Automatic
+
+	column TITULO
+		dataType: string
+		lineageTag: b312f118-5560-4df2-bac1-843d51337af7
+		summarizeBy: none
+		sourceColumn: TITULO
+
+		annotation SummarizationSetBy = Automatic
+
+	column REVISTA
+		dataType: string
+		lineageTag: 7acd870a-b6df-496a-a601-579a25469c3e
+		summarizeBy: none
+		sourceColumn: REVISTA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUARTIL
+		dataType: string
+		lineageTag: 356bcaab-f737-4b3f-a998-1aad3574e65e
+		summarizeBy: none
+		sourceColumn: CUARTIL
+
+		annotation SummarizationSetBy = Automatic
+
+	column ENLACE_WEB
+		dataType: string
+		lineageTag: 23507530-d7a2-408e-985c-5dd03b999b89
+		summarizeBy: none
+		sourceColumn: ENLACE_WEB
+
+		annotation SummarizationSetBy = Automatic
+
+	column AUTOR
+		dataType: string
+		lineageTag: dd672d3d-d220-468d-8901-14fb801218a7
+		summarizeBy: none
+		sourceColumn: AUTOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDIZACION
+		dataType: string
+		lineageTag: 0b62e655-6503-43f4-9c3d-69b5adb83ef3
+		summarizeBy: none
+		sourceColumn: INDIZACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOC_TYPE
+		dataType: string
+		lineageTag: 0b7d1a22-e603-45df-b46a-e32c25c925c6
+		summarizeBy: none
+		sourceColumn: DOC_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column EID
+		dataType: string
+		lineageTag: b3bc9939-7241-4dd6-97dc-6103ecdb4d32
+		summarizeBy: none
+		sourceColumn: EID
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL
+		dataType: string
+		lineageTag: 69c66a7d-fe8e-461b-a11c-72868949ac41
+		summarizeBy: none
+		sourceColumn: NIVEL
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_PROGACAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 780883e6-417b-49e4-8844-e50aec4a8764
+		summarizeBy: none
+		sourceColumn: ID_PROGACAD
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TESIS_PUBL = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_TESIS_PUBL = Origen{[Schema="dbo",Item="TESIS_PUBL"]}[Data]
+				in
+				    dbo_TESIS_PUBL
+

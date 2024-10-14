@@ -1,0 +1,225 @@
+table GRUPOS
+	lineageTag: 9e70d773-d0fe-40f6-905b-dab50a3c18c5
+
+	column ID_GRUP
+		dataType: int64
+		formatString: 0
+		lineageTag: 04e13b23-76af-4544-90cc-b790ed334c67
+		summarizeBy: sum
+		sourceColumn: ID_GRUP
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE_GI
+		dataType: string
+		lineageTag: 5077c043-f1ab-4873-ad51-27a9a5632320
+		summarizeBy: none
+		sourceColumn: NOMBRE_GI
+
+		annotation SummarizationSetBy = Automatic
+
+	column COORDINADOR_GI
+		dataType: string
+		lineageTag: 2cd4a41c-229f-4d30-93be-419cf2b8da96
+		summarizeBy: none
+		sourceColumn: COORDINADOR_GI
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_COLAB
+		dataType: int64
+		formatString: 0
+		lineageTag: 32fb0fed-f7cb-467f-9dee-37985ae2a4bd
+		summarizeBy: none
+		sourceColumn: ID_COLAB
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROGRAMA
+		dataType: string
+		lineageTag: e44117a8-e130-4bcf-a8c0-59b938d291fd
+		summarizeBy: none
+		sourceColumn: PROGRAMA
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESOLUCION
+		dataType: string
+		lineageTag: 2866af5a-87bd-4a42-ad1b-f7a66f2cc220
+		summarizeBy: none
+		sourceColumn: RESOLUCION
+
+		annotation SummarizationSetBy = Automatic
+
+	column FECHA_RESOLUCION
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1da2d3e0-707a-4de0-84a3-154f1b88185a
+		summarizeBy: none
+		sourceColumn: FECHA_RESOLUCION
+
+		variation Variación
+			isDefault
+			relationship: 6fc668e8-ff3c-40c9-b86e-29a80e0a92c7
+			defaultHierarchy: LocalDateTable_051ec4a5-28a6-4e1d-b112-6ab75c87d34c.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column LINEA_DE_INVESTIGACION_01
+		dataType: string
+		lineageTag: fdf13ac3-6ee5-4ffd-93c5-cc45b6ec4753
+		summarizeBy: none
+		sourceColumn: LINEA_DE_INVESTIGACION_01
+
+		annotation SummarizationSetBy = Automatic
+
+	column LINEA_DE_INVESTIGACION_02
+		dataType: string
+		lineageTag: 181894bf-2d18-4a0d-bc5c-266731b0ed5b
+		summarizeBy: none
+		sourceColumn: LINEA_DE_INVESTIGACION_02
+
+		annotation SummarizationSetBy = Automatic
+
+	column ODS_1
+		dataType: string
+		lineageTag: 4f807526-0f14-4cb8-9095-e7fbbe070909
+		summarizeBy: none
+		sourceColumn: ODS_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column ODS_2
+		dataType: string
+		lineageTag: e163143e-8734-4cc4-95ff-c6a0068ec93c
+		summarizeBy: none
+		sourceColumn: ODS_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUNDACION
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f528b647-1fcc-4759-a4e1-5cd91a394ad9
+		summarizeBy: none
+		sourceColumn: FUNDACION
+
+		variation Variación
+			isDefault
+			relationship: 7ed5e559-573d-4b2e-9935-5d8170c02533
+			defaultHierarchy: LocalDateTable_3aa9dc8d-f1c9-412d-8148-319aa3308696.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column VENCIMIENTO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8fc7abf5-ae68-44d8-9a63-fa7135b4675c
+		summarizeBy: none
+		sourceColumn: VENCIMIENTO
+
+		variation Variación
+			isDefault
+			relationship: ed633782-3a03-43aa-a0aa-aa3a8d4e4f1c
+			defaultHierarchy: LocalDateTable_886204cb-cf5e-4879-9f5f-74e0205315d9.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CONDICION
+		dataType: string
+		lineageTag: d6106257-7a84-43cc-984e-c730213a83e7
+		summarizeBy: none
+		sourceColumn: CONDICION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLASIFICACION
+		dataType: string
+		lineageTag: 345a741b-6a48-4c1f-a8e2-519d40ff96a6
+		summarizeBy: none
+		sourceColumn: CLASIFICACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CANTIDAD
+		dataType: int64
+		formatString: 0
+		lineageTag: b6e6958c-1aa3-4b41-a472-476f2928db85
+		summarizeBy: sum
+		sourceColumn: CANTIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column FICHA_PLAN
+		dataType: string
+		lineageTag: fbebeb8f-e176-494e-8715-dfda234bc667
+		summarizeBy: none
+		sourceColumn: FICHA_PLAN
+
+		annotation SummarizationSetBy = Automatic
+
+	column INFORME_AGOT
+		dataType: string
+		lineageTag: 727f5d9b-bd89-43b7-b073-303f73fd5572
+		summarizeBy: none
+		sourceColumn: INFORME_AGOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column INFORME_SEPT
+		dataType: string
+		lineageTag: 282e84d3-8329-4b7c-b874-76f2549c5e88
+		summarizeBy: none
+		sourceColumn: INFORME_SEPT
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_CAMPUS
+		dataType: int64
+		formatString: 0
+		lineageTag: ce5c38f3-7927-44e8-b192-4a1c7ce4c31f
+		summarizeBy: none
+		sourceColumn: ID_CAMPUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_INTEG
+		dataType: int64
+		formatString: 0
+		lineageTag: 910ed70c-3ee0-4d2f-8d1d-8949826e31ac
+		summarizeBy: none
+		sourceColumn: ID_INTEG
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL
+		dataType: string
+		lineageTag: 17ba3c59-5014-4bbd-95db-572dbf878b8f
+		summarizeBy: none
+		sourceColumn: NIVEL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: 9bcc709e-8787-414a-96a6-349f6f85e96a
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition GRUPOS = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_GRUPOS = Origen{[Schema="dbo",Item="GRUPOS"]}[Data]
+				in
+				    dbo_GRUPOS
+

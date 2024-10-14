@@ -1,0 +1,281 @@
+table TAB_DESARROLLO
+	lineageTag: 30e79cb9-3586-4b22-99d5-e70c916f850d
+
+	column ID_DRSLL
+		dataType: int64
+		formatString: 0
+		lineageTag: e8499e39-70cc-4a3b-8443-0bc1d364ce07
+		summarizeBy: sum
+		sourceColumn: ID_DRSLL
+
+		annotation SummarizationSetBy = Automatic
+
+	column GRUPOS
+		dataType: int64
+		formatString: 0
+		lineageTag: d2878ff8-484a-45c0-a938-8446995ded29
+		summarizeBy: sum
+		sourceColumn: GRUPOS
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOCT_RENACYT
+		dataType: int64
+		formatString: 0
+		lineageTag: 187f07e8-5f00-48ea-91b7-b083c61941be
+		summarizeBy: sum
+		sourceColumn: DOCT_RENACYT
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOCT_MENTORIZADO
+		dataType: int64
+		formatString: 0
+		lineageTag: b71180f1-ea20-4651-8744-dcd5aedf515e
+		summarizeBy: sum
+		sourceColumn: DOCT_MENTORIZADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ACTIVO
+		dataType: int64
+		formatString: 0
+		lineageTag: ce92bc36-dad8-44c8-b211-4f7a1b9d4130
+		summarizeBy: sum
+		sourceColumn: ACTIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENCIDO
+		dataType: int64
+		formatString: 0
+		lineageTag: 89e4e8cf-0286-429d-8977-46c380f7b0cd
+		summarizeBy: sum
+		sourceColumn: VENCIDO
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMPLETO
+		dataType: int64
+		formatString: 0
+		lineageTag: 1eeb0c2c-5954-4518-81ed-23ade2d8660c
+		summarizeBy: sum
+		sourceColumn: COMPLETO
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMPRAS
+		dataType: int64
+		formatString: 0
+		lineageTag: 941dbd0e-3d39-44b8-a2f5-2b68dede8f82
+		summarizeBy: sum
+		sourceColumn: COMPRAS
+
+		annotation SummarizationSetBy = Automatic
+
+	column RECOLECCION
+		dataType: int64
+		formatString: 0
+		lineageTag: e9d8965d-36a7-4ce6-9692-636a3c6a2967
+		summarizeBy: sum
+		sourceColumn: RECOLECCION
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESULTADOS
+		dataType: int64
+		formatString: 0
+		lineageTag: 1bad115d-85d2-4cc7-9470-720341d5ca38
+		summarizeBy: sum
+		sourceColumn: RESULTADOS
+
+		annotation SummarizationSetBy = Automatic
+
+	column REDACCION
+		dataType: int64
+		formatString: 0
+		lineageTag: 1c31820f-bdb5-4b15-b849-29bcd4f74a01
+		summarizeBy: sum
+		sourceColumn: REDACCION
+
+		annotation SummarizationSetBy = Automatic
+
+	column MANUSCRITO
+		dataType: int64
+		formatString: 0
+		lineageTag: 85440ec0-efd8-4137-b5a8-37a74ac39c81
+		summarizeBy: sum
+		sourceColumn: MANUSCRITO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ENVIO_REVISTA
+		dataType: int64
+		formatString: 0
+		lineageTag: 7ba445b0-e3f7-4430-aaf7-e04118bd826c
+		summarizeBy: sum
+		sourceColumn: ENVIO_REVISTA
+
+		annotation SummarizationSetBy = Automatic
+
+	column PUBLICADO
+		dataType: int64
+		formatString: 0
+		lineageTag: 9d7fa48a-02d3-408c-96c7-16b86b8b3491
+		summarizeBy: sum
+		sourceColumn: PUBLICADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CANCELADO
+		dataType: int64
+		formatString: 0
+		lineageTag: e07ac7b8-4053-4a9d-8210-e2ec7e0b105f
+		summarizeBy: sum
+		sourceColumn: CANCELADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONSOLIDADO
+		dataType: int64
+		formatString: 0
+		lineageTag: 0a476748-ef1f-4ada-b80e-a8a17c5b72d5
+		summarizeBy: sum
+		sourceColumn: CONSOLIDADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column EMERGENTE
+		dataType: int64
+		formatString: 0
+		lineageTag: 4ff969ce-7fe8-498b-b63d-224e9bfbc56f
+		summarizeBy: sum
+		sourceColumn: EMERGENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column POR_CONSOLIDAR
+		dataType: int64
+		formatString: 0
+		lineageTag: a45378de-bb1b-4cfb-8922-cc7bda0ed21b
+		summarizeBy: sum
+		sourceColumn: POR_CONSOLIDAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROYECTOS
+		dataType: int64
+		formatString: 0
+		lineageTag: d3ab006e-f9e2-4a4f-ba16-45b1bd9041e4
+		summarizeBy: sum
+		sourceColumn: PROYECTOS
+
+		annotation SummarizationSetBy = Automatic
+
+	column I
+		dataType: int64
+		formatString: 0
+		lineageTag: 00f1c1aa-f90a-4d45-b2df-2d005a60833c
+		summarizeBy: sum
+		sourceColumn: I
+
+		annotation SummarizationSetBy = Automatic
+
+	column II
+		dataType: int64
+		formatString: 0
+		lineageTag: e23d4090-82d8-40eb-b164-a26ac95ca81b
+		summarizeBy: sum
+		sourceColumn: II
+
+		annotation SummarizationSetBy = Automatic
+
+	column III
+		dataType: int64
+		formatString: 0
+		lineageTag: 5b5b9d52-3ccf-4b12-b8be-7738d039a194
+		summarizeBy: sum
+		sourceColumn: III
+
+		annotation SummarizationSetBy = Automatic
+
+	column IV
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b38b4b4-50c8-42cc-9aae-6dda0400cfdb
+		summarizeBy: sum
+		sourceColumn: IV
+
+		annotation SummarizationSetBy = Automatic
+
+	column V
+		dataType: int64
+		formatString: 0
+		lineageTag: 329aaa19-8ce2-4dab-8dca-b36ea1a9e834
+		summarizeBy: sum
+		sourceColumn: V
+
+		annotation SummarizationSetBy = Automatic
+
+	column VI
+		dataType: int64
+		formatString: 0
+		lineageTag: 7536bf1a-5405-4376-982c-2dfc569350ac
+		summarizeBy: sum
+		sourceColumn: VI
+
+		annotation SummarizationSetBy = Automatic
+
+	column VII
+		dataType: int64
+		formatString: 0
+		lineageTag: a4660b64-5254-43f4-9470-7777af374a4e
+		summarizeBy: sum
+		sourceColumn: VII
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 6d0e741b-4dee-4807-b507-7cf3b9306a3b
+		summarizeBy: count
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROGRAMA
+		dataType: string
+		lineageTag: a2b8fc44-5903-440e-bcc5-441143bc6d23
+		summarizeBy: none
+		sourceColumn: PROGRAMA
+
+		annotation SummarizationSetBy = Automatic
+
+	column REVISION
+		dataType: int64
+		formatString: 0
+		lineageTag: 135b1b9a-d562-4de9-8a07-ea59e0bbd332
+		summarizeBy: sum
+		sourceColumn: REVISION
+
+		annotation SummarizationSetBy = Automatic
+
+	column INACTIVO
+		dataType: int64
+		formatString: 0
+		lineageTag: 5064ea82-db21-4cc0-b698-1cd169128144
+		summarizeBy: sum
+		sourceColumn: INACTIVO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TAB_DESARROLLO = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_TAB_DESARROLLO = Origen{[Schema="dbo",Item="TAB_DESARROLLO"]}[Data]
+				in
+				    dbo_TAB_DESARROLLO
+

@@ -1,0 +1,22 @@
+table SP_TOTAL_ART_DOCENTE
+	lineageTag: 035165b6-4586-48ae-b665-aa7dd6e660b4
+
+	column TOTAL_ARTDOCENTES
+		dataType: int64
+		formatString: 0
+		lineageTag: 11431c83-e758-4e39-9bce-08e08c70fe43
+		summarizeBy: sum
+		sourceColumn: TOTAL_ARTDOCENTES
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_TOTAL_ART_DOCENTE = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_TOTAL_ART_DOCENTE"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

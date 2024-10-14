@@ -1,0 +1,30 @@
+table SP_PROPIEDAD_SEGUN_PROGRAMA
+	lineageTag: 3821dba3-60de-46a3-8695-b0ec76ef8275
+
+	column PROGRAMA
+		dataType: string
+		lineageTag: eac2ca00-1f07-4260-92d6-d22c11e112e2
+		summarizeBy: none
+		sourceColumn: PROGRAMA
+
+		annotation SummarizationSetBy = Automatic
+
+	column RENACYT_TOTAL
+		dataType: int64
+		formatString: 0
+		lineageTag: 51c5d89f-425c-46a3-9508-59f36d3fb19d
+		summarizeBy: sum
+		sourceColumn: RENACYT_TOTAL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_PROPIEDAD_SEGUN_PROGRAMA = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_PROPIEDAD_SEGUN_PROGRAMA"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

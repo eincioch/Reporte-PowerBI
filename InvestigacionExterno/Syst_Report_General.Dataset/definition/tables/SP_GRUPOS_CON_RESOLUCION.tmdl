@@ -1,0 +1,30 @@
+table SP_GRUPOS_CON_RESOLUCION
+	lineageTag: 77f6d64c-dfd3-4734-a72d-1ae983601a15
+
+	column PROGRAMA
+		dataType: string
+		lineageTag: ccc91fcd-03ed-4931-a596-4b38044eee11
+		summarizeBy: none
+		sourceColumn: PROGRAMA
+
+		annotation SummarizationSetBy = Automatic
+
+	column GRUPOS_CON_RVI
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ecc861f-5ed5-4b8a-aa09-f91c2bcb50f0
+		summarizeBy: sum
+		sourceColumn: GRUPOS_CON_RVI
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_GRUPOS_CON_RESOLUCION = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_GRUPOS_CON_RESOLUCION"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

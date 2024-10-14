@@ -1,0 +1,46 @@
+table 'BDS DMN_Nivel_Academico'
+	lineageTag: 938db748-0181-4eca-9655-3ab7f7249abc
+
+	column Cod_Nivel_Academico
+		dataType: int64
+		formatString: 0
+		lineageTag: a456de73-58d3-4244-b31a-0f10965079dd
+		summarizeBy: none
+		sourceColumn: Cod_Nivel_Academico
+
+		annotation SummarizationSetBy = Automatic
+
+	column Des_Nivel_Academico
+		dataType: string
+		lineageTag: 37037194-3960-46f0-ba7a-b69f231373d5
+		summarizeBy: none
+		sourceColumn: Des_Nivel_Academico
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fec_Carga
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a56e5255-7d41-4804-a9b1-ad350d696930
+		summarizeBy: none
+		sourceColumn: Fec_Carga
+
+		variation Variación
+			isDefault
+			relationship: 225fcf88-acb7-461a-8d5c-077adebb6d70
+			defaultHierarchy: LocalDateTable_0224ec06-92d6-499c-b5bf-5a7a66dfded2.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'BDS DMN_Nivel_Academico' = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Databases("student360ucv.database.windows.net,1433"),
+				    BDStudent = Origen{[Name="BDStudent"]}[Data],
+				    BDS_DMN_Nivel_Academico = BDStudent{[Schema="BDS",Item="DMN_Nivel_Academico"]}[Data]
+				in
+				    BDS_DMN_Nivel_Academico
+
+	annotation PBI_ResultType = Table
+

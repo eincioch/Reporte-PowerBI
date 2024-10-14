@@ -1,0 +1,54 @@
+table INTEGRANTE
+	lineageTag: 7ffd0b3b-c2f0-4f9d-a7c3-c595eec32590
+
+	column ID_INTEG
+		dataType: int64
+		formatString: 0
+		lineageTag: 66f87737-4c53-40a5-bfe0-5786f2c3cea5
+		summarizeBy: none
+		sourceColumn: ID_INTEG
+
+		annotation SummarizationSetBy = Automatic
+
+	column APELLIDO
+		dataType: string
+		lineageTag: b9052397-d9a5-432a-88d0-0ef62e94b1cf
+		summarizeBy: none
+		sourceColumn: APELLIDO
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE
+		dataType: string
+		lineageTag: 0752c232-9295-45c7-8b28-fce8df95d89f
+		summarizeBy: none
+		sourceColumn: NOMBRE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CELULAR
+		dataType: int64
+		formatString: 0
+		lineageTag: d7cd0632-e5d0-4bba-b3d1-95ff8fe90097
+		summarizeBy: none
+		sourceColumn: CELULAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CORREO
+		dataType: string
+		lineageTag: c3a4ccda-c25b-487f-a5fe-ea7284b78934
+		summarizeBy: none
+		sourceColumn: CORREO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition INTEGRANTE = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_INTEGRANTE = Origen{[Schema="dbo",Item="INTEGRANTE"]}[Data]
+				in
+				    dbo_INTEGRANTE
+

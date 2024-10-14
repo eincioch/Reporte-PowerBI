@@ -1,0 +1,62 @@
+table 'BDS DMN_Escuela'
+	lineageTag: ca5a78d9-88f5-47c2-bc31-9b89b1b3f476
+
+	column Cod_Escuela
+		dataType: int64
+		formatString: 0
+		lineageTag: b4e70171-34ef-4042-8bf7-2d8125c66859
+		summarizeBy: none
+		sourceColumn: Cod_Escuela
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cod_Facultad
+		dataType: int64
+		formatString: 0
+		lineageTag: 022a70d3-d660-4347-8da8-8e0427ab93c4
+		summarizeBy: none
+		sourceColumn: Cod_Facultad
+
+		annotation SummarizationSetBy = User
+
+	column Cod_Filial
+		dataType: string
+		lineageTag: d8555737-2f11-4c6f-becb-30fd3db6c309
+		summarizeBy: none
+		sourceColumn: Cod_Filial
+
+		annotation SummarizationSetBy = Automatic
+
+	column Des_Escuela
+		dataType: string
+		lineageTag: 310fee9c-2003-4a72-ad8b-bd22aec97847
+		summarizeBy: none
+		sourceColumn: Des_Escuela
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fec_Carga
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c1cd2ce6-6301-4d0f-bf24-49a93241e384
+		summarizeBy: none
+		sourceColumn: Fec_Carga
+
+		variation Variación
+			isDefault
+			relationship: 94428de1-d1be-4747-b5bc-90e27af49c47
+			defaultHierarchy: LocalDateTable_10f097d5-7116-455a-8a03-cd382f5a035e.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'BDS DMN_Escuela' = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("student360ucv.database.windows.net,1433", "BDStudent"),
+				    BDS_DMN_Escuela = Origen{[Schema="BDS",Item="DMN_Escuela"]}[Data]
+				in
+				    BDS_DMN_Escuela
+
+	annotation PBI_ResultType = Table
+

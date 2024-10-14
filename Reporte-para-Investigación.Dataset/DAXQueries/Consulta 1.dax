@@ -1,0 +1,9 @@
+// Más información sobre las consultas DAX en https://aka.ms/dax-queries
+
+// Esta es una consulta DAX de ejemplo del modelo; haga clic en "Ejecutar".
+// Pruebe otras consultas DAX haciendo clic con el botón derecho en una tabla, columna o medida en el panel de datos y eligiendo una de "Consultas rápidas".
+EVALUATE
+    TOPN(100, 'BDS DMN_Curso_Sundedu')
+	
+	// dax fecha
+	

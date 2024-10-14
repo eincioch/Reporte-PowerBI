@@ -1,0 +1,103 @@
+table GRUPOS_MENTORIZADOS
+	lineageTag: 3897402c-4205-4aec-9854-6b3156aae30f
+
+	column ID_GRUP_MENT
+		dataType: int64
+		formatString: 0
+		lineageTag: b822a2d1-e106-4f26-b66c-b62e04d5e465
+		summarizeBy: sum
+		sourceColumn: ID_GRUP_MENT
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMBRE_GI
+		dataType: string
+		lineageTag: d06f02c3-5f24-41a7-8bf0-0f914ef4ecfd
+		summarizeBy: none
+		sourceColumn: NOMBRE_GI
+
+		annotation SummarizationSetBy = Automatic
+
+	column COORDINADOR_GI
+		dataType: string
+		lineageTag: aa97d7a2-af15-4f7e-9bc8-33f0cc8de4e0
+		summarizeBy: none
+		sourceColumn: COORDINADOR_GI
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_COLAB
+		dataType: int64
+		formatString: 0
+		lineageTag: a9eaeb02-a0aa-4862-9e77-d6e361a56538
+		summarizeBy: sum
+		sourceColumn: ID_COLAB
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROGRAMA
+		dataType: string
+		lineageTag: fde529f5-ff0f-46c3-b7eb-737ede71be2c
+		summarizeBy: none
+		sourceColumn: PROGRAMA
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESOLUCION
+		dataType: string
+		lineageTag: 68d52187-c55e-43a5-8dfd-b69eec336509
+		summarizeBy: none
+		sourceColumn: RESOLUCION
+
+		annotation SummarizationSetBy = Automatic
+
+	column LINEA_DE_INVESTIGACION_01
+		dataType: string
+		lineageTag: 050e56a4-ec27-4fa6-af80-4312442a2f8c
+		summarizeBy: none
+		sourceColumn: LINEA_DE_INVESTIGACION_01
+
+		annotation SummarizationSetBy = Automatic
+
+	column FICHA_PLAN
+		dataType: string
+		lineageTag: 23daac01-bc7d-446a-be6c-8de0476d7354
+		summarizeBy: none
+		sourceColumn: FICHA_PLAN
+
+		annotation SummarizationSetBy = Automatic
+
+	column INFORME_AGOT
+		dataType: string
+		lineageTag: be7b56b9-cc00-462b-a083-bf4a3c9b2234
+		summarizeBy: none
+		sourceColumn: INFORME_AGOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column INFORME_SEPT
+		dataType: string
+		lineageTag: 42bf1b52-2ff1-4649-a910-bc0f67952ed9
+		summarizeBy: none
+		sourceColumn: INFORME_SEPT
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_CAMPUS
+		dataType: int64
+		formatString: 0
+		lineageTag: d2235868-9cb6-4ee7-a57e-8d9808222f4e
+		summarizeBy: none
+		sourceColumn: ID_CAMPUS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition GRUPOS_MENTORIZADOS = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_GRUPOS_MENTORIZADOS = Origen{[Schema="dbo",Item="GRUPOS_MENTORIZADOS"]}[Data]
+				in
+				    dbo_GRUPOS_MENTORIZADOS
+

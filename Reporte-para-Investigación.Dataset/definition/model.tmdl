@@ -12,7 +12,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBIDesktopVersion = 2.128.952.0 (24.04)
 
-annotation PBI_ProTooling = ["DevMode"]
+annotation PBI_ProTooling = ["DevMode","DaxQueryView_Desktop"]
 
 ref table DateTableTemplate_8e6458cd-1791-4d20-ac75-a5b38cec09c8
 ref table 'BDS DMN_Curso_Sundedu'

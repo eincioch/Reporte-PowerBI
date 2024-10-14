@@ -1,0 +1,249 @@
+relationship AutoDetected_c675f980-4312-440b-a05e-430f7dae1078
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: SP_PROYECTOS_NIVELES.NIVEL
+	toColumn: SP_GRUPOS_NIVEL_RESOLUCION.NIVEL
+
+relationship AutoDetected_5ea21147-6dce-4da5-8dce-578d6db71e01
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: SP_RENACYT_ESCUELAS.PROGRAMA
+	toColumn: SP_PROYECTOS_POR_ESCUELAS.PROGRAMA
+
+relationship AutoDetected_50fcc4cd-6a8d-4205-b403-e73fd0a660f0
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: SP_PROPIEDAD_SEGUN_PROGRAMA.PROGRAMA
+	toColumn: SP_GRUPOS_CON_RESOLUCION.PROGRAMA
+
+relationship AutoDetected_950ae272-e523-4f46-99a0-3eae0b513672
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: SP_ART_DOCENTE_POR_ESCUELA.PROGRAMA
+	toColumn: SP_PROYECTOS_POR_ESCUELAS.PROGRAMA
+
+relationship AutoDetected_01b7921d-31ad-4a24-818b-16990ebc9312
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'EXECUTE SP_ART_DOCENTE_POR_MODALIDAD'.MODALIDAD
+	toColumn: SP_RENACYT_SEGUN_MODALIDAD.MODALIDAD
+
+relationship AutoDetected_deaa88c5-5f7a-44e5-9b07-0d7cbd512f42
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: SP_TESIS_PUBLICADO_POR_ESCUELAS.PROGRAMA
+	toColumn: SP_PROYECTOS_POR_ESCUELAS.PROGRAMA
+
+relationship AutoDetected_12a72d1e-c923-4480-9b5d-ddbd7a1c2546
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: SP_TESIS_PUBLICADO_POR_CUARTIL.CUARTIL
+	toColumn: SP_ART_DOCENTE_POR_CUARTIL.CUARTIL
+
+relationship AutoDetected_ef550a81-4c82-4e99-81a5-7dcfba2a44e1
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: SP_TESIS_PUBLICADO_POR_NIVELES_ACADEMICOS.TOTAL_TESIS
+	toColumn: SP_TESIS_PUBLICADO_POR_INDIZACION.TOTAL_TESIS
+
+relationship AutoDetected_cf0ff254-4c63-4065-bbd4-2f73072b62ad
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: SP_ART_ESTUDIANTE_POR_ESCUELA.PROGRAMA
+	toColumn: SP_PROYECTOS_POR_ESCUELAS.PROGRAMA
+
+relationship 9b9d1955-f237-4036-ac37-1d9fde3f34f3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: GRUPOS.FECHA_RESOLUCION
+	toColumn: LocalDateTable_eafb94e5-d79b-42d8-82f5-b40fcd696a6f.Date
+
+relationship 462a545a-c1c7-4a4c-85d9-c75bfef436d2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: GRUPOS.FUNDACION
+	toColumn: LocalDateTable_be98433a-dd27-4f47-88d6-e31ad09464fd.Date
+
+relationship a3f9acfa-717f-4b05-9e6c-7c0b5bc9eb89
+	joinOnDateBehavior: datePartOnly
+	fromColumn: GRUPOS.VENCIMIENTO
+	toColumn: LocalDateTable_005f1166-2950-4bc9-8566-cfc559e76241.Date
+
+relationship 78505495-a965-4073-86f6-66982d9dc444
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'sys database_firewall_rules'.create_date
+	toColumn: LocalDateTable_1b6b2bdf-367e-4e7f-882b-6d6702c8a446.Date
+
+relationship cb8e8a65-87a2-4f2b-9051-ad5a413d6f2e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'sys database_firewall_rules'.modify_date
+	toColumn: LocalDateTable_80e1e1de-667a-4463-ae3b-0e93d91ad8f9.Date
+
+relationship 6faa34c6-58c5-4eb3-aeef-6b9a46232b48
+	fromColumn: ART_DOCENTE.ID_AUTOR
+	toColumn: AUTOR.ID_AUTOR
+
+	annotation PBI_IsFromSource = FS
+
+relationship 0ab5bedb-2d7b-4e0e-af86-32ece780568c
+	fromColumn: ART_DOCENTE.ID_PROGACAD
+	toColumn: PROGACADEM.ID_PROGACAD
+
+	annotation PBI_IsFromSource = FS
+
+relationship e0cbadd2-a75a-4656-9112-13e81c909ed3
+	fromColumn: ART_ESTUDIANTE.ID_AUTOR
+	toColumn: AUTOR.ID_AUTOR
+
+	annotation PBI_IsFromSource = FS
+
+relationship e63cf6b1-1226-4723-a3d3-b56e64ed63b2
+	fromColumn: ART_ESTUDIANTE.ID_PROGACAD
+	toColumn: PROGACADEM.ID_PROGACAD
+
+	annotation PBI_IsFromSource = FS
+
+relationship 0ee5f87b-9d71-466c-a704-84a83723d6f6
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: DOC_FORMATIVA.ID_PROGACAD
+	toColumn: PROGACADEM.ID_PROGACAD
+
+	annotation PBI_IsFromSource = FS
+
+relationship 1cba2bea-aaed-45e1-9f70-e07ff13bf793
+	fromColumn: GRUPOS.ID_CAMPUS
+	toColumn: CAMPUS.ID_CAMPUS
+
+	annotation PBI_IsFromSource = FS
+
+relationship dcacbed2-cbb2-4f98-8ab1-4064490ce81b
+	fromColumn: GRUPOS.ID_COLAB
+	toColumn: COLABORADOR.ID_COLAB
+
+	annotation PBI_IsFromSource = FS
+
+relationship be5ff808-9b67-45aa-8274-10aa2e2b816a
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: GRUPOS_MENTORIZADOS.ID_CAMPUS
+	toColumn: CAMPUS.ID_CAMPUS
+
+	annotation PBI_IsFromSource = FS
+
+relationship d956bf0b-a044-4608-b0d5-e01f68757527
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: GRUPOS_MENTORIZADOS.ID_COLAB
+	toColumn: COLABORADOR.ID_COLAB
+
+	annotation PBI_IsFromSource = FS
+
+relationship 9dac58c8-6ea9-4f5e-815c-f4db762350cb
+	fromColumn: LIBRO.ID_CAMPUS
+	toColumn: CAMPUS.ID_CAMPUS
+
+	annotation PBI_IsFromSource = FS
+
+relationship 1b8649bc-9900-42ec-b6b0-b37ef9114855
+	fromColumn: LIBRO.ID_PROGACAD
+	toColumn: PROGACADEM.ID_PROGACAD
+
+	annotation PBI_IsFromSource = FS
+
+relationship 6d4e4273-b989-436b-a34e-39fd7938ee8c
+	fromColumn: PROPIEDAD.ID_CAMPUS
+	toColumn: CAMPUS.ID_CAMPUS
+
+	annotation PBI_IsFromSource = FS
+
+relationship cbee49f1-0e65-4111-974b-5d2e49252db5
+	isActive: false
+	fromColumn: PROPIEDAD.ID_GRUP
+	toColumn: GRUPOS.ID_GRUP
+
+	annotation PBI_IsFromSource = FS
+
+relationship 4a8d3f46-d6d8-4deb-8079-00941266fcf4
+	fromColumn: PROPIEDAD.ID_PROGACAD
+	toColumn: PROGACADEM.ID_PROGACAD
+
+	annotation PBI_IsFromSource = FS
+
+relationship dc7b3728-81d1-4518-8811-f576cc7508f0
+	fromColumn: PROPIEDAD.ID_SEMLL
+	toColumn: SEMILLERO.ID_SEMLL
+
+	annotation PBI_IsFromSource = FS
+
+relationship 122746ab-004f-4184-ba8e-746cfb498980
+	fromColumn: PROYECTO.ID_CAMPUS
+	toColumn: CAMPUS.ID_CAMPUS
+
+	annotation PBI_IsFromSource = FS
+
+relationship 5ee26c45-97c9-4b3d-85ab-a248dfc140cc
+	fromColumn: PROYECTO.ID_PROGACAD
+	toColumn: PROGACADEM.ID_PROGACAD
+
+	annotation PBI_IsFromSource = FS
+
+relationship ca3834dd-9ad2-49a0-a00a-4bf65744f45a
+	fromColumn: RENACYT.ID_CAMPUS
+	toColumn: CAMPUS.ID_CAMPUS
+
+	annotation PBI_IsFromSource = FS
+
+relationship 5a5dde9a-3560-4155-8917-390925b9e38d
+	isActive: false
+	fromColumn: RENACYT.ID_GRUP
+	toColumn: GRUPOS.ID_GRUP
+
+	annotation PBI_IsFromSource = FS
+
+relationship 8ead4986-504b-45f2-aeb3-92280b5b706f
+	isActive: false
+	fromColumn: RENACYT.ID_LIBRO
+	toColumn: LIBRO.ID_LIBRO
+
+	annotation PBI_IsFromSource = FS
+
+relationship ac9d5fa4-2852-4f41-801f-b90db0a0b515
+	fromColumn: RENACYT.ID_PROGACAD
+	toColumn: PROGACADEM.ID_PROGACAD
+
+	annotation PBI_IsFromSource = FS
+
+relationship 257d4664-7b59-4d8d-b935-946b092c479b
+	isActive: false
+	fromColumn: RENACYT.ID_PROPIEDAD
+	toColumn: PROPIEDAD.ID_PROPIEDAD
+
+	annotation PBI_IsFromSource = FS
+
+relationship bd047a04-d6e9-4186-a856-e8f2929f1551
+	fromColumn: RENACYT.ID_RESOL
+	toColumn: RESOLUCION.ID_RESOL
+
+	annotation PBI_IsFromSource = FS
+
+relationship 4099d2d5-1c1b-4967-815e-dd6e284816ec
+	fromColumn: RENACYT.ID_SEMLL
+	toColumn: SEMILLERO.ID_SEMLL
+
+	annotation PBI_IsFromSource = FS
+
+relationship 463b8b0d-80e5-4876-9e01-73777a2799cf
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: SEMILLERO.ID_PROGACAD
+	toColumn: PROGACADEM.ID_PROGACAD
+
+	annotation PBI_IsFromSource = FS
+
+relationship 4b821a87-8b17-4416-a1e2-1a1f8129efa0
+	fromColumn: TESIS_PUBL.ID_PROGACAD
+	toColumn: PROGACADEM.ID_PROGACAD
+
+	annotation PBI_IsFromSource = FS
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "InformeAlumnosCondicionEstudio"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4109fc5a-2cd2-46df-b374-2d2df9488b0c"
+  }
+}

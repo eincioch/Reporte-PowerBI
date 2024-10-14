@@ -1,0 +1,22 @@
+table SP_TOTAL_GRUPOS
+	lineageTag: 86eb8c48-a11c-4d6a-a641-2e68c78b77e5
+
+	column TOTAL_GRUPOS
+		dataType: int64
+		formatString: 0
+		lineageTag: 62d0ee6d-4b60-417e-8ae3-48f02f8d83a0
+		summarizeBy: sum
+		sourceColumn: TOTAL_GRUPOS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_TOTAL_GRUPOS = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_TOTAL_GRUPOS"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

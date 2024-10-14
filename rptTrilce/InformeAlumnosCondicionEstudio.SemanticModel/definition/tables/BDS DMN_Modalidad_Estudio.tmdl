@@ -1,0 +1,45 @@
+table 'BDS DMN_Modalidad_Estudio'
+	lineageTag: 4d54a69d-7c7d-46cf-b91f-2753a97a5540
+
+	column Cod_Modalidad_Estudio
+		dataType: int64
+		formatString: 0
+		lineageTag: e703257e-7e65-41e1-bd4d-1e597036d48e
+		summarizeBy: none
+		sourceColumn: Cod_Modalidad_Estudio
+
+		annotation SummarizationSetBy = User
+
+	column Des_Modalidad_Estudio
+		dataType: string
+		lineageTag: c4cc2725-e37b-45f2-b9d2-b33034737586
+		summarizeBy: none
+		sourceColumn: Des_Modalidad_Estudio
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fec_Carga
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c573bb3f-0876-4e45-ae5e-81163c3669f5
+		summarizeBy: none
+		sourceColumn: Fec_Carga
+
+		variation Variación
+			isDefault
+			relationship: f66fc588-201b-401d-a890-fff80547674d
+			defaultHierarchy: LocalDateTable_39afb52b-409b-4e0e-b94f-40209c3d9fd1.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'BDS DMN_Modalidad_Estudio' = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("student360ucv.database.windows.net,1433", "BDStudent"),
+				    BDS_DMN_Modalidad_Estudio = Origen{[Schema="BDS",Item="DMN_Modalidad_Estudio"]}[Data]
+				in
+				    BDS_DMN_Modalidad_Estudio
+
+	annotation PBI_ResultType = Table
+

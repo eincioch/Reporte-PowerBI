@@ -1,0 +1,22 @@
+table SP_TOTAL_TESIS
+	lineageTag: e189ae33-01b4-41a2-b00c-557d0d65e83d
+
+	column TOTAL_TESIS
+		dataType: int64
+		formatString: 0
+		lineageTag: 50e280e0-7f57-4fd5-ae0d-3e31b8517c3c
+		summarizeBy: sum
+		sourceColumn: TOTAL_TESIS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_TOTAL_TESIS = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_TOTAL_TESIS"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

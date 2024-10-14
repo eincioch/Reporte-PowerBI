@@ -1,0 +1,22 @@
+table SP_TOTAL_RENACYT
+	lineageTag: 4e05a28e-d6d5-4ffb-a484-aebe5083f8a4
+
+	column TOTAL_RENACYT
+		dataType: int64
+		formatString: 0
+		lineageTag: efe257bc-b216-4f4d-bde0-1d277f64f14d
+		summarizeBy: sum
+		sourceColumn: TOTAL_RENACYT
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_TOTAL_RENACYT = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_TOTAL_RENACYT"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,609 @@
+{
+  "config": "{\"version\":\"5.50\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU05\",\"version\":\"5.54\",\"type\":2},\"customTheme\":{\"name\":\"AccessibleTidal\",\"version\":\"5.54\",\"type\":2}},\"activeSectionIndex\":6,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "c7bc645dd2ea03d43397",
+      "config": "{}",
+      "name": "Pod"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "800px-LogoUCV_201807870137511854747.png",
+            "path": "800px-LogoUCV_201807870137511854747.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "AccessibleTidal",
+            "path": "BuiltInThemes/AccessibleTidal.json",
+            "type": 201
+          },
+          {
+            "name": "CY24SU05",
+            "path": "BaseThemes/CY24SU05.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "GRUPOS",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "1616f1fe583cc9294f6b",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2fdc3622c88910387507\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.467980295566505,\"y\":40.78817733990148,\"z\":5000,\"width\":204.82758620689654,\"height\":54.08866995073892,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"800px-LogoUCV_201807870137511854747.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 54.09,
+          "width": 204.83,
+          "x": 35.47,
+          "y": 40.79,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"6e20ed019d4ac8d98104\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1094.1871921182267,\"y\":51.42857142857143,\"z\":6000,\"width\":151.6256157635468,\"height\":33.69458128078818,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Campus \",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}},{\"value\":\"Trujillo\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 33.69,
+          "width": 151.63,
+          "x": 1094.19,
+          "y": 51.43,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"9435e5760793f684c583\",\"layouts\":[{\"id\":0,\"position\":{\"x\":424.72906403940885,\"y\":40.78817733990148,\"z\":3000,\"width\":543.5467980295566,\"height\":56.748768472906406,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"GRUPOS DE INVESTIGACIÓN\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 56.75,
+          "width": 543.55,
+          "x": 424.73,
+          "y": 40.79,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"9ba3ce00da8fb3db22c4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":782.9556650246305,\"y\":140.0985221674877,\"z\":1000,\"width\":497.4384236453202,\"height\":250.935960591133,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_GRUPOS_POR_CLASIFICACION.CLASIFICACION\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_GRUPOS_POR_CLASIFICACION.TOTAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_GRUPOS_POR_CLASIFICACION\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"CLASIFICACION\"},\"Name\":\"SP_GRUPOS_POR_CLASIFICACION.CLASIFICACION\",\"NativeReferenceName\":\"CLASIFICACION\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL\"}},\"Function\":0},\"Name\":\"Sum(SP_GRUPOS_POR_CLASIFICACION.TOTAL)\",\"NativeReferenceName\":\"Suma de TOTAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Data'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'CLASIFICACIÓN DE GRUPOS'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 250.94,
+          "width": 497.44,
+          "x": 782.96,
+          "y": 140.10,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c6ce2888a13e7f03e59c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":353.7931034482759,\"y\":34.58128078817734,\"z\":4000,\"width\":111.72413793103448,\"height\":66.50246305418719,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(SP_TOTAL_GRUPOS.TOTAL_GRUPOS)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_TOTAL_GRUPOS\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_GRUPOS\"}},\"Function\":0},\"Name\":\"Sum(SP_TOTAL_GRUPOS.TOTAL_GRUPOS)\",\"NativeReferenceName\":\"TOTAL DE GRUPOS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_GRUPOS\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(SP_TOTAL_GRUPOS.TOTAL_GRUPOS)\":{\"displayName\":\"TOTAL DE GRUPOS\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 66.50,
+          "width": 111.72,
+          "x": 353.79,
+          "y": 34.58,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"d64425dd760858b841ea\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":140.0985221674877,\"z\":0,\"width\":766.1083743842364,\"height\":571.9211822660099,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_GRUPOS_CON_RESOLUCION.PROGRAMA\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_GRUPOS_CON_RESOLUCION.GRUPOS_CON_RVI)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_GRUPOS_CON_RESOLUCION\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROGRAMA\"},\"Name\":\"SP_GRUPOS_CON_RESOLUCION.PROGRAMA\",\"NativeReferenceName\":\"Recuento de PROGRAMA\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"GRUPOS_CON_RVI\"}},\"Function\":0},\"Name\":\"Sum(SP_GRUPOS_CON_RESOLUCION.GRUPOS_CON_RVI)\",\"NativeReferenceName\":\"Suma de GRUPOS_CON_RVI\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"GRUPOS_CON_RVI\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'GRUPOS DE INVESTIGACIÓN'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 571.92,
+          "width": 766.11,
+          "x": 0.00,
+          "y": 140.10,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"dea3ec25ae22cd88b71c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":782.9556650246305,\"y\":406.9950738916256,\"z\":2000,\"width\":497.4384236453202,\"height\":305.02463054187194,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_GRUPOS_NIVEL_RESOLUCION.NIVEL\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_GRUPOS_NIVEL_RESOLUCION.GRUPOS_CON_RVI)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_GRUPOS_NIVEL_RESOLUCION\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"NIVEL\"},\"Name\":\"SP_GRUPOS_NIVEL_RESOLUCION.NIVEL\",\"NativeReferenceName\":\"Recuento de NIVEL\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"GRUPOS_CON_RVI\"}},\"Function\":0},\"Name\":\"Sum(SP_GRUPOS_NIVEL_RESOLUCION.GRUPOS_CON_RVI)\",\"NativeReferenceName\":\"Suma de GRUPOS_CON_RVI\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"GRUPOS_CON_RVI\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'GRUPOS SEGÚN MODALIDAD'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 305.02,
+          "width": 497.44,
+          "x": 782.96,
+          "y": 407.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "TESIS_PUBL",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "5dbcdcabab5cbe6cd8ad",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"14a6befd50ea793578d2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":156.94581280788177,\"z\":0,\"width\":529.35960591133,\"height\":563.0541871921182,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_TESIS_PUBLICADO_POR_ESCUELAS.PROGRAMA\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_TESIS_PUBLICADO_POR_ESCUELAS.TOTAL_TESIS)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_TESIS_PUBLICADO_POR_ESCUELAS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROGRAMA\"},\"Name\":\"SP_TESIS_PUBLICADO_POR_ESCUELAS.PROGRAMA\",\"NativeReferenceName\":\"PROGRAMA\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_TESIS\"}},\"Function\":0},\"Name\":\"Sum(SP_TESIS_PUBLICADO_POR_ESCUELAS.TOTAL_TESIS)\",\"NativeReferenceName\":\"Suma de TOTAL_TESIS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_TESIS\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'TESIS PUBLICADAS COMO ARTÍCULOS SEGÚN PROGRAMA'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 563.05,
+          "width": 529.36,
+          "x": 0.00,
+          "y": 156.95,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"24cd9e2399636d98f93c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":944.3349753694581,\"y\":157.83251231527095,\"z\":2000,\"width\":329.85221674876846,\"height\":251.82266009852216,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_TESIS_PUBLICADO_POR_INDIZACION.INDIZACION\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_TESIS_PUBLICADO_POR_INDIZACION.TOTAL_TESIS)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_TESIS_PUBLICADO_POR_INDIZACION\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"INDIZACION\"},\"Name\":\"SP_TESIS_PUBLICADO_POR_INDIZACION.INDIZACION\",\"NativeReferenceName\":\"INDIZACION\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_TESIS\"}},\"Function\":0},\"Name\":\"Sum(SP_TESIS_PUBLICADO_POR_INDIZACION.TOTAL_TESIS)\",\"NativeReferenceName\":\"Suma de TOTAL_TESIS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_TESIS\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'INDIZACIÓN DE ARTÍCULOS DE TESIS'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 251.82,
+          "width": 329.85,
+          "x": 944.33,
+          "y": 157.83,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"3670b9809044fcfe5118\",\"layouts\":[{\"id\":0,\"position\":{\"x\":545.320197044335,\"y\":157.83251231527095,\"z\":3000,\"width\":375.9605911330049,\"height\":251.82266009852216,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_TESIS_PUBLICADO_POR_TIPO_ARTICULOS.DOC_TYPE\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_TESIS_PUBLICADO_POR_TIPO_ARTICULOS.TOTAL_TESIS)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_TESIS_PUBLICADO_POR_TIPO_ARTICULOS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"DOC_TYPE\"},\"Name\":\"SP_TESIS_PUBLICADO_POR_TIPO_ARTICULOS.DOC_TYPE\",\"NativeReferenceName\":\"DOC_TYPE\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_TESIS\"}},\"Function\":0},\"Name\":\"Sum(SP_TESIS_PUBLICADO_POR_TIPO_ARTICULOS.TOTAL_TESIS)\",\"NativeReferenceName\":\"Suma de TOTAL_TESIS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_TESIS\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'TIPO DE PUBLICACIÓN'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 251.82,
+          "width": 375.96,
+          "x": 545.32,
+          "y": 157.83,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"4a54679c2ebd6b1498db\",\"layouts\":[{\"id\":0,\"position\":{\"x\":944.3349753694581,\"y\":428.2758620689655,\"z\":5000,\"width\":329.85221674876846,\"height\":291.7241379310345,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Consulta1.NIVEL\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Consulta1.TOTAL_TESIS)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"SP_TESIS_PUBLICADO_POR_NIVELES_ACADEMICOS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"NIVEL\"},\"Name\":\"Consulta1.NIVEL\",\"NativeReferenceName\":\"NIVEL\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TOTAL_TESIS\"}},\"Function\":0},\"Name\":\"Sum(Consulta1.TOTAL_TESIS)\",\"NativeReferenceName\":\"Suma de TOTAL_TESIS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TOTAL_TESIS\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Data'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'MODALIDAD'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 291.72,
+          "width": 329.85,
+          "x": 944.33,
+          "y": 428.28,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"59e247d550a2d0ea1710\",\"layouts\":[{\"id\":0,\"position\":{\"x\":290.8374384236453,\"y\":39.90147783251231,\"z\":4000,\"width\":108.17733990147784,\"height\":64.72906403940887,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(SP_TOTAL_TESIS.TOTAL_TESIS)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_TOTAL_TESIS\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_TESIS\"}},\"Function\":0},\"Name\":\"Sum(SP_TOTAL_TESIS.TOTAL_TESIS)\",\"NativeReferenceName\":\"TOTAL TESIS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_TESIS\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(SP_TOTAL_TESIS.TOTAL_TESIS)\":{\"displayName\":\"TOTAL TESIS\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 64.73,
+          "width": 108.18,
+          "x": 290.84,
+          "y": 39.90,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"60d2b450aed6e151852d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.467980295566505,\"y\":40.78817733990148,\"z\":7000,\"width\":204.82758620689654,\"height\":54.08866995073892,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"800px-LogoUCV_201807870137511854747.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 54.09,
+          "width": 204.83,
+          "x": 35.47,
+          "y": 40.79,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"7e6fb68387290d0f3d69\",\"layouts\":[{\"id\":0,\"position\":{\"x\":545.320197044335,\"y\":428.2758620689655,\"z\":1000,\"width\":375.9605911330049,\"height\":291.7241379310345,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_TESIS_PUBLICADO_POR_CUARTIL.CUARTIL\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_TESIS_PUBLICADO_POR_CUARTIL.TOTAL_TESIS)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_TESIS_PUBLICADO_POR_CUARTIL\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"CUARTIL\"},\"Name\":\"SP_TESIS_PUBLICADO_POR_CUARTIL.CUARTIL\",\"NativeReferenceName\":\"CUARTIL\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_TESIS\"}},\"Function\":0},\"Name\":\"Sum(SP_TESIS_PUBLICADO_POR_CUARTIL.TOTAL_TESIS)\",\"NativeReferenceName\":\"Suma de TOTAL_TESIS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_TESIS\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'ARTÍCULOS SEGÚN POR CUARTIL'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 291.72,
+          "width": 375.96,
+          "x": 545.32,
+          "y": 428.28,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"a73d9924b24ea29c6112\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1094.1871921182267,\"y\":51.42857142857143,\"z\":8000,\"width\":151.6256157635468,\"height\":33.69458128078818,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Campus \",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}},{\"value\":\"Trujillo\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 33.69,
+          "width": 151.63,
+          "x": 1094.19,
+          "y": 51.43,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"ba5fecdf66984656005f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":399.01477832512313,\"y\":46.108374384236456,\"z\":6000,\"width\":664.1379310344828,\"height\":59.40886699507389,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"TESIS PUBLICADAS COMO ARTÍCULOS\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 59.41,
+          "width": 664.14,
+          "x": 399.01,
+          "y": 46.11,
+          "z": 6000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "ART_DOCENTES",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "79abcfa6f9fb7c14379e",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2a1259e513dd0c9c2b8c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":179.11330049261085,\"z\":0,\"width\":553.3004926108374,\"height\":540.8866995073892,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_ART_DOCENTE_POR_ESCUELA.PROGRAMA\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_ART_DOCENTE_POR_ESCUELA.TOTAL_DOCENTES)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_ART_DOCENTE_POR_ESCUELA\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROGRAMA\"},\"Name\":\"SP_ART_DOCENTE_POR_ESCUELA.PROGRAMA\",\"NativeReferenceName\":\"PROGRAMA\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_DOCENTES\"}},\"Function\":0},\"Name\":\"Sum(SP_ART_DOCENTE_POR_ESCUELA.TOTAL_DOCENTES)\",\"NativeReferenceName\":\"Suma de TOTAL_DOCENTES\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_DOCENTES\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'ARTÍCULOS PUBLICADOS POR ESCUELA'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 540.89,
+          "width": 553.30,
+          "x": 0.00,
+          "y": 179.11,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"2b2f193023268694aa54\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.467980295566505,\"y\":40.78817733990148,\"z\":7000,\"width\":204.82758620689654,\"height\":54.08866995073892,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"800px-LogoUCV_201807870137511854747.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 54.09,
+          "width": 204.83,
+          "x": 35.47,
+          "y": 40.79,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"5dcd63aceb648463b948\",\"layouts\":[{\"id\":0,\"position\":{\"x\":590.5418719211823,\"y\":410.5418719211823,\"z\":1000,\"width\":349.35960591133005,\"height\":284.6305418719212,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_ART_DOCENTE_POR_PROPIEDAD.PRODINTELECTUAL\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_ART_DOCENTE_POR_PROPIEDAD.TOTAL_PROPIEDAD)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_ART_DOCENTE_POR_PROPIEDAD\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PRODINTELECTUAL\"},\"Name\":\"SP_ART_DOCENTE_POR_PROPIEDAD.PRODINTELECTUAL\",\"NativeReferenceName\":\"PRODINTELECTUAL\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_PROPIEDAD\"}},\"Function\":0},\"Name\":\"Sum(SP_ART_DOCENTE_POR_PROPIEDAD.TOTAL_PROPIEDAD)\",\"NativeReferenceName\":\"Suma de TOTAL_PROPIEDAD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_PROPIEDAD\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'PARTICIPACIÓN DE ESTUDIANTES'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 284.63,
+          "width": 349.36,
+          "x": 590.54,
+          "y": 410.54,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"76efe17de1ffe3abc0f1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":954.0886699507389,\"y\":179.11330049261085,\"z\":2000,\"width\":326.30541871921184,\"height\":231.42857142857142,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"EXECUTE SP_ART_DOCENTE_POR_MODALIDAD.MODALIDAD\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(EXECUTE SP_ART_DOCENTE_POR_MODALIDAD.TOTAL_MODALIDAD)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"EXECUTE SP_ART_DOCENTE_POR_MODALIDAD\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"MODALIDAD\"},\"Name\":\"EXECUTE SP_ART_DOCENTE_POR_MODALIDAD.MODALIDAD\",\"NativeReferenceName\":\"MODALIDAD\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"TOTAL_MODALIDAD\"}},\"Function\":0},\"Name\":\"Sum(EXECUTE SP_ART_DOCENTE_POR_MODALIDAD.TOTAL_MODALIDAD)\",\"NativeReferenceName\":\"Suma de TOTAL_MODALIDAD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"TOTAL_MODALIDAD\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'preferInside'\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Data'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'TIPO DE MODALIDAD'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 231.43,
+          "width": 326.31,
+          "x": 954.09,
+          "y": 179.11,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"b7884651014c4c2dc455\",\"layouts\":[{\"id\":0,\"position\":{\"x\":296.1576354679803,\"y\":38.12807881773399,\"z\":5000,\"width\":118.81773399014779,\"height\":60.29556650246305,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(SP_TOTAL_ART_DOCENTE.TOTAL_ARTDOCENTES)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_TOTAL_ART_DOCENTE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_ARTDOCENTES\"}},\"Function\":0},\"Name\":\"Sum(SP_TOTAL_ART_DOCENTE.TOTAL_ARTDOCENTES)\",\"NativeReferenceName\":\"TOTAL ARTÍCULOS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_ARTDOCENTES\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(SP_TOTAL_ART_DOCENTE.TOTAL_ARTDOCENTES)\":{\"displayName\":\"TOTAL ARTÍCULOS\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 60.30,
+          "width": 118.82,
+          "x": 296.16,
+          "y": 38.13,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"ca6600e977e399dd3f60\",\"layouts\":[{\"id\":0,\"position\":{\"x\":590.5418719211823,\"y\":179.11330049261085,\"z\":3000,\"width\":349.35960591133005,\"height\":210.14778325123152,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_ART_DOCENTE_POR_CUARTIL.CUARTIL\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_ART_DOCENTE_POR_CUARTIL.TOTAL_CUARTIL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_ART_DOCENTE_POR_CUARTIL\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"CUARTIL\"},\"Name\":\"SP_ART_DOCENTE_POR_CUARTIL.CUARTIL\",\"NativeReferenceName\":\"CUARTIL\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_CUARTIL\"}},\"Function\":0},\"Name\":\"Sum(SP_ART_DOCENTE_POR_CUARTIL.TOTAL_CUARTIL)\",\"NativeReferenceName\":\"Suma de TOTAL_CUARTIL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_CUARTIL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'ARTICULOS PUBLICADOS POR CUARTIL'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 210.15,
+          "width": 349.36,
+          "x": 590.54,
+          "y": 179.11,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"cc0acc5de78fab837b39\",\"layouts\":[{\"id\":0,\"position\":{\"x\":954.0886699507389,\"y\":410.5418719211823,\"z\":4000,\"width\":326.30541871921184,\"height\":292.61083743842363,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Consulta1.EXP_CURRICULAR\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Consulta1.TOTAL_EXPERIENCIA)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"SP_ART_DOCENTE_SEGUN_CURRICULA\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"EXP_CURRICULAR\"},\"Name\":\"Consulta1.EXP_CURRICULAR\",\"NativeReferenceName\":\"EXP_CURRICULAR\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TOTAL_EXPERIENCIA\"}},\"Function\":0},\"Name\":\"Sum(Consulta1.TOTAL_EXPERIENCIA)\",\"NativeReferenceName\":\"Suma de TOTAL_EXPERIENCIA\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TOTAL_EXPERIENCIA\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'outside'\"}}},\"overflow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Data'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'EXPERIENCIA CURRICULAR'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 292.61,
+          "width": 326.31,
+          "x": 954.09,
+          "y": 410.54,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"f19df3fc394193256293\",\"layouts\":[{\"id\":0,\"position\":{\"x\":399.90147783251234,\"y\":37.241379310344826,\"z\":6000,\"width\":685.4187192118227,\"height\":61.18226600985222,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"ARTICULOS PUBLICADOS POR DOCENTES\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 61.18,
+          "width": 685.42,
+          "x": 399.90,
+          "y": 37.24,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"fdf85d67206730020ec9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1094.1871921182267,\"y\":51.42857142857143,\"z\":8000,\"width\":151.6256157635468,\"height\":33.69458128078818,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Campus \",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}},{\"value\":\"Trujillo\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 33.69,
+          "width": 151.63,
+          "x": 1094.19,
+          "y": 51.43,
+          "z": 8000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "DOCENTES",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c7bc645dd2ea03d43397",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0c28d689e03e68159a98\",\"layouts\":[{\"id\":0,\"position\":{\"x\":646.4039408866995,\"y\":428.2758620689655,\"z\":2000,\"width\":633.9901477832512,\"height\":284.6305418719212,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_RENACYT_SEGUN_NIVEL.NIVEL\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_RENACYT_SEGUN_NIVEL.RENACYT_TOTAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_RENACYT_SEGUN_NIVEL\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"NIVEL\"},\"Name\":\"SP_RENACYT_SEGUN_NIVEL.NIVEL\",\"NativeReferenceName\":\"NIVEL\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RENACYT_TOTAL\"}},\"Function\":0},\"Name\":\"Sum(SP_RENACYT_SEGUN_NIVEL.RENACYT_TOTAL)\",\"NativeReferenceName\":\"Suma de RENACYT_TOTAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RENACYT_TOTAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'RENACYT POR NIVELES'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 284.63,
+          "width": 633.99,
+          "x": 646.40,
+          "y": 428.28,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"1e6a922180c6f6244a09\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":151.6256157635468,\"z\":0,\"width\":627.7832512315271,\"height\":561.2807881773399,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_RENACYT_ESCUELAS.PROGRAMA\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_RENACYT_ESCUELAS.RENACYT_TOTAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_RENACYT_ESCUELAS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROGRAMA\"},\"Name\":\"SP_RENACYT_ESCUELAS.PROGRAMA\",\"NativeReferenceName\":\"Recuento de PROGRAMA\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RENACYT_TOTAL\"}},\"Function\":0},\"Name\":\"Sum(SP_RENACYT_ESCUELAS.RENACYT_TOTAL)\",\"NativeReferenceName\":\"Suma de RENACYT_TOTAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RENACYT_TOTAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'RENACYT POR ESCUELA'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 561.28,
+          "width": 627.78,
+          "x": 0.00,
+          "y": 151.63,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"2e1f3fcae89fbb7a3605\",\"layouts\":[{\"id\":0,\"position\":{\"x\":493.89162561576353,\"y\":46.108374384236456,\"z\":4000,\"width\":443.3497536945813,\"height\":59.40886699507389,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"DOCENTES RENACYT UCV\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 59.41,
+          "width": 443.35,
+          "x": 493.89,
+          "y": 46.11,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"39f3d83c0be4c153bd49\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.467980295566505,\"y\":40.78817733990148,\"z\":5000,\"width\":204.82758620689654,\"height\":54.08866995073892,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"800px-LogoUCV_201807870137511854747.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 54.09,
+          "width": 204.83,
+          "x": 35.47,
+          "y": 40.79,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"6afd3b4593c3f2bea06a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":646.4039408866995,\"y\":151.6256157635468,\"z\":1000,\"width\":633.9901477832512,\"height\":258.9162561576355,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_RENACYT_GI.GI\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_RENACYT_GI.TOTAL_GI)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_RENACYT_GI\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"GI\"},\"Name\":\"SP_RENACYT_GI.GI\",\"NativeReferenceName\":\"GI\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_GI\"}},\"Function\":0},\"Name\":\"Sum(SP_RENACYT_GI.TOTAL_GI)\",\"NativeReferenceName\":\"Suma de TOTAL_GI\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_GI\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideCenter'\"}}}}}],\"percentBarLabel\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'RENACYT SEGÚN GI'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"lockAspect\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 258.92,
+          "width": 633.99,
+          "x": 646.40,
+          "y": 151.63,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"a25caa3e56254883d2b6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":383.9408866995074,\"y\":39.90147783251231,\"z\":3000,\"width\":109.95073891625616,\"height\":62.06896551724138,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(SP_TOTAL_RENACYT.TOTAL_RENACYT)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_TOTAL_RENACYT\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_RENACYT\"}},\"Function\":0},\"Name\":\"Sum(SP_TOTAL_RENACYT.TOTAL_RENACYT)\",\"NativeReferenceName\":\"TOTAL DE RENACYT\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_RENACYT\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(SP_TOTAL_RENACYT.TOTAL_RENACYT)\":{\"displayName\":\"TOTAL DE RENACYT\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 62.07,
+          "width": 109.95,
+          "x": 383.94,
+          "y": 39.90,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"ba117c244970a0380dbb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1094.1871921182267,\"y\":51.42857142857143,\"z\":6000,\"width\":151.6256157635468,\"height\":33.69458128078818,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Campus \",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}},{\"value\":\"Trujillo\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 33.69,
+          "width": 151.63,
+          "x": 1094.19,
+          "y": 51.43,
+          "z": 6000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "PROYECTOS",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ca1f9fd8e0f85f0825b9",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1202f875bd41b8765aca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":452.2167487684729,\"y\":40.78817733990148,\"z\":4000,\"width\":531.1330049261084,\"height\":55.86206896551724,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"PROYECTOS DE INVESTIGACIÓN\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 55.86,
+          "width": 531.13,
+          "x": 452.22,
+          "y": 40.79,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"43e76a9997c1ee022bc8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":7.093596059113301,\"y\":142.75862068965517,\"z\":0,\"width\":572.807881773399,\"height\":562.167487684729,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_PROYECTOS_POR_ESCUELAS.PROGRAMA\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_PROYECTOS_POR_ESCUELAS.PROYECTO_TOTAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_PROYECTOS_POR_ESCUELAS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROGRAMA\"},\"Name\":\"SP_PROYECTOS_POR_ESCUELAS.PROGRAMA\",\"NativeReferenceName\":\"Recuento de PROGRAMA\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROYECTO_TOTAL\"}},\"Function\":0},\"Name\":\"Sum(SP_PROYECTOS_POR_ESCUELAS.PROYECTO_TOTAL)\",\"NativeReferenceName\":\"Suma de PROYECTO_TOTAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROYECTO_TOTAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'PROYECTOS DE INVESTIGACIÓN'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 562.17,
+          "width": 572.81,
+          "x": 7.09,
+          "y": 142.76,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"4bfeb1b65d7790985331\",\"layouts\":[{\"id\":0,\"position\":{\"x\":599.4088669950739,\"y\":435.3694581280788,\"z\":1000,\"width\":680.9852216748768,\"height\":269.5566502463054,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_PROYECTOS_INSTANCIAS.INSTANCIA\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_PROYECTOS_INSTANCIAS.PROYECTO_TOTAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_PROYECTOS_INSTANCIAS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"INSTANCIA\"},\"Name\":\"SP_PROYECTOS_INSTANCIAS.INSTANCIA\",\"NativeReferenceName\":\"INSTANCIA\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROYECTO_TOTAL\"}},\"Function\":0},\"Name\":\"Sum(SP_PROYECTOS_INSTANCIAS.PROYECTO_TOTAL)\",\"NativeReferenceName\":\"Suma de PROYECTO_TOTAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROYECTO_TOTAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"percentBarLabel\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideCenter'\"}}},\"funnelLabelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Data'\"}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'INSTANCIA LOS DE PI (PROCESO DE EVALUACIÓN)'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 269.56,
+          "width": 680.99,
+          "x": 599.41,
+          "y": 435.37,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"7b4a6e4fe1fbc246aec2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":599.4088669950739,\"y\":142.75862068965517,\"z\":2000,\"width\":351.13300492610836,\"height\":274.8768472906404,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_PROYECTOS_HITOS.HITO\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_PROYECTOS_HITOS.PROYECTO_TOTAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_PROYECTOS_HITOS\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"HITO\"},\"Name\":\"SP_PROYECTOS_HITOS.HITO\",\"NativeReferenceName\":\"HITO\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROYECTO_TOTAL\"}},\"Function\":0},\"Name\":\"Sum(SP_PROYECTOS_HITOS.PROYECTO_TOTAL)\",\"NativeReferenceName\":\"Suma de PROYECTO_TOTAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROYECTO_TOTAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Data'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'HITOS DE PI (PROCESO DE EJECUCIÓN)'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 274.88,
+          "width": 351.13,
+          "x": 599.41,
+          "y": 142.76,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"8a62a5d013a6cccb87d1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":970.0492610837439,\"y\":142.75862068965517,\"z\":3000,\"width\":310.3448275862069,\"height\":274.8768472906404,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_PROYECTOS_NIVELES.NIVEL\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_PROYECTOS_NIVELES.PROYECTO_TOTAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_PROYECTOS_NIVELES\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"NIVEL\"},\"Name\":\"SP_PROYECTOS_NIVELES.NIVEL\",\"NativeReferenceName\":\"Recuento de NIVEL\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROYECTO_TOTAL\"}},\"Function\":0},\"Name\":\"Sum(SP_PROYECTOS_NIVELES.PROYECTO_TOTAL)\",\"NativeReferenceName\":\"Suma de PROYECTO_TOTAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROYECTO_TOTAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'PROYECTOS SEGÚN MODALIDAD'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 274.88,
+          "width": 310.34,
+          "x": 970.05,
+          "y": 142.76,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"ac43c2e680e408ec7500\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1094.1871921182267,\"y\":51.42857142857143,\"z\":7000,\"width\":151.6256157635468,\"height\":33.69458128078818,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Campus \",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}},{\"value\":\"Trujillo\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 33.69,
+          "width": 151.63,
+          "x": 1094.19,
+          "y": 51.43,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"d2ba6a919a08769bc788\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.467980295566505,\"y\":40.78817733990148,\"z\":6000,\"width\":204.82758620689654,\"height\":54.08866995073892,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"800px-LogoUCV_201807870137511854747.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 54.09,
+          "width": 204.83,
+          "x": 35.47,
+          "y": 40.79,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"e3a809b81ecd77eb5a26\",\"layouts\":[{\"id\":0,\"position\":{\"x\":325.4187192118227,\"y\":40.78817733990148,\"z\":5000,\"width\":126.79802955665025,\"height\":55.86206896551724,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(SP_TOTAL_PROYECTOS.TOTAL_PROYECTOS)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_TOTAL_PROYECTOS\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_PROYECTOS\"}},\"Function\":0},\"Name\":\"Sum(SP_TOTAL_PROYECTOS.TOTAL_PROYECTOS)\",\"NativeReferenceName\":\"TOTAL DE PROYECTOS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_PROYECTOS\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(SP_TOTAL_PROYECTOS.TOTAL_PROYECTOS)\":{\"displayName\":\"TOTAL DE PROYECTOS\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 55.86,
+          "width": 126.80,
+          "x": 325.42,
+          "y": 40.79,
+          "z": 5000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "ART_ESTUDIANTES",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "eeaea616923dc53dad6a",
+      "ordinal": 6,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"01c85fd3ddea9a3eb1c9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1094.1871921182267,\"y\":51.42857142857143,\"z\":5000,\"width\":151.6256157635468,\"height\":33.69458128078818,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Campus \",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}},{\"value\":\"Trujillo\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 33.69,
+          "width": 151.63,
+          "x": 1094.19,
+          "y": 51.43,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"1681d1f8cc547e6b5726\",\"layouts\":[{\"id\":0,\"position\":{\"x\":248.27586206896552,\"y\":34.58128078817734,\"z\":2000,\"width\":136.55172413793105,\"height\":67.38916256157636,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(SP_TOTAL_ART_ESTUDIANTE.TOTAL_ESTUDIANTE)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_TOTAL_ART_ESTUDIANTE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_ESTUDIANTE\"}},\"Function\":0},\"Name\":\"Sum(SP_TOTAL_ART_ESTUDIANTE.TOTAL_ESTUDIANTE)\",\"NativeReferenceName\":\"TOTAL DE ESTUDIANTES\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_ESTUDIANTE\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(SP_TOTAL_ART_ESTUDIANTE.TOTAL_ESTUDIANTE)\":{\"displayName\":\"TOTAL DE ESTUDIANTES\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.39,
+          "width": 136.55,
+          "x": 248.28,
+          "y": 34.58,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"2ec150ffe175b65b2150\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.467980295566505,\"y\":40.78817733990148,\"z\":4000,\"width\":204.82758620689654,\"height\":54.08866995073892,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"800px-LogoUCV_201807870137511854747.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 54.09,
+          "width": 204.83,
+          "x": 35.47,
+          "y": 40.79,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"74346a2654f092fd53c2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":699.6059113300493,\"y\":193.30049261083744,\"z\":1000,\"width\":571.0344827586207,\"height\":516.0591133004926,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_ART_ESTUDIANTE_EXP_CURRICULAR.EXP_CURRICULAR\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_ART_ESTUDIANTE_EXP_CURRICULAR.TOTAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_ART_ESTUDIANTE_EXP_CURRICULAR\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"EXP_CURRICULAR\"},\"Name\":\"SP_ART_ESTUDIANTE_EXP_CURRICULAR.EXP_CURRICULAR\",\"NativeReferenceName\":\"EXP_CURRICULAR\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL\"}},\"Function\":0},\"Name\":\"Sum(SP_ART_ESTUDIANTE_EXP_CURRICULAR.TOTAL)\",\"NativeReferenceName\":\"Suma de TOTAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Data'\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'outside'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'ARTÍCULOS POSTULADOS SEGÚN EC'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter0d09268157b59c6f0622\",\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_ART_ESTUDIANTE_EXP_CURRICULAR\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"EXP_CURRICULAR\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'METODOLOGÍA DE LA INVESTIGACIÓN CIENTÍFICA.'\"}}],[{\"Literal\":{\"Value\":\"'DESARROLLO DEL PROYECTO DE INVESTIGACIÓN.'\"}}],[{\"Literal\":{\"Value\":\"'DISEÑO DEL PROYECTO DE INVESTIGACIÓN.'\"}}]]}}}}}]},\"type\":\"Exclude\",\"howCreated\":4,\"filterExpressionMetadata\":{\"expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"SP_ART_ESTUDIANTE_EXP_CURRICULAR\"}},\"Property\":\"EXP_CURRICULAR\"}}],\"cachedValueItems\":[{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"SP_ART_ESTUDIANTE_EXP_CURRICULAR\"}},\"Property\":\"EXP_CURRICULAR\"}},\"Right\":{\"Literal\":{\"Value\":\"'DISEÑO DEL PROYECTO DE INVESTIGACIÓN.'\"}}}}}],\"valueMap\":{\"0\":\"DISEÑO DEL PROYECTO DE INVESTIGACIÓN.\"}},{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"SP_ART_ESTUDIANTE_EXP_CURRICULAR\"}},\"Property\":\"EXP_CURRICULAR\"}},\"Right\":{\"Literal\":{\"Value\":\"'DESARROLLO DEL PROYECTO DE INVESTIGACIÓN.'\"}}}}}],\"valueMap\":{\"0\":\"DESARROLLO DEL PROYECTO DE INVESTIGACIÓN.\"}},{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"SP_ART_ESTUDIANTE_EXP_CURRICULAR\"}},\"Property\":\"EXP_CURRICULAR\"}},\"Right\":{\"Literal\":{\"Value\":\"'METODOLOGÍA DE LA INVESTIGACIÓN CIENTÍFICA.'\"}}}}}],\"valueMap\":{\"0\":\"METODOLOGÍA DE LA INVESTIGACIÓN CIENTÍFICA.\"}}]}}]",
+          "height": 516.06,
+          "width": 571.03,
+          "x": 699.61,
+          "y": 193.30,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"b78c563054300ac30df1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.64039408866995,\"y\":193.30049261083744,\"z\":0,\"width\":665.9113300492611,\"height\":516.0591133004926,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_ART_ESTUDIANTE_POR_ESCUELA.PROGRAMA\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_ART_ESTUDIANTE_POR_ESCUELA.TOTAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"SP_ART_ESTUDIANTE_POR_ESCUELA\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"PROGRAMA\"},\"Name\":\"SP_ART_ESTUDIANTE_POR_ESCUELA.PROGRAMA\",\"NativeReferenceName\":\"PROGRAMA\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TOTAL\"}},\"Function\":0},\"Name\":\"Sum(SP_ART_ESTUDIANTE_POR_ESCUELA.TOTAL)\",\"NativeReferenceName\":\"Suma de TOTAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TOTAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'ARTÍCULOS POSTULADOS SEGÚN ESCUELA'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 516.06,
+          "width": 665.91,
+          "x": 10.64,
+          "y": 193.30,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f47580b7bb5b3026ca68\",\"layouts\":[{\"id\":0,\"position\":{\"x\":376.8472906403941,\"y\":40.78817733990148,\"z\":3000,\"width\":709.35960591133,\"height\":66.50246305418719,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"ARTÍCULOS POSTULADOS POR ESTUDIANTES\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 66.50,
+          "width": 709.36,
+          "x": 376.85,
+          "y": 40.79,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "PROPIEDAD",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "f0d5ae8c7589a8ed1f59",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0db0c5e98343ce726710\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.960591133004927,\"y\":189.7536945812808,\"z\":1000,\"width\":624.2364532019704,\"height\":520.4926108374384,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_PROPIEDAD_SEGUN_PROGRAMA.PROGRAMA\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_PROPIEDAD_SEGUN_PROGRAMA.RENACYT_TOTAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_PROPIEDAD_SEGUN_PROGRAMA\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PROGRAMA\"},\"Name\":\"SP_PROPIEDAD_SEGUN_PROGRAMA.PROGRAMA\",\"NativeReferenceName\":\"PROGRAMA\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RENACYT_TOTAL\"}},\"Function\":0},\"Name\":\"Sum(SP_PROPIEDAD_SEGUN_PROGRAMA.RENACYT_TOTAL)\",\"NativeReferenceName\":\"Suma de RENACYT_TOTAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RENACYT_TOTAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'MODELO DE UTILIDAD '\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"lockAspect\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 520.49,
+          "width": 624.24,
+          "x": 15.96,
+          "y": 189.75,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"14e1eb4b0b862a5d8f46\",\"layouts\":[{\"id\":0,\"position\":{\"x\":708.4729064039409,\"y\":189.7536945812808,\"z\":2000,\"width\":547.9802955665025,\"height\":226.10837438423644,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_PROPIEDAD_SEGUN_ESTADO.ESTADO\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_PROPIEDAD_SEGUN_ESTADO.RENACYT_TOTAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_PROPIEDAD_SEGUN_ESTADO\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ESTADO\"},\"Name\":\"SP_PROPIEDAD_SEGUN_ESTADO.ESTADO\",\"NativeReferenceName\":\"ESTADO\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RENACYT_TOTAL\"}},\"Function\":0},\"Name\":\"Sum(SP_PROPIEDAD_SEGUN_ESTADO.RENACYT_TOTAL)\",\"NativeReferenceName\":\"Suma de RENACYT_TOTAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RENACYT_TOTAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'STATUS DE PROPIEDAD INTELECTUAL'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 226.11,
+          "width": 547.98,
+          "x": 708.47,
+          "y": 189.75,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"6d84d33961e825910460\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1094.1871921182267,\"y\":51.42857142857143,\"z\":6000,\"width\":151.6256157635468,\"height\":33.69458128078818,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Campus \",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}},{\"value\":\"Trujillo\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\",\"color\":\"#0f3a69\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 33.69,
+          "width": 151.63,
+          "x": 1094.19,
+          "y": 51.43,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"906a1f9399690b77c692\",\"layouts\":[{\"id\":0,\"position\":{\"x\":708.4729064039409,\"y\":431.8226600985222,\"z\":0,\"width\":547.9802955665025,\"height\":278.42364532019707,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"SP_PROPIEDAD_SEGUN_TIPO.TIPO\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(SP_PROPIEDAD_SEGUN_TIPO.RENACYT_TOTAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_PROPIEDAD_SEGUN_TIPO\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TIPO\"},\"Name\":\"SP_PROPIEDAD_SEGUN_TIPO.TIPO\",\"NativeReferenceName\":\"Recuento de TIPO\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RENACYT_TOTAL\"}},\"Function\":0},\"Name\":\"Sum(SP_PROPIEDAD_SEGUN_TIPO.RENACYT_TOTAL)\",\"NativeReferenceName\":\"Suma de RENACYT_TOTAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RENACYT_TOTAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'PROPIEDAD INTELECTUAL '\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 278.42,
+          "width": 547.98,
+          "x": 708.47,
+          "y": 431.82,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a94b26b416a0220191e4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.467980295566505,\"y\":40.78817733990148,\"z\":5000,\"width\":204.82758620689654,\"height\":54.08866995073892,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"800px-LogoUCV_201807870137511854747.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 54.09,
+          "width": 204.83,
+          "x": 35.47,
+          "y": 40.79,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"b8c4904a2564453b61b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":387.48768472906403,\"y\":40.78817733990148,\"z\":4000,\"width\":672.1182266009853,\"height\":59.40886699507389,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"REGISTROS DE PROPIEDAD INTELECTUAL\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 59.41,
+          "width": 672.12,
+          "x": 387.49,
+          "y": 40.79,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"e27d96b7ae2437c008a8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":282.85714285714283,\"y\":37.241379310344826,\"z\":3000,\"width\":104.63054187192118,\"height\":66.50246305418719,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(SP_TOTAL_PROPIEDAD.TOTAL_PROPIEDAD)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SP_TOTAL_PROPIEDAD\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_PROPIEDAD\"}},\"Function\":0},\"Name\":\"Sum(SP_TOTAL_PROPIEDAD.TOTAL_PROPIEDAD)\",\"NativeReferenceName\":\"TOTAL DE PROPIEDAD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TOTAL_PROPIEDAD\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(SP_TOTAL_PROPIEDAD.TOTAL_PROPIEDAD)\":{\"displayName\":\"TOTAL DE PROPIEDAD\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 66.50,
+          "width": 104.63,
+          "x": 282.86,
+          "y": 37.24,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "AccessibleTidal"
+}

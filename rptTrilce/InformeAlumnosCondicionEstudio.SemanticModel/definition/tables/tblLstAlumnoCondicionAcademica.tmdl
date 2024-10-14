@@ -1,0 +1,214 @@
+table tblLstAlumnoCondicionAcademica
+	lineageTag: 2df04320-36f8-4270-af35-ed45e1615715
+
+	column CodigoFilial
+		dataType: string
+		lineageTag: 57125a47-e11f-4bd1-9c11-359928779c6d
+		summarizeBy: none
+		sourceColumn: CodigoFilial
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DescripcionFilial
+		dataType: string
+		lineageTag: 1cb3d300-2656-4b4c-b4e3-557f555abf33
+		summarizeBy: none
+		sourceColumn: DescripcionFilial
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodigoModalidad
+		dataType: int64
+		formatString: 0
+		lineageTag: 7d588015-8aed-420f-9f66-40a592b7a82e
+		summarizeBy: none
+		sourceColumn: CodigoModalidad
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column DescripcionModalidad
+		dataType: string
+		lineageTag: 036f9c3d-33e7-4d05-b29a-8601eeba3c74
+		summarizeBy: none
+		sourceColumn: DescripcionModalidad
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodigoModalidadIngreso
+		dataType: int64
+		formatString: 0
+		lineageTag: 653a3332-ccd9-49ae-a142-b8c9ae6f7a87
+		summarizeBy: none
+		sourceColumn: CodigoModalidadIngreso
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodigoFacultad
+		dataType: string
+		lineageTag: 24de13f9-6128-46bd-80c0-b234a553260a
+		summarizeBy: none
+		sourceColumn: CodigoFacultad
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DescripcionFacultad
+		dataType: string
+		lineageTag: cde0cc3d-24a7-4cec-a2a2-0b120751b114
+		summarizeBy: none
+		sourceColumn: DescripcionFacultad
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodigoEscuela
+		dataType: int64
+		formatString: 0
+		lineageTag: bea621e5-70d4-4400-b4b8-aa093a7a8ec4
+		summarizeBy: none
+		sourceColumn: CodigoEscuela
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DescripcionEscuela
+		dataType: string
+		lineageTag: 292fb3cc-b7b4-45da-a545-c4413e0654f6
+		summarizeBy: none
+		sourceColumn: DescripcionEscuela
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodigoAlumno
+		dataType: string
+		lineageTag: 4ac4bb6d-ec88-4775-acae-2c15e268ef59
+		summarizeBy: none
+		sourceColumn: CodigoAlumno
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column NombreAlumno
+		dataType: string
+		lineageTag: 38c22e6b-919b-4090-88c1-2357d0b4b631
+		summarizeBy: none
+		sourceColumn: NombreAlumno
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column PeriodoAlumno
+		dataType: int64
+		formatString: 0
+		lineageTag: d1016a5f-65a5-41e6-96c6-192098897fed
+		summarizeBy: none
+		sourceColumn: PeriodoAlumno
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DescripcionPeriodo
+		dataType: string
+		lineageTag: 69062bfa-2000-4ef6-9561-6110565c364a
+		summarizeBy: none
+		sourceColumn: DescripcionPeriodo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CantidadCursos
+		dataType: int64
+		formatString: 0
+		lineageTag: 575c663a-1f8a-495b-89d4-dec04f239f44
+		summarizeBy: none
+		sourceColumn: CantidadCursos
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column EstadoCursos
+		dataType: string
+		lineageTag: 048b19a5-1397-4bf9-8772-01dc84017010
+		summarizeBy: none
+		sourceColumn: EstadoCursos
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CantidadVeces
+		dataType: string
+		lineageTag: da69614c-3519-4c28-96ca-053b3933f320
+		summarizeBy: none
+		sourceColumn: CantidadVeces
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CodigoNivelAcademico
+		dataType: int64
+		formatString: 0
+		lineageTag: ea822cdc-61fd-4dd5-90ac-dc4f82963e29
+		summarizeBy: none
+		sourceColumn: CodigoNivelAcademico
+
+		annotation SummarizationSetBy = Automatic
+
+	column DescripcionNivelAcademico
+		dataType: string
+		lineageTag: b8902056-07cf-43b9-bb8c-0cb9c12bbf27
+		summarizeBy: none
+		sourceColumn: DescripcionNivelAcademico
+
+		annotation SummarizationSetBy = Automatic
+
+	column DescripcionModalidadIngreso
+		dataType: string
+		lineageTag: 888dd429-0c54-4a18-b223-16ea9d530cb6
+		summarizeBy: none
+		sourceColumn: DescripcionModalidadIngreso
+
+		annotation SummarizationSetBy = Automatic
+
+	column DetalleCursosEstados
+		dataType: string
+		lineageTag: 9361e833-ca4e-4d9a-965e-7daeba4d33ae
+		summarizeBy: none
+		sourceColumn: DetalleCursosEstados
+
+		annotation SummarizationSetBy = Automatic
+
+	partition tblLstAlumnoCondicionAcademica = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("student360ucv.database.windows.net,1433", "BDStudent", [MultiSubnetFailover=true]),
+				    dbo_tblLstAlumnoCondicionAcademica = Origen{[Schema="dbo",Item="tblLstAlumnoCondicionAcademica"]}[Data]
+				in
+				    dbo_tblLstAlumnoCondicionAcademica
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

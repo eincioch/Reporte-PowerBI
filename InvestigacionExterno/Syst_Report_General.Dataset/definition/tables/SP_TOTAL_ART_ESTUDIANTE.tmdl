@@ -1,0 +1,22 @@
+table SP_TOTAL_ART_ESTUDIANTE
+	lineageTag: 1a9a9b83-bd7e-4160-b93c-a0a1465e335e
+
+	column TOTAL_ESTUDIANTE
+		dataType: int64
+		formatString: 0
+		lineageTag: b5607e9d-f4e6-4d38-9b57-827d888bebe9
+		summarizeBy: sum
+		sourceColumn: TOTAL_ESTUDIANTE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_TOTAL_ART_ESTUDIANTE = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_TOTAL_ART_ESTUDIANTE"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

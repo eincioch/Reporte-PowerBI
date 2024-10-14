@@ -1,0 +1,31 @@
+table CAMPUS
+	lineageTag: c8380429-3d66-425f-8ecf-16ac7bce523e
+
+	column ID_CAMPUS
+		dataType: int64
+		formatString: 0
+		lineageTag: c7245f9a-0ae1-498e-b60e-3be997e8db57
+		summarizeBy: none
+		sourceColumn: ID_CAMPUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column CAMPUS
+		dataType: string
+		lineageTag: 860ef03b-d86b-41e1-97d7-079e28a1a9c7
+		summarizeBy: none
+		sourceColumn: CAMPUS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CAMPUS = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_CAMPUS = Origen{[Schema="dbo",Item="CAMPUS"]}[Data]
+				in
+				    dbo_CAMPUS
+
+	annotation PBI_ResultType = Table
+

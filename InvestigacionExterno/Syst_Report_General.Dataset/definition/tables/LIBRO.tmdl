@@ -1,0 +1,73 @@
+table LIBRO
+	lineageTag: 2f75fc93-a70b-4731-9fbe-fe2f05de1c9d
+
+	column ID_LIBRO
+		dataType: int64
+		formatString: 0
+		lineageTag: 294a8cf2-34fd-406b-a199-32c5da0f7555
+		summarizeBy: sum
+		sourceColumn: ID_LIBRO
+
+		annotation SummarizationSetBy = Automatic
+
+	column TITULO
+		dataType: string
+		lineageTag: 6d7a3d5d-273a-466b-b091-ab36cb088f2c
+		summarizeBy: none
+		sourceColumn: TITULO
+
+		annotation SummarizationSetBy = Automatic
+
+	column AUTOR
+		dataType: string
+		lineageTag: 1d6c6cad-3e7a-47ef-a32b-fb492a79625f
+		summarizeBy: none
+		sourceColumn: AUTOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPO
+		dataType: string
+		lineageTag: a74d0aa7-fc99-4d1c-bcda-54b2da99448d
+		summarizeBy: none
+		sourceColumn: TIPO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ESTADO
+		dataType: string
+		lineageTag: 521db6a0-763d-4585-8627-23de77b365bd
+		summarizeBy: none
+		sourceColumn: ESTADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_CAMPUS
+		dataType: int64
+		formatString: 0
+		lineageTag: 47224664-afb0-4289-835f-bcd98434cb2d
+		summarizeBy: none
+		sourceColumn: ID_CAMPUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_PROGACAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f91cc5b-ec3d-47aa-81a9-77b305a00aa4
+		summarizeBy: none
+		sourceColumn: ID_PROGACAD
+
+		annotation SummarizationSetBy = Automatic
+
+	partition LIBRO = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_LIBRO = Origen{[Schema="dbo",Item="LIBRO"]}[Data]
+				in
+				    dbo_LIBRO
+
+	annotation PBI_ResultType = Table
+

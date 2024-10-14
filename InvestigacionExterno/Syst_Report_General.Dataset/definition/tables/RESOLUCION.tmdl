@@ -1,0 +1,87 @@
+table RESOLUCION
+	lineageTag: 05058bd1-e4b9-4432-ae83-84c39e706b1a
+
+	column ID_RESOL
+		dataType: int64
+		formatString: 0
+		lineageTag: dcc8218b-7020-4cf4-9295-15fdf39c6e52
+		summarizeBy: none
+		sourceColumn: ID_RESOL
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESOL_2023
+		dataType: string
+		lineageTag: 725f7473-dca9-4024-999a-f420d22d816f
+		summarizeBy: none
+		sourceColumn: RESOL_2023
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESOL_2024
+		dataType: string
+		lineageTag: 624dd47b-26f2-4076-841f-73be7d860567
+		summarizeBy: none
+		sourceColumn: RESOL_2024
+
+		annotation SummarizationSetBy = Automatic
+
+	column RVI_2021
+		dataType: string
+		lineageTag: 5d178d46-6122-4420-82a4-2f1c023c45a6
+		summarizeBy: none
+		sourceColumn: RVI_2021
+
+		annotation SummarizationSetBy = Automatic
+
+	column RVI_2022
+		dataType: string
+		lineageTag: 96af81fd-d325-4349-b1d6-05181d7d6439
+		summarizeBy: none
+		sourceColumn: RVI_2022
+
+		annotation SummarizationSetBy = Automatic
+
+	column RVI_2023
+		dataType: string
+		lineageTag: 62396cf9-a5b3-4b5b-9b82-723927b30768
+		summarizeBy: none
+		sourceColumn: RVI_2023
+
+		annotation SummarizationSetBy = Automatic
+
+	column RVI_2024
+		dataType: string
+		lineageTag: 2892b8c8-846b-46a3-b357-9cf76304eaf3
+		summarizeBy: none
+		sourceColumn: RVI_2024
+
+		annotation SummarizationSetBy = Automatic
+
+	column RCU_2023
+		dataType: string
+		lineageTag: 63fc6d4d-2f73-48b9-9419-9c3b38548bf6
+		summarizeBy: none
+		sourceColumn: RCU_2023
+
+		annotation SummarizationSetBy = Automatic
+
+	column RCU_2024
+		dataType: string
+		lineageTag: a426ac54-5b2a-4747-81d1-5a380f12b143
+		summarizeBy: none
+		sourceColumn: RCU_2024
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RESOLUCION = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_RESOLUCION = Origen{[Schema="dbo",Item="RESOLUCION"]}[Data]
+				in
+				    dbo_RESOLUCION
+
+	annotation PBI_ResultType = Table
+

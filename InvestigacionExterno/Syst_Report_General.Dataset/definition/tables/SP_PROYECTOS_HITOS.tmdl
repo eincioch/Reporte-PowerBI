@@ -1,0 +1,30 @@
+table SP_PROYECTOS_HITOS
+	lineageTag: 37539f1c-8949-4034-b108-7119575540de
+
+	column HITO
+		dataType: string
+		lineageTag: 545f7607-f9b2-46eb-bcca-ddcc73b2dfe9
+		summarizeBy: none
+		sourceColumn: HITO
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROYECTO_TOTAL
+		dataType: int64
+		formatString: 0
+		lineageTag: d7ff30ee-ddf1-4789-811e-882853310626
+		summarizeBy: sum
+		sourceColumn: PROYECTO_TOTAL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_PROYECTOS_HITOS = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_PROYECTOS_HITOS"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

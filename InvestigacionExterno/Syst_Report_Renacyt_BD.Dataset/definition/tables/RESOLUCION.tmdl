@@ -1,0 +1,85 @@
+table RESOLUCION
+	lineageTag: 6e9d832f-f5fd-4a2c-9936-725ec54ff358
+
+	column ID_RESOL
+		dataType: int64
+		formatString: 0
+		lineageTag: 23c49d3d-4a71-4881-8cf7-82f82215074f
+		summarizeBy: none
+		sourceColumn: ID_RESOL
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESOL_2023
+		dataType: string
+		lineageTag: ebe4b29c-51f5-473c-b450-c682d102f53d
+		summarizeBy: none
+		sourceColumn: RESOL_2023
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESOL_2024
+		dataType: string
+		lineageTag: d027b095-e15a-4b5c-8ce0-284adb538aef
+		summarizeBy: none
+		sourceColumn: RESOL_2024
+
+		annotation SummarizationSetBy = Automatic
+
+	column RVI_2021
+		dataType: string
+		lineageTag: bf4c2fb0-55d8-468c-87ac-74bdd4bff449
+		summarizeBy: none
+		sourceColumn: RVI_2021
+
+		annotation SummarizationSetBy = Automatic
+
+	column RVI_2022
+		dataType: string
+		lineageTag: 8745210c-0d8b-4030-810e-33a6a2b352aa
+		summarizeBy: none
+		sourceColumn: RVI_2022
+
+		annotation SummarizationSetBy = Automatic
+
+	column RVI_2023
+		dataType: string
+		lineageTag: 491cd3e3-f0cb-4126-bd55-137d2f0e4697
+		summarizeBy: none
+		sourceColumn: RVI_2023
+
+		annotation SummarizationSetBy = Automatic
+
+	column RVI_2024
+		dataType: string
+		lineageTag: 974ac609-30f2-4791-9aa3-7978dec495e5
+		summarizeBy: none
+		sourceColumn: RVI_2024
+
+		annotation SummarizationSetBy = Automatic
+
+	column RCU_2023
+		dataType: string
+		lineageTag: 3f3a8d95-8e76-44a4-aae9-fe0766668f30
+		summarizeBy: none
+		sourceColumn: RCU_2023
+
+		annotation SummarizationSetBy = Automatic
+
+	column RCU_2024
+		dataType: string
+		lineageTag: 27924473-12ae-4e0b-95ca-722eb721d744
+		summarizeBy: none
+		sourceColumn: RCU_2024
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RESOLUCION = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_RESOLUCION = Origen{[Schema="dbo",Item="RESOLUCION"]}[Data]
+				in
+				    dbo_RESOLUCION
+

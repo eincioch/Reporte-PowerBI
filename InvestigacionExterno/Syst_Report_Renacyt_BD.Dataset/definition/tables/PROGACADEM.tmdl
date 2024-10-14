@@ -1,0 +1,29 @@
+table PROGACADEM
+	lineageTag: 55d67923-a615-4a02-8315-6b43f36b92ef
+
+	column ID_PROGACAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 9dcd1a5d-ebd9-4a85-bd82-2c2d1f04a578
+		summarizeBy: none
+		sourceColumn: ID_PROGACAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROGRAMA
+		dataType: string
+		lineageTag: 69fd54ce-3ede-48fe-a2ee-dd8690b37412
+		summarizeBy: none
+		sourceColumn: PROGRAMA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PROGACADEM = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_PROGACADEM = Origen{[Schema="dbo",Item="PROGACADEM"]}[Data]
+				in
+				    dbo_PROGACADEM
+

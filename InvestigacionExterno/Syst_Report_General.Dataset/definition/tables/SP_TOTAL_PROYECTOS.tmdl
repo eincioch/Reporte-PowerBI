@@ -1,0 +1,22 @@
+table SP_TOTAL_PROYECTOS
+	lineageTag: ccfa5240-a894-42da-91a4-5787106cb8af
+
+	column TOTAL_PROYECTOS
+		dataType: int64
+		formatString: 0
+		lineageTag: 14688bb0-6867-4c5b-9155-b7b235b4df8d
+		summarizeBy: sum
+		sourceColumn: TOTAL_PROYECTOS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_TOTAL_PROYECTOS = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_TOTAL_PROYECTOS"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

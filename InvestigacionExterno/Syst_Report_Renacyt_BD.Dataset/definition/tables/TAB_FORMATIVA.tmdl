@@ -1,0 +1,182 @@
+table TAB_FORMATIVA
+	lineageTag: 2164f342-7b2e-41b1-94d2-7f1b98ccfebc
+
+	column ID_FORMTV
+		dataType: int64
+		formatString: 0
+		lineageTag: 99572f5a-3288-4a84-8e35-4ddf57c90e9d
+		summarizeBy: sum
+		sourceColumn: ID_FORMTV
+
+		annotation SummarizationSetBy = Automatic
+
+	column LIBROS
+		dataType: int64
+		formatString: 0
+		lineageTag: 425400f6-4afb-428c-9d7f-d8b20e02e19b
+		summarizeBy: sum
+		sourceColumn: LIBROS
+
+		annotation SummarizationSetBy = Automatic
+
+	column LIB_ACADEM
+		dataType: int64
+		formatString: 0
+		lineageTag: 553c175c-30a3-4484-a8fd-05477ab17601
+		summarizeBy: sum
+		sourceColumn: LIB_ACADEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column LIB_INVEST
+		dataType: int64
+		formatString: 0
+		lineageTag: 4864d7cf-174a-4ae7-9fba-bf40726067af
+		summarizeBy: sum
+		sourceColumn: LIB_INVEST
+
+		annotation SummarizationSetBy = Automatic
+
+	column ART_POSTULADO
+		dataType: int64
+		formatString: 0
+		lineageTag: 8070629c-185b-4c7a-98d4-8ee982269ba6
+		summarizeBy: sum
+		sourceColumn: ART_POSTULADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ART_PUBLICADO
+		dataType: int64
+		formatString: 0
+		lineageTag: cb32cccd-92c7-4535-a1eb-5455b08d4225
+		summarizeBy: sum
+		sourceColumn: ART_PUBLICADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column TEST_PUBLICADO
+		dataType: int64
+		formatString: 0
+		lineageTag: 710a33c1-b3b0-4b8e-8fbc-1bd408d4aa91
+		summarizeBy: sum
+		sourceColumn: TEST_PUBLICADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEMILLERO
+		dataType: int64
+		formatString: 0
+		lineageTag: ebd5116a-79a3-47f8-975a-06ef0ad4b996
+		summarizeBy: sum
+		sourceColumn: SEMILLERO
+
+		annotation SummarizationSetBy = Automatic
+
+	column P_INVENSION
+		dataType: int64
+		formatString: 0
+		lineageTag: b00ca34e-a428-4918-a761-e54e25cdc6fb
+		summarizeBy: sum
+		sourceColumn: P_INVENSION
+
+		annotation SummarizationSetBy = Automatic
+
+	column MOD_UTILIDAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 7e360450-8134-4149-bf1a-52c98637d68a
+		summarizeBy: sum
+		sourceColumn: MOD_UTILIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column SOFTWARE
+		dataType: int64
+		formatString: 0
+		lineageTag: c9d36700-9355-417e-991c-6f456bf76ec2
+		summarizeBy: sum
+		sourceColumn: SOFTWARE
+
+		annotation SummarizationSetBy = Automatic
+
+	column SOLICT_PROPIEDAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 68148ddc-68f4-4553-8310-a2378b9a8fdd
+		summarizeBy: sum
+		sourceColumn: SOLICT_PROPIEDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column EN_TRAMITE
+		dataType: int64
+		formatString: 0
+		lineageTag: 1639d25d-a7a7-480d-ae4e-d32ccc72a5e2
+		summarizeBy: sum
+		sourceColumn: EN_TRAMITE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATI
+		dataType: int64
+		formatString: 0
+		lineageTag: 207a02b9-41cf-46a3-a6ed-3192a0dee39c
+		summarizeBy: sum
+		sourceColumn: CATI
+
+		annotation SummarizationSetBy = Automatic
+
+	column INDECOPI
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b5ba491-17dc-45b3-af64-e94163403ba2
+		summarizeBy: sum
+		sourceColumn: INDECOPI
+
+		annotation SummarizationSetBy = Automatic
+
+	column OTORGADO
+		dataType: int64
+		formatString: 0
+		lineageTag: c6d2ce2e-df23-4d21-b941-dba3efd516c7
+		summarizeBy: sum
+		sourceColumn: OTORGADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column EN_PROCESO
+		dataType: int64
+		formatString: 0
+		lineageTag: 44b04e37-348e-48d7-a1ed-1468481c853d
+		summarizeBy: sum
+		sourceColumn: EN_PROCESO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CULMINADA
+		dataType: int64
+		formatString: 0
+		lineageTag: d1b0a586-e8e3-4171-8d06-8bb79067972e
+		summarizeBy: sum
+		sourceColumn: CULMINADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROGRAMA
+		dataType: string
+		lineageTag: 2f53d7b3-15e0-4f4a-b227-0810d3562a28
+		summarizeBy: none
+		sourceColumn: PROGRAMA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition TAB_FORMATIVA = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_TAB_FORMATIVA = Origen{[Schema="dbo",Item="TAB_FORMATIVA"]}[Data]
+				in
+				    dbo_TAB_FORMATIVA
+

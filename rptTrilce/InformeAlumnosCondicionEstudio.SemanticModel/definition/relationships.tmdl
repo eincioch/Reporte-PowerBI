@@ -1,0 +1,65 @@
+relationship e9dd38a2-0638-4ccb-ae17-8e9c7fc2509f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'BDS DMN_Filial'.Fec_Carga
+	toColumn: LocalDateTable_44bcbdd5-d352-4ec9-bbd2-293a67a32ee3.Date
+
+relationship 7b3752e6-cfa3-4b7d-b655-e45906d89369
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'BDS DMN_Facultad'.Fec_Carga
+	toColumn: LocalDateTable_07b6b6ed-062d-4e5d-b288-4a7c03d03221.Date
+
+relationship 94428de1-d1be-4747-b5bc-90e27af49c47
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'BDS DMN_Escuela'.Fec_Carga
+	toColumn: LocalDateTable_10f097d5-7116-455a-8a03-cd382f5a035e.Date
+
+relationship f66fc588-201b-401d-a890-fff80547674d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'BDS DMN_Modalidad_Estudio'.Fec_Carga
+	toColumn: LocalDateTable_39afb52b-409b-4e0e-b94f-40209c3d9fd1.Date
+
+relationship 69d59484-324d-4303-8c03-2a9407f0dcc1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'BDS DMN_Modalidad_Ingreso'.Fec_Carga
+	toColumn: LocalDateTable_63960831-82ff-4860-86c9-f7137de8197b.Date
+
+relationship cb5c8d74-825d-4b35-86b0-7828eed78b2f
+	fromColumn: 'BDS DMN_Facultad'.Cod_Filial
+	toColumn: 'BDS DMN_Filial'.Cod_Filial
+
+relationship 9d2451a8-54c3-4a89-9f3c-c6b625aee0e5
+	fromColumn: 'BDS DMN_Escuela'.Cod_Filial
+	toColumn: 'BDS DMN_Filial'.Cod_Filial
+
+relationship 62a03468-0bad-4bbb-a513-200417897ff6
+	fromColumn: tblLstAlumnoCondicionAcademica.CodigoModalidadIngreso
+	toColumn: 'BDS DMN_Modalidad_Ingreso'.Cod_Modalidad_Ingreso
+
+relationship 00a81887-c399-48c4-9fb9-b3974c8b7500
+	fromColumn: tblLstAlumnoCondicionAcademica.CodigoFilial
+	toColumn: 'BDS DMN_Filial'.Cod_Filial
+
+relationship 225fcf88-acb7-461a-8d5c-077adebb6d70
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'BDS DMN_Nivel_Academico'.Fec_Carga
+	toColumn: LocalDateTable_0224ec06-92d6-499c-b5bf-5a7a66dfded2.Date
+
+relationship 7ecec2a5-bcd8-4a46-80a8-fcf131c9c546
+	fromColumn: tblLstAlumnoCondicionAcademica.CodigoNivelAcademico
+	toColumn: 'BDS DMN_Nivel_Academico'.Cod_Nivel_Academico
+
+relationship b738e25f-da06-cadb-b84f-104098d1cacc
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'BDS DMN_Escuela'.Cod_Escuela
+	toColumn: tblLstAlumnoCondicionAcademica.CodigoEscuela
+
+relationship 109ba3c7-e207-4078-bc6d-a5ad8c147f3c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'BDS DMN_Periodo'.Fec_Carga
+	toColumn: LocalDateTable_07627e11-4ff6-409a-9394-7dc0855229f1.Date
+
+relationship 437bf200-c1b8-187e-5838-937a8253143c
+	fromColumn: tblLstAlumnoCondicionAcademica.PeriodoAlumno
+	toColumn: 'BDS DMN_Periodo'.Cod_Periodo
+

@@ -1,0 +1,161 @@
+table PROYECTO
+	lineageTag: bbb84429-0074-4e97-bec1-207e089e08a4
+
+	column ID_PROYECTO
+		dataType: int64
+		formatString: 0
+		lineageTag: 00dea1ea-faad-4e78-a407-5e7a0506277c
+		summarizeBy: sum
+		sourceColumn: ID_PROYECTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_PROYECTO
+		dataType: string
+		lineageTag: ae1332d6-4d2e-4a9b-9c2a-16574ad9d17b
+		summarizeBy: none
+		sourceColumn: COD_PROYECTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_TRILCE
+		dataType: string
+		lineageTag: f6fb777d-78a8-475c-8b21-7a4caf358829
+		summarizeBy: none
+		sourceColumn: COD_TRILCE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONVOCATORIA
+		dataType: string
+		lineageTag: 26be4f22-f6a0-4bee-8921-fe419626a999
+		summarizeBy: none
+		sourceColumn: CONVOCATORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column TITULO_PROYECTO
+		dataType: string
+		lineageTag: 0c0bc8a4-439d-42e1-90cc-5339fe237ef5
+		summarizeBy: none
+		sourceColumn: TITULO_PROYECTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column INVESTIGADOR
+		dataType: string
+		lineageTag: a0340be7-3ed3-492e-992c-38eba7613b5f
+		summarizeBy: none
+		sourceColumn: INVESTIGADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column INSTANCIA
+		dataType: string
+		lineageTag: 0570654e-86df-4008-88d4-cd88b3eec289
+		summarizeBy: none
+		sourceColumn: INSTANCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_PROGACAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 2c8f843c-cd1b-4add-b159-283f99eb3c93
+		summarizeBy: none
+		sourceColumn: ID_PROGACAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL
+		dataType: string
+		lineageTag: b12809be-98c8-45c9-9624-d5a489e78daa
+		summarizeBy: none
+		sourceColumn: NIVEL
+
+		annotation SummarizationSetBy = Automatic
+
+	column TURNITIN
+		dataType: string
+		lineageTag: bae5809c-a31b-4695-9ead-837ee51c4617
+		summarizeBy: none
+		sourceColumn: TURNITIN
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMITE_ETICA
+		dataType: string
+		lineageTag: 4e1a8a9f-ad50-4413-b65d-6b62b5a03ca8
+		summarizeBy: none
+		sourceColumn: COMITE_ETICA
+
+		annotation SummarizationSetBy = Automatic
+
+	column PAR_REVISORES
+		dataType: string
+		lineageTag: c7b8936c-731c-44e8-b4c6-f91197f06463
+		summarizeBy: none
+		sourceColumn: PAR_REVISORES
+
+		annotation SummarizationSetBy = Automatic
+
+	column MONTO
+		dataType: string
+		lineageTag: 234d4cf4-65b5-427c-89b2-d25e4831f3e4
+		summarizeBy: none
+		sourceColumn: MONTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column FINANCIAMIENTO
+		dataType: string
+		lineageTag: 9d2a6617-a99b-447a-b4eb-7bbb263f1b1b
+		summarizeBy: none
+		sourceColumn: FINANCIAMIENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column HITO
+		dataType: string
+		lineageTag: 6e366e21-3efa-45f9-bf1c-093787c41ecc
+		summarizeBy: none
+		sourceColumn: HITO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ESTADO
+		dataType: string
+		lineageTag: 800a0bff-a87b-42c2-949a-96ba03d09c22
+		summarizeBy: none
+		sourceColumn: ESTADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column AVANCE
+		dataType: string
+		lineageTag: 10953706-7eb7-4e6e-86fa-ae043dcefb76
+		summarizeBy: none
+		sourceColumn: AVANCE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_CAMPUS
+		dataType: int64
+		formatString: 0
+		lineageTag: 720ce4c1-9e98-4379-8836-4287ff7607be
+		summarizeBy: none
+		sourceColumn: ID_CAMPUS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PROYECTO = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_PROYECTO = Origen{[Schema="dbo",Item="PROYECTO"]}[Data]
+				in
+				    dbo_PROYECTO
+
+	annotation PBI_ResultType = Table
+

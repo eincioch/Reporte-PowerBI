@@ -1,0 +1,639 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_GRUPOS_CON_RESOLUCION",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_GRUPOS_POR_CLASIFICACION",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_GRUPOS_NIVEL_RESOLUCION",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_PROYECTOS_POR_ESCUELAS",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1136,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_PROYECTOS_INSTANCIAS",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1420,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_PROYECTOS_HITOS",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1704,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_PROYECTOS_NIVELES",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1988,
+            "y": 767.25439437002126
+          },
+          "nodeIndex": "SP_TOTAL_GRUPOS",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2272,
+            "y": 767.25439437002126
+          },
+          "nodeIndex": "SP_TOTAL_PROYECTOS",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2556,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_RENACYT_ESCUELAS",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2840,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_RENACYT_GI",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3124,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_RENACYT_SEGUN_MODALIDAD",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3408,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_RENACYT_SEGUN_NIVEL",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3692,
+            "y": 767.25439437002126
+          },
+          "nodeIndex": "SP_TOTAL_RENACYT",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3976,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_PROPIEDAD_SEGUN_TIPO",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4260,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_PROPIEDAD_SEGUN_PROGRAMA",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4544,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_PROPIEDAD_SEGUN_ESTADO",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4828,
+            "y": 767.25439437002126
+          },
+          "nodeIndex": "SP_TOTAL_PROPIEDAD",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5112,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_ART_DOCENTE_POR_ESCUELA",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5396,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_ART_DOCENTE_POR_PROPIEDAD",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5680,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "EXECUTE SP_ART_DOCENTE_POR_MODALIDAD",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5964,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_ART_DOCENTE_POR_CUARTIL",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6248,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_ART_DOCENTE_SEGUN_CURRICULA",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6532,
+            "y": 767.25439437002126
+          },
+          "nodeIndex": "SP_TOTAL_ART_DOCENTE",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6816,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_TESIS_PUBLICADO_POR_ESCUELAS",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7100,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_TESIS_PUBLICADO_POR_CUARTIL",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7384,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_TESIS_PUBLICADO_POR_INDIZACION",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7668,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_TESIS_PUBLICADO_POR_TIPO_ARTICULOS",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8236,
+            "y": 767.25439437002126
+          },
+          "nodeIndex": "SP_TOTAL_TESIS",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8804,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_ART_ESTUDIANTE_POR_ESCUELA",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8520,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_TESIS_PUBLICADO_POR_NIVELES_ACADEMICOS",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9088,
+            "y": 755.25439437002126
+          },
+          "nodeIndex": "SP_ART_ESTUDIANTE_EXP_CURRICULAR",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9372,
+            "y": 767.25439437002126
+          },
+          "nodeIndex": "SP_TOTAL_ART_ESTUDIANTE",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 11438.56386960175,
+            "y": 1255.222385430058
+          },
+          "nodeIndex": "ART_DOCENTE",
+          "nodeLineageTag": "9ebeedd4-3165-46db-8d23-a23e22cd7cb5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 11645.831042914062,
+            "y": 898.061425223601
+          },
+          "nodeIndex": "ART_ESTUDIANTE",
+          "nodeLineageTag": "105ef7e6-6fe9-4034-843f-15c2efae833c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 11917.16673841016,
+            "y": 1253.7871126082471
+          },
+          "nodeIndex": "AUTOR",
+          "nodeLineageTag": "582878c4-68b3-4302-ab4f-c83f1261c579",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10338.870443470389,
+            "y": 378.59579075411784
+          },
+          "nodeIndex": "CAMPUS",
+          "nodeLineageTag": "c8380429-3d66-425f-8ecf-16ac7bce523e",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9666,
+            "y": -10
+          },
+          "nodeIndex": "COLABORADOR",
+          "nodeLineageTag": "4c75450b-fa05-4901-b67e-d6a164d3f728",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 11148.916090672177,
+            "y": 1428.5087887400425
+          },
+          "nodeIndex": "DOC_FORMATIVA",
+          "nodeLineageTag": "eecbcca4-0145-460e-8458-e83752765259",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10050.666165276272,
+            "y": 475.98157696084513
+          },
+          "nodeIndex": "GRUPOS",
+          "nodeLineageTag": "6bbb26c2-8309-4223-8d76-a7e1828a65e3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9955.8383527605529,
+            "y": 118.76880032652684
+          },
+          "nodeIndex": "GRUPOS_MENTORIZADOS",
+          "nodeLineageTag": "f44e2ea5-daf7-4dcf-bd83-493b31a91eff",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10467.759018188402,
+            "y": 947.1362654786069
+          },
+          "nodeIndex": "LIBRO",
+          "nodeLineageTag": "2f75fc93-a70b-4731-9fbe-fe2f05de1c9d",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 11151.035851359633,
+            "y": 1043.9551962295502
+          },
+          "nodeIndex": "PROGACADEM",
+          "nodeLineageTag": "2afdd31a-7822-4db7-8ed1-b35f6d1a13ae",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10756.4192364346,
+            "y": 769.09184298851858
+          },
+          "nodeIndex": "PROPIEDAD",
+          "nodeLineageTag": "dde0157b-281c-4c48-839d-c9fb5b1ae1b9",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 11046.322296118895,
+            "y": 627.61026470483034
+          },
+          "nodeIndex": "PROYECTO",
+          "nodeLineageTag": "bbb84429-0074-4e97-bec1-207e089e08a4",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10179.869612292801,
+            "y": 1177.0894965408863
+          },
+          "nodeIndex": "RENACYT",
+          "nodeLineageTag": "35ec135d-5d2d-4ac4-a799-985bdede0643",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9894.30619960991,
+            "y": 833.365457188653
+          },
+          "nodeIndex": "RESOLUCION",
+          "nodeLineageTag": "05058bd1-e4b9-4432-ae83-84c39e706b1a",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10862.374079874313,
+            "y": 1126.058929460957
+          },
+          "nodeIndex": "SEMILLERO",
+          "nodeLineageTag": "5c674e5c-f692-4787-834d-c38eceb0e5b1",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 12191.16673841016,
+            "y": 707.25439437002126
+          },
+          "nodeIndex": "sys database_firewall_rules",
+          "nodeLineageTag": "92e033ea-b99e-458e-ae51-e731e30f9558",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 11574.334365327686,
+            "y": 540.76167952959588
+          },
+          "nodeIndex": "TESIS_PUBL",
+          "nodeLineageTag": "d028b2c8-f6c6-491d-9914-5a6dc63ca6e4",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

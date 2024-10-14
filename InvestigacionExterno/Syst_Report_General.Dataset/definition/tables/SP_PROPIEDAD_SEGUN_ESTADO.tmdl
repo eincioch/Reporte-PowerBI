@@ -1,0 +1,30 @@
+table SP_PROPIEDAD_SEGUN_ESTADO
+	lineageTag: 7a07cffb-c435-416a-8d82-2fb9cbe7304c
+
+	column ESTADO
+		dataType: string
+		lineageTag: 3470914a-ab2a-4a89-b005-e59955910964
+		summarizeBy: none
+		sourceColumn: ESTADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column RENACYT_TOTAL
+		dataType: int64
+		formatString: 0
+		lineageTag: 4cb0faff-d4c7-40ab-a7dd-e8b6a1409fc4
+		summarizeBy: sum
+		sourceColumn: RENACYT_TOTAL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_PROPIEDAD_SEGUN_ESTADO = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_PROPIEDAD_SEGUN_ESTADO"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

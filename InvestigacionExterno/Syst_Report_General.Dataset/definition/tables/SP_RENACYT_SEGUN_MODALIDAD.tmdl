@@ -1,0 +1,30 @@
+table SP_RENACYT_SEGUN_MODALIDAD
+	lineageTag: 231803ac-9966-4ae3-922b-6cf209677680
+
+	column MODALIDAD
+		dataType: string
+		lineageTag: 04711580-eb5c-406a-aac2-80676ebb6442
+		summarizeBy: none
+		sourceColumn: MODALIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column RENACYT_TOTAL
+		dataType: int64
+		formatString: 0
+		lineageTag: 9787f1b5-af93-43d3-b939-1c92c6688f1b
+		summarizeBy: sum
+		sourceColumn: RENACYT_TOTAL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_RENACYT_SEGUN_MODALIDAD = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_RENACYT_SEGUN_MODALIDAD"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

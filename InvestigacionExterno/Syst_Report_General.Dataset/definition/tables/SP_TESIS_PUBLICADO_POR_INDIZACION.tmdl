@@ -1,0 +1,30 @@
+table SP_TESIS_PUBLICADO_POR_INDIZACION
+	lineageTag: ceefe58a-f6b4-4f40-a7fb-e88ca384b22a
+
+	column INDIZACION
+		dataType: string
+		lineageTag: 354024fb-ff0c-4003-878e-0aaddf586532
+		summarizeBy: none
+		sourceColumn: INDIZACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column TOTAL_TESIS
+		dataType: int64
+		formatString: 0
+		lineageTag: 0d9af8cb-b540-42e2-be22-c918bc42463e
+		summarizeBy: none
+		sourceColumn: TOTAL_TESIS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_TESIS_PUBLICADO_POR_INDIZACION = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_TESIS_PUBLICADO_POR_INDIZACION"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

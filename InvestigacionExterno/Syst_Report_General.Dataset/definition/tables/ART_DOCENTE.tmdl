@@ -1,0 +1,154 @@
+table ART_DOCENTE
+	lineageTag: 9ebeedd4-3165-46db-8d23-a23e22cd7cb5
+
+	column ID_DOCENTE
+		dataType: int64
+		formatString: 0
+		lineageTag: 0d08b579-d2c0-4aa1-a9bc-03350ebdab3e
+		summarizeBy: sum
+		sourceColumn: ID_DOCENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_AUTOR
+		dataType: int64
+		formatString: 0
+		lineageTag: 27462e4c-0d5f-42b9-8cd1-903ec67abb9f
+		summarizeBy: none
+		sourceColumn: ID_AUTOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_PROGACAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 564e5955-d394-4257-8f08-a662c30e7425
+		summarizeBy: none
+		sourceColumn: ID_PROGACAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXP_CURRICULAR
+		dataType: string
+		lineageTag: 5f5b87e3-2a73-4917-9b89-c6deb1f03329
+		summarizeBy: none
+		sourceColumn: EXP_CURRICULAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column MODALIDAD
+		dataType: string
+		lineageTag: 879993fe-4e2d-49af-94ec-2d1ca5991fd3
+		summarizeBy: none
+		sourceColumn: MODALIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPROPIEDAD
+		dataType: string
+		lineageTag: 3c8db112-8a6c-4c7a-b9fc-006c23d811dc
+		summarizeBy: none
+		sourceColumn: TIPROPIEDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column LINEA_INVESTIGACION
+		dataType: string
+		lineageTag: 89e066af-7fe5-4353-92cb-d016f735b3fd
+		summarizeBy: none
+		sourceColumn: LINEA_INVESTIGACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column ODS_1
+		dataType: string
+		lineageTag: 1ef12275-1e8c-4b45-85a3-73ccb46388ef
+		summarizeBy: none
+		sourceColumn: ODS_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column TITULO
+		dataType: string
+		lineageTag: 38b0794a-ba8a-4b3c-9321-e7642711c209
+		summarizeBy: none
+		sourceColumn: TITULO
+
+		annotation SummarizationSetBy = Automatic
+
+	column AÑO
+		dataType: int64
+		formatString: 0
+		lineageTag: dbc90a5a-c546-4966-88c7-3e97aa3f7ef9
+		summarizeBy: sum
+		sourceColumn: AÑO
+
+		annotation SummarizationSetBy = Automatic
+
+	column REVISTA
+		dataType: string
+		lineageTag: 3526ac62-41e6-46bc-8aa4-77fe6bb76541
+		summarizeBy: none
+		sourceColumn: REVISTA
+
+		annotation SummarizationSetBy = Automatic
+
+	column BASE_DATO
+		dataType: string
+		lineageTag: 033e46fe-b896-4993-b7b1-033744ef6877
+		summarizeBy: none
+		sourceColumn: BASE_DATO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUARTIL
+		dataType: string
+		lineageTag: c07f9718-6612-4298-bb83-23551f229894
+		summarizeBy: none
+		sourceColumn: CUARTIL
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRODINTELECTUAL
+		dataType: string
+		lineageTag: 251720ce-fbb2-49d0-8338-60c2149eb54c
+		summarizeBy: none
+		sourceColumn: PRODINTELECTUAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOI
+		dataType: string
+		lineageTag: ab1f0e42-3476-4675-a82d-2e6fde1206b6
+		summarizeBy: none
+		sourceColumn: DOI
+
+		annotation SummarizationSetBy = Automatic
+
+	column ORIGEN
+		dataType: string
+		lineageTag: be02a702-630a-405e-b8f9-16cd65a45f5e
+		summarizeBy: none
+		sourceColumn: ORIGEN
+
+		annotation SummarizationSetBy = Automatic
+
+	column FINANCIAR
+		dataType: string
+		lineageTag: f0cf90db-1f16-4c18-9965-4251a56107d9
+		summarizeBy: none
+		sourceColumn: FINANCIAR
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ART_DOCENTE = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_ART_DOCENTE = Origen{[Schema="dbo",Item="ART_DOCENTE"]}[Data]
+				in
+				    dbo_ART_DOCENTE
+
+	annotation PBI_ResultType = Table
+

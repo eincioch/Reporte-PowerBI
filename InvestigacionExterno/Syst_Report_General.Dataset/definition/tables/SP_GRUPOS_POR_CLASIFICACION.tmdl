@@ -1,0 +1,30 @@
+table SP_GRUPOS_POR_CLASIFICACION
+	lineageTag: 0de29529-023f-4ed5-84af-407f91b87300
+
+	column CLASIFICACION
+		dataType: string
+		lineageTag: 42cc53e0-9015-4ea1-b868-08e05d142293
+		summarizeBy: none
+		sourceColumn: CLASIFICACION
+
+		annotation SummarizationSetBy = Automatic
+
+	column TOTAL
+		dataType: int64
+		formatString: 0
+		lineageTag: eec00bf5-3a88-494f-9b9c-b1e2b6463f28
+		summarizeBy: sum
+		sourceColumn: TOTAL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_GRUPOS_POR_CLASIFICACION = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_GRUPOS_POR_CLASIFICACION"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

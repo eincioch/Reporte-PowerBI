@@ -1,0 +1,37 @@
+table AUTOR
+	lineageTag: cf72bcb9-a141-4077-ba7e-52bc647138c7
+
+	column ID_AUTOR
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a5eb0d2-56d3-4a7a-9e12-0bcb75a1270f
+		summarizeBy: none
+		sourceColumn: ID_AUTOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column AUTOR
+		dataType: string
+		lineageTag: 3ff723f2-4e9c-4bb6-bc51-d3fc0b70d1c2
+		summarizeBy: none
+		sourceColumn: AUTOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONDICION
+		dataType: string
+		lineageTag: 43bd0611-e6a9-40a2-a269-628a5c31f91e
+		summarizeBy: none
+		sourceColumn: CONDICION
+
+		annotation SummarizationSetBy = Automatic
+
+	partition AUTOR = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_AUTOR = Origen{[Schema="dbo",Item="AUTOR"]}[Data]
+				in
+				    dbo_AUTOR
+

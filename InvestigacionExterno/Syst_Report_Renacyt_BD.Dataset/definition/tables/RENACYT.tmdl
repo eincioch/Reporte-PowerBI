@@ -1,0 +1,244 @@
+table RENACYT
+	lineageTag: ec443b05-ecac-4520-8bae-8074016ceccc
+
+	column ID_DOCINVEST
+		dataType: int64
+		formatString: 0
+		lineageTag: 70c88b6d-516d-4920-88fd-d4fc664317e3
+		summarizeBy: sum
+		sourceColumn: ID_DOCINVEST
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_DOCENTE
+		dataType: string
+		lineageTag: bde5f0f6-c700-4d82-adde-44b32f283dc4
+		summarizeBy: none
+		sourceColumn: COD_DOCENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_RENACYT
+		dataType: string
+		lineageTag: 65a5cbdb-cfcc-4fe3-9a5a-e58d51fe45c3
+		summarizeBy: none
+		sourceColumn: COD_RENACYT
+
+		annotation SummarizationSetBy = Automatic
+
+	column DNI
+		dataType: string
+		lineageTag: f591c24b-4940-4f2d-8d1d-432bef7bde1d
+		summarizeBy: none
+		sourceColumn: DNI
+
+		annotation SummarizationSetBy = Automatic
+
+	column INVESTIGADOR
+		dataType: string
+		lineageTag: 1d8f25b6-c223-40d2-bb58-50819a64a70c
+		summarizeBy: none
+		sourceColumn: INVESTIGADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column NACIONALIDAD
+		dataType: string
+		lineageTag: d42f9442-6178-4a09-99e8-f7322ed4067c
+		summarizeBy: none
+		sourceColumn: NACIONALIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESIDENCIA
+		dataType: string
+		lineageTag: 9d5e5a52-ab27-4026-b592-748198d48655
+		summarizeBy: none
+		sourceColumn: RESIDENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ESPACIO_FISICO
+		dataType: string
+		lineageTag: 7487b9de-2282-461c-8c0b-b85e477131d6
+		summarizeBy: none
+		sourceColumn: ESPACIO_FISICO
+
+		annotation SummarizationSetBy = Automatic
+
+	column UBICAR_AMBIENTE
+		dataType: string
+		lineageTag: 7af4da60-0cc1-4a97-9a03-d1789c759c6b
+		summarizeBy: none
+		sourceColumn: UBICAR_AMBIENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CNL
+		dataType: string
+		lineageTag: ea24e4dd-4e29-48ee-b531-d977bfb63904
+		summarizeBy: none
+		sourceColumn: CNL
+
+		annotation SummarizationSetBy = Automatic
+
+	column EMISION_CONSTANCIA
+		dataType: string
+		lineageTag: b0f3cbe5-97ce-4924-995d-e730690c3e28
+		summarizeBy: none
+		sourceColumn: EMISION_CONSTANCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGLAMENTO
+		dataType: string
+		lineageTag: 5587dadd-13df-41f1-ad78-c26a4ec41f31
+		summarizeBy: none
+		sourceColumn: REGLAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL
+		dataType: string
+		lineageTag: 1e0e917f-22fc-4882-8780-f0aa88c1f673
+		summarizeBy: none
+		sourceColumn: NIVEL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONDICION
+		dataType: string
+		lineageTag: 398660ae-fbe8-47f0-9326-e9ec6d865ff0
+		summarizeBy: none
+		sourceColumn: CONDICION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CTI_VITAE
+		dataType: string
+		lineageTag: 3d8b5562-013f-4733-91c0-79dde8ba563f
+		summarizeBy: none
+		sourceColumn: CTI_VITAE
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESOL_2023_01
+		dataType: string
+		lineageTag: e8875117-42a5-452e-ae45-6a30d376cd56
+		summarizeBy: none
+		sourceColumn: RESOL_2023_01
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESOL_2024_01
+		dataType: string
+		lineageTag: 6abfbb9a-1f4b-463d-be50-9d29529bc7fb
+		summarizeBy: none
+		sourceColumn: RESOL_2024_01
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGIMEN
+		dataType: string
+		lineageTag: 066856ee-6633-4f27-84fa-db31a434d96b
+		summarizeBy: none
+		sourceColumn: REGIMEN
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORIA
+		dataType: string
+		lineageTag: bdb972fa-b3e0-4b5f-b59f-02f3d316b233
+		summarizeBy: none
+		sourceColumn: CATEGORIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_PROGACAD
+		dataType: int64
+		formatString: 0
+		lineageTag: e9b88ac4-93a3-4f50-83e0-65cd52986331
+		summarizeBy: none
+		sourceColumn: ID_PROGACAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column MODALIDAD
+		dataType: string
+		lineageTag: a8267c86-964d-4ec8-bd36-5662aa94349c
+		summarizeBy: none
+		sourceColumn: MODALIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_CAMPUS
+		dataType: int64
+		formatString: 0
+		lineageTag: 02d12a43-2561-4397-9cc6-f96390acf720
+		summarizeBy: none
+		sourceColumn: ID_CAMPUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_LIBRO
+		dataType: int64
+		formatString: 0
+		lineageTag: ebfbbff8-05c8-445e-9e25-324f93998a72
+		summarizeBy: sum
+		sourceColumn: ID_LIBRO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_SEMLL
+		dataType: int64
+		formatString: 0
+		lineageTag: 9f581e7f-7d1d-4dad-8859-666efb0a86d4
+		summarizeBy: none
+		sourceColumn: ID_SEMLL
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_GRUP
+		dataType: int64
+		formatString: 0
+		lineageTag: 34a954d7-52b0-4cf7-8937-29d0f0fdc11d
+		summarizeBy: sum
+		sourceColumn: ID_GRUP
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_RESOL
+		dataType: int64
+		formatString: 0
+		lineageTag: b567cf2d-4d29-4205-bf03-75c74fb80b13
+		summarizeBy: none
+		sourceColumn: ID_RESOL
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_PROPIEDAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 994b7549-9fe3-40fa-a5cb-468ffeb295f3
+		summarizeBy: sum
+		sourceColumn: ID_PROPIEDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column GI
+		dataType: string
+		lineageTag: c66e3b38-c563-490d-904c-46c192172ebc
+		summarizeBy: none
+		sourceColumn: GI
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RENACYT = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_RENACYT = Origen{[Schema="dbo",Item="RENACYT"]}[Data]
+				in
+				    dbo_RENACYT
+

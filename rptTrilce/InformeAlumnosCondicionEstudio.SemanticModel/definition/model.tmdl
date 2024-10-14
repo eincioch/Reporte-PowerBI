@@ -1,0 +1,33 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["tblLstAlumnoCondicionAcademica","BDS DMN_Filial","BDS DMN_Facultad","BDS DMN_Escuela","BDS DMN_Modalidad_Estudio","BDS DMN_Modalidad_Ingreso","BDS DMN_Nivel_Academico","BDS DMN_Periodo"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.128.952.0 (24.04)
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table tblLstAlumnoCondicionAcademica
+ref table DateTableTemplate_8879d7d3-a811-4900-b919-352458ab5e33
+ref table 'BDS DMN_Filial'
+ref table LocalDateTable_44bcbdd5-d352-4ec9-bbd2-293a67a32ee3
+ref table 'BDS DMN_Facultad'
+ref table LocalDateTable_07b6b6ed-062d-4e5d-b288-4a7c03d03221
+ref table 'BDS DMN_Escuela'
+ref table LocalDateTable_10f097d5-7116-455a-8a03-cd382f5a035e
+ref table 'BDS DMN_Modalidad_Estudio'
+ref table LocalDateTable_39afb52b-409b-4e0e-b94f-40209c3d9fd1
+ref table 'BDS DMN_Modalidad_Ingreso'
+ref table LocalDateTable_63960831-82ff-4860-86c9-f7137de8197b
+ref table 'BDS DMN_Nivel_Academico'
+ref table LocalDateTable_0224ec06-92d6-499c-b5bf-5a7a66dfded2
+ref table 'BDS DMN_Periodo'
+ref table LocalDateTable_07627e11-4ff6-409a-9394-7dc0855229f1
+

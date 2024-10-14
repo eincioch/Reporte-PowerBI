@@ -1,0 +1,40 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-ES
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.126.927.0 (24.02)
+
+annotation PBI_QueryOrder = ["ART_DOCENTE","ART_ESTUDIANTE","AUTOR","CAMPUS","COLABORADOR","DOC_FORMATIVA","GRUPOS","GRUPOS_MENTORIZADOS","INTEGRANTE","PROGACADEM","LIBRO","PROPIEDAD","RENACYT","PROYECTO","RESOLUCION","SEMILLERO","TAB_DESARROLLO","TAB_FORMATIVA","TESIS_PUBL"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table ART_DOCENTE
+ref table ART_ESTUDIANTE
+ref table AUTOR
+ref table CAMPUS
+ref table COLABORADOR
+ref table DOC_FORMATIVA
+ref table GRUPOS
+ref table DateTableTemplate_514e7c19-e571-42da-ab8e-dc5fedecb63b
+ref table LocalDateTable_051ec4a5-28a6-4e1d-b112-6ab75c87d34c
+ref table LocalDateTable_3aa9dc8d-f1c9-412d-8148-319aa3308696
+ref table LocalDateTable_886204cb-cf5e-4879-9f5f-74e0205315d9
+ref table GRUPOS_MENTORIZADOS
+ref table INTEGRANTE
+ref table PROGACADEM
+ref table LIBRO
+ref table PROPIEDAD
+ref table RENACYT
+ref table PROYECTO
+ref table RESOLUCION
+ref table SEMILLERO
+ref table TAB_DESARROLLO
+ref table TAB_FORMATIVA
+ref table TESIS_PUBL
+

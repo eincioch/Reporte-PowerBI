@@ -1,0 +1,31 @@
+table COLABORADOR
+	lineageTag: 4c75450b-fa05-4901-b67e-d6a164d3f728
+
+	column ID_COLAB
+		dataType: int64
+		formatString: 0
+		lineageTag: 78d16948-415d-4a51-8ffc-22735e82632a
+		summarizeBy: none
+		sourceColumn: ID_COLAB
+
+		annotation SummarizationSetBy = Automatic
+
+	column APELLIDO_NOMBRE
+		dataType: string
+		lineageTag: 36487262-a1d4-4605-bc53-6b2c53b502d3
+		summarizeBy: none
+		sourceColumn: APELLIDO_NOMBRE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition COLABORADOR = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_COLABORADOR = Origen{[Schema="dbo",Item="COLABORADOR"]}[Data]
+				in
+				    dbo_COLABORADOR
+
+	annotation PBI_ResultType = Table
+

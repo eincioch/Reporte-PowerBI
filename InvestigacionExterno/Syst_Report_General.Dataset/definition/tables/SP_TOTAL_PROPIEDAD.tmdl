@@ -1,0 +1,22 @@
+table SP_TOTAL_PROPIEDAD
+	lineageTag: 6d0fd0df-ec75-465a-a4cd-60c63e4cbc29
+
+	column TOTAL_PROPIEDAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 008dee16-4138-4b94-9556-32973575ef5c
+		summarizeBy: sum
+		sourceColumn: TOTAL_PROPIEDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SP_TOTAL_PROPIEDAD = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion", [Query="EXECUTE SP_TOTAL_PROPIEDAD"])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

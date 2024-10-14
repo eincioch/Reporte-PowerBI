@@ -1,0 +1,54 @@
+table DOC_FORMATIVA
+	lineageTag: 8d97d4d8-7cd9-4ad9-9134-ac8131af8955
+
+	column ID_IVFORMA
+		dataType: int64
+		formatString: 0
+		lineageTag: a5a10434-8719-4d89-9a5f-c3e7431abb41
+		summarizeBy: sum
+		sourceColumn: ID_IVFORMA
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_DOCENTE
+		dataType: string
+		lineageTag: 69465447-498f-4df1-93a4-9efb9ce2899d
+		summarizeBy: none
+		sourceColumn: COD_DOCENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOCENTE
+		dataType: string
+		lineageTag: 92ccc7cb-391b-42bb-994c-2e82ddd47086
+		summarizeBy: none
+		sourceColumn: DOCENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXP_CURRICULAR
+		dataType: string
+		lineageTag: 48fdc971-8548-4e4b-ada2-b53b9a76191a
+		summarizeBy: none
+		sourceColumn: EXP_CURRICULAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_PROGACAD
+		dataType: int64
+		formatString: 0
+		lineageTag: 688aae0f-551b-4733-8f97-2fc098ee7153
+		summarizeBy: none
+		sourceColumn: ID_PROGACAD
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DOC_FORMATIVA = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    dbo_DOC_FORMATIVA = Origen{[Schema="dbo",Item="DOC_FORMATIVA"]}[Data]
+				in
+				    dbo_DOC_FORMATIVA
+

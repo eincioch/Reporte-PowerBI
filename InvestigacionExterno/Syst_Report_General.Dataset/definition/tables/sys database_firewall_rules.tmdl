@@ -1,0 +1,75 @@
+table 'sys database_firewall_rules'
+	lineageTag: 92e033ea-b99e-458e-ae51-e731e30f9558
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b29f9f1-e1f7-4169-b98b-0e9329ea1461
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: ad423485-561d-400d-860d-9b5a50406dfe
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column start_ip_address
+		dataType: string
+		lineageTag: c2d68bd2-4171-4f54-8f61-44ddedb32dc5
+		summarizeBy: none
+		sourceColumn: start_ip_address
+
+		annotation SummarizationSetBy = Automatic
+
+	column end_ip_address
+		dataType: string
+		lineageTag: efe88d07-00bc-4f36-b1c8-2f564bf6adfc
+		summarizeBy: none
+		sourceColumn: end_ip_address
+
+		annotation SummarizationSetBy = Automatic
+
+	column create_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 1b8b72cc-0202-49f9-a424-d7f7bcc8bae6
+		summarizeBy: none
+		sourceColumn: create_date
+
+		variation Variación
+			isDefault
+			relationship: 78505495-a965-4073-86f6-66982d9dc444
+			defaultHierarchy: LocalDateTable_1b6b2bdf-367e-4e7f-882b-6d6702c8a446.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column modify_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 16b99980-4368-47ca-9d21-778445bdedc9
+		summarizeBy: none
+		sourceColumn: modify_date
+
+		variation Variación
+			isDefault
+			relationship: cb8e8a65-87a2-4f2b-9051-ad5a413d6f2e
+			defaultHierarchy: LocalDateTable_80e1e1de-667a-4463-ae3b-0e93d91ad8f9.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'sys database_firewall_rules' = m
+		mode: import
+		source =
+				let
+				    Origen = Sql.Database("tcp:sql-dinvestigacion.database.windows.net,1433", "sqldb-dinvestigacion"),
+				    sys_database_firewall_rules = Origen{[Schema="sys",Item="database_firewall_rules"]}[Data]
+				in
+				    sys_database_firewall_rules
+
+	annotation PBI_ResultType = Table
+
